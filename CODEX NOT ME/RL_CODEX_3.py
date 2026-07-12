@@ -1,16 +1,16 @@
-"""RL CODEX 3: train a portfolio-aware PPO over the historical S&P 500.
+"""RL CODEX 3 Revision 2: train a portfolio-aware PPO over current S&P 500 names.
 
 This is a new experiment.  RL CODEX 1 and RL CODEX 2 are not imported or
 changed.
 
 The important design ideas are:
 
-* Point-in-time S&P 500 membership decides which companies are eligible on
-  each historical date, reducing survivorship bias.
+* Today's S&P 500 members form one frozen universe across the training period.
+  This deliberately creates survivorship bias and makes old results optimistic.
 * Roughly 500 liquid stocks are examined at every decision date.
-* PPO chooses a set of understandable factor weights and a cash exposure.
-  Those weights rank all eligible stocks.  We do NOT call PPO's action
-  probability a prediction confidence.
+* PPO chooses understandable factor weights that rank eligible stocks. It
+  cannot escape learning by requesting 100% cash; portfolio risk controls may
+  still leave some cash. We do NOT call its action a prediction confidence.
 * Training and testing use the same long-only portfolio builder.
 * Signals use today's close, but trades occur at the next market open.
 * Spread, slippage, turnover, drawdown, position, sector and volatility limits
@@ -21,9 +21,9 @@ The important design ideas are:
 Free-data limitation
 --------------------
 Yahoo may not return every ticker. Missing tickers are excluded, and the
-program writes a data-quality report. Historical membership and free prices
-can still contain errors, so results must not be treated as proof of future
-performance.
+program writes a data-quality report. Using today's successful companies in
+old years excludes many failures and removals. Results therefore must not be
+treated as proof of future performance.
 
 This remains educational research, not a promise of profit or a real-money
 trading system.
@@ -58,15 +58,12 @@ from stable_baselines3.common.utils import set_random_seed
 
 SCRIPT_DIRECTORY = Path(__file__).resolve().parent
 CACHE_DIRECTORY = SCRIPT_DIRECTORY / "rl3_cache"
-MODEL_PATH = SCRIPT_DIRECTORY / "rl_codex_3_portfolio_policy"
-METADATA_PATH = SCRIPT_DIRECTORY / "RL_CODEX_3_METADATA.json"
-WALK_FORWARD_PATH = SCRIPT_DIRECTORY / "RL_CODEX_3_WALK_FORWARD.csv"
-DATA_QUALITY_PATH = SCRIPT_DIRECTORY / "RL_CODEX_3_DATA_QUALITY.json"
+STRATEGY_REVISION = 2
+MODEL_PATH = SCRIPT_DIRECTORY / "rl_codex_3_portfolio_policy_v2"
+METADATA_PATH = SCRIPT_DIRECTORY / "RL_CODEX_3_METADATA_V2.json"
+WALK_FORWARD_PATH = SCRIPT_DIRECTORY / "RL_CODEX_3_WALK_FORWARD_V2.csv"
+DATA_QUALITY_PATH = SCRIPT_DIRECTORY / "RL_CODEX_3_DATA_QUALITY_V2.json"
 
-MEMBERSHIP_URL = (
-    "https://raw.githubusercontent.com/hanshof/sp500_constituents/"
-    "main/sp_500_historical_components.csv"
-)
 SECTOR_URL = (
     "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/"
     "main/data/constituents.csv"
@@ -91,8 +88,12 @@ KEEP_HOLDING_WITHIN_TOP_RANK = 40
 MINIMUM_PRICE = 5.0
 MINIMUM_DOLLAR_VOLUME = 5_000_000.0
 # Ordinary missing tickers are skipped, but stop if less than 60% of the
-# point-in-time universe works.
+# frozen current-company universe works.
 MINIMUM_DATA_COVERAGE = 0.60
+
+MIN_VALIDATION_AVERAGE_EXPOSURE = 0.35
+MIN_VALIDATION_AVERAGE_HOLDINGS = 5.0
+MIN_VALIDATION_TURNOVER = 0.05
 
 MAX_POSITION_WEIGHT = 0.075
 MAX_SECTOR_WEIGHT = 0.25
@@ -182,45 +183,8 @@ class MembershipHistory:
         return selected
 
 
-def load_membership_history(*, refresh: bool = False) -> MembershipHistory:
-    """Load and cache point-in-time S&P 500 membership snapshots."""
-    path = CACHE_DIRECTORY / "sp500_membership_history.csv"
-    if refresh or not path.exists():
-        print("Downloading point-in-time S&P 500 membership history...")
-        _download_text(MEMBERSHIP_URL, path)
-
-    frame = pd.read_csv(path)
-    lowered = {str(column).lower(): column for column in frame.columns}
-    if "date" not in lowered or "tickers" not in lowered:
-        raise RuntimeError("Membership CSV must contain date and tickers columns.")
-
-    frame = frame.rename(
-        columns={lowered["date"]: "date", lowered["tickers"]: "tickers"}
-    )
-    frame["date"] = pd.to_datetime(frame["date"], errors="coerce")
-    frame = frame.dropna(subset=["date", "tickers"]).sort_values("date")
-    frame = frame.drop_duplicates("date", keep="last")
-
-    dates: list[pd.Timestamp] = []
-    snapshots: list[frozenset[str]] = []
-    for row in frame.itertuples(index=False):
-        tickers = frozenset(
-            yahoo_symbol(value)
-            for value in str(row.tickers).split(",")
-            if str(value).strip()
-        )
-        if len(tickers) < 400:
-            continue
-        dates.append(pd.Timestamp(row.date).tz_localize(None))
-        snapshots.append(tickers)
-
-    if not dates:
-        raise RuntimeError("No valid S&P 500 membership snapshots were loaded.")
-    return MembershipHistory(pd.DatetimeIndex(dates), tuple(snapshots))
-
-
 def load_sector_map(*, refresh: bool = False) -> dict[str, str]:
-    """Load today's sector labels; old unavailable tickers remain Unknown."""
+    """Load today's S&P 500 symbols and their current sector labels."""
     path = CACHE_DIRECTORY / "sp500_current_sectors.csv"
     if refresh or not path.exists():
         print("Downloading current S&P 500 sector labels...")
@@ -236,6 +200,16 @@ def load_sector_map(*, refresh: bool = False) -> dict[str, str]:
         for symbol, sector in zip(frame[symbol_column], frame[sector_column])
         if pd.notna(symbol) and pd.notna(sector)
     }
+
+
+def fixed_current_membership(
+    sectors: dict[str, str], start: str
+) -> MembershipHistory:
+    """Freeze today's constituents across all dates (survivorship-biased)."""
+    members = frozenset(sectors)
+    if len(members) < 400:
+        raise RuntimeError("Current S&P 500 constituent list is unexpectedly small.")
+    return MembershipHistory(pd.DatetimeIndex([pd.Timestamp(start)]), (members,))
 
 
 def _clean_price_frame(frame: pd.DataFrame) -> pd.DataFrame:
@@ -729,8 +703,8 @@ def build_market_bundle(
     price_data_directory: Path | None = None,
     quality_report_path: Path = DATA_QUALITY_PATH,
 ) -> MarketBundle:
-    membership = load_membership_history(refresh=refresh)
     sectors = load_sector_map(refresh=refresh)
+    membership = fixed_current_membership(sectors, start)
     union = membership.union(start, end)
     required = union | {"SPY"} | set(SECTOR_ETFS.values())
     prices, missing = download_prices(
@@ -740,6 +714,13 @@ def build_market_bundle(
         refresh=refresh,
         external_directory=price_data_directory,
     )
+    # Cached files may contain newer rows added by Simulation 3. The requested
+    # end is exclusive, so clip every series before any feature can see it.
+    exclusive_end = pd.Timestamp(end)
+    prices = {
+        ticker: frame.loc[frame.index < exclusive_end].copy()
+        for ticker, frame in prices.items()
+    }
     if "SPY" not in prices:
         raise RuntimeError("SPY prices are required to create the market calendar.")
 
@@ -758,12 +739,12 @@ def build_market_bundle(
             data, spy["close"], sector_close
         )
         if number % 100 == 0:
-            print(f"Prepared features for {number}/{len(union)} historical tickers...")
+            print(f"Prepared features for {number}/{len(union)} current tickers...")
 
     # Market ETFs remain available for benchmarks and market observations.
     featured_prices["SPY"] = add_asset_features(spy, spy["close"], spy["close"])
     market_features = make_market_features(spy, sector_prices)
-    dates = spy.loc[start:end].index.sort_values()
+    dates = spy.loc[spy.index >= pd.Timestamp(start)].index.sort_values()
     bundle = MarketBundle(
         membership=membership,
         prices=featured_prices,
@@ -792,24 +773,24 @@ def build_market_bundle(
         "generated_at": date.today().isoformat(),
         "start": start,
         "end": end,
-        "historical_tickers_requested": len(union),
-        "historical_tickers_with_prices": len(featured_prices) - 1,
+        "current_tickers_requested": len(union),
+        "current_tickers_with_prices": len(featured_prices) - 1,
         "missing_tickers": missing,
         "sampled_coverage": coverage_rows,
         "minimum_sampled_coverage": minimum_coverage,
         "warning": (
-            "Point-in-time membership reduces survivorship bias, but the free "
-            "membership and Yahoo price histories may still be incomplete."
+            "Today's S&P 500 members are used across all old dates. This "
+            "creates survivorship bias and makes historical results optimistic."
         ),
     }
     quality_report_path.write_text(json.dumps(quality, indent=2), encoding="utf-8")
     print(
-        f"Historical-universe coverage: minimum sampled eligible coverage "
+        f"Current-universe coverage: minimum sampled eligible coverage "
         f"{minimum_coverage:.1%}; missing price histories: {len(missing)}"
     )
     if minimum_coverage < MINIMUM_DATA_COVERAGE and not allow_incomplete:
         raise RuntimeError(
-            f"Historical-universe price coverage fell to {minimum_coverage:.1%}. "
+            f"Current-universe price coverage fell to {minimum_coverage:.1%}. "
             "Too much data is missing for a useful training run."
         )
     return bundle
@@ -853,10 +834,10 @@ def construct_target_weights(
         return {}, {}, 0.0
 
     action = np.asarray(action, dtype=float).reshape(-1)
-    expected_size = len(FACTOR_COLUMNS) + 1
+    expected_size = len(FACTOR_COLUMNS)
     if len(action) != expected_size:
         raise ValueError(f"Expected {expected_size} action values, got {len(action)}.")
-    factor_preferences = action[:-1]
+    factor_preferences = action
     magnitude = float(np.abs(factor_preferences).sum())
     if magnitude < 1e-6:
         factor_preferences = np.zeros(len(FACTOR_COLUMNS), dtype=float)
@@ -880,12 +861,10 @@ def construct_target_weights(
         if ticker not in selected:
             selected.append(ticker)
 
-    desired_exposure = float(np.clip((action[-1] + 1) / 2, 0, 1))
-    market = bundle.market_row(when)
-    if float(market["market_trend_200d"]) < 0:
-        desired_exposure = min(desired_exposure, 0.50)
-    if float(market["market_volatility_20d"]) > 0.60:
-        desired_exposure = min(desired_exposure, 0.40)
+    # PPO must rank stocks instead of escaping into permanent cash. Exposure
+    # begins at 100%; the objective volatility and concentration limits below
+    # may still leave a sensible cash reserve when risk is high.
+    desired_exposure = 1.0
 
     selected_frame = cross_section.loc[selected]
     inverse_volatility = 1 / selected_frame["annual_volatility_20d"].clip(lower=0.10)
@@ -923,7 +902,8 @@ def construct_target_weights(
     scores = {
         tickers[position]: float(scores_array[position]) for position in order
     }
-    return target, scores, desired_exposure
+    actual_exposure = float(sum(target.values()))
+    return target, scores, actual_exposure
 
 
 def apply_trade_controls(
@@ -1201,7 +1181,7 @@ class PortfolioFactorEnvironment(gym.Env):
         self.action_space = spaces.Box(
             low=-1.0,
             high=1.0,
-            shape=(len(FACTOR_COLUMNS) + 1,),
+            shape=(len(FACTOR_COLUMNS),),
             dtype=np.float32,
         )
         self.observation_space = spaces.Box(
@@ -1279,14 +1259,17 @@ class PortfolioFactorEnvironment(gym.Env):
             if spy_start is None or spy_end is None
             else math.log(spy_end / spy_start)
         )
-        downside = max(0.0, -net_log_return)
         drawdown_worsening = max(0.0, old_drawdown - new_drawdown)
+        active_log_return = net_log_return - benchmark_log_return
+
+        # Net return already includes spread, impact and all trading fees. Do
+        # not punish turnover or losses a second time. The smaller active-return
+        # bonus teaches stock selection, while the modest drawdown term keeps
+        # risk relevant without making cash the easiest answer.
         reward = (
             net_log_return
-            + 0.15 * (net_log_return - benchmark_log_return)
-            - 0.05 * transition.turnover
-            - 0.50 * downside**2
-            - 0.25 * drawdown_worsening
+            + 0.25 * active_log_return
+            - 0.10 * drawdown_worsening
         )
 
         self.index += 1
@@ -1415,6 +1398,7 @@ def simulate_strategy(
     all_trades: list[dict[str, Any]] = []
     value_rows: list[tuple[pd.Timestamp, float]] = [(signals[0], value)]
     holding_counts: list[int] = []
+    exposures: list[float] = []
 
     for index in range(len(signals) - 1):
         signal_date = signals[index]
@@ -1464,6 +1448,7 @@ def simulate_strategy(
         all_trades.extend(transition.trades)
         value_rows.extend(transition.daily_values)
         holding_counts.append(len(weights))
+        exposures.append(float(sum(max(0.0, weight) for weight in weights.values())))
 
     equity = (
         pd.DataFrame(value_rows, columns=["date", "portfolio_value"])
@@ -1478,6 +1463,8 @@ def simulate_strategy(
             "last_date": equity.index[-1],
             "trading_days": len(equity),
             "average_holdings": float(np.mean(holding_counts)) if holding_counts else 0.0,
+            "average_exposure": float(np.mean(exposures)) if exposures else 0.0,
+            "minimum_exposure": float(np.min(exposures)) if exposures else 0.0,
             "trade_log": all_trades,
             "equity_curve": equity,
             "final_weights": weights,
@@ -1517,9 +1504,8 @@ def simulate_fixed_factor(
     *,
     starting_cash: float = 100_000,
 ) -> dict[str, Any]:
-    action = np.zeros(len(FACTOR_COLUMNS) + 1, dtype=np.float32)
+    action = np.zeros(len(FACTOR_COLUMNS), dtype=np.float32)
     action[FACTOR_COLUMNS.index(factor_name)] = 1.0
-    action[-1] = 1.0
     return simulate_strategy(
         bundle,
         start,
@@ -1545,12 +1531,23 @@ def buy_and_hold_spy(
     ) | {"equity_curve": curve}
 
 
-def walk_forward_score(result: dict[str, Any]) -> float:
+def walk_forward_score(
+    result: dict[str, Any], benchmark: dict[str, Any]
+) -> float:
+    """Prefer excess return over SPY, then better risk-adjusted behaviour."""
     return float(
-        result["return"]
-        + 0.25 * result["sharpe"]
-        + 0.50 * result["max_drawdown"]
-        - 0.02 * result["turnover"]
+        (result["return"] - benchmark["return"])
+        + 0.15 * (result["sharpe"] - benchmark["sharpe"])
+        + 0.25 * (result["max_drawdown"] - benchmark["max_drawdown"])
+    )
+
+
+def validation_is_active(result: dict[str, Any]) -> bool:
+    """Reject degenerate models before they can reach final training."""
+    return bool(
+        result["average_exposure"] >= MIN_VALIDATION_AVERAGE_EXPOSURE
+        and result["average_holdings"] >= MIN_VALIDATION_AVERAGE_HOLDINGS
+        and result["turnover"] >= MIN_VALIDATION_TURNOVER
     )
 
 
@@ -1595,11 +1592,12 @@ def main() -> None:
         final_steps = min(final_steps, 20_000)
 
     print("=" * 84)
-    print("RL CODEX 3 - HISTORICAL S&P 500 PORTFOLIO PPO")
+    print("RL CODEX 3 REVISION 2 - CURRENT S&P 500 PORTFOLIO PPO")
     print("=" * 84)
     print("Training cutoff: 2025-07-10. Later data is forbidden here.")
+    print("WARNING: Current members in old years create survivorship bias.")
     print(f"Walk-forward years: {folds}")
-    print(f"Factor action size: {len(FACTOR_COLUMNS)} factors + cash exposure")
+    print(f"Factor action size: {len(FACTOR_COLUMNS)} factors; no cash action")
     print(f"Maximum stocks examined: {MAX_STOCKS_EXAMINED}")
     print(f"Maximum holdings: {TOP_STOCKS_TO_HOLD}")
     print("Signals use the close; all simulated orders execute next open.")
@@ -1613,6 +1611,24 @@ def main() -> None:
     )
     if (bundle.dates > pd.Timestamp(FINAL_TRAIN_END)).any():
         raise AssertionError("Post-training-cutoff data leaked into RL Codex 3 training.")
+
+    preflight = simulate_fixed_factor(
+        bundle,
+        "2024-01-01",
+        "2024-12-31",
+        "factor_return_60d",
+        starting_cash=100_000,
+    )
+    if not validation_is_active(preflight):
+        raise RuntimeError(
+            "Portfolio preflight failed to create an active momentum portfolio. "
+            "Training was cancelled before spending PPO compute time."
+        )
+    print(
+        f"Portfolio preflight passed: exposure {preflight['average_exposure']:.1%}, "
+        f"holdings {preflight['average_holdings']:.1f}, "
+        f"turnover {preflight['turnover']:.2f}x"
+    )
 
     rows: list[dict[str, Any]] = []
     for seed in CANDIDATE_SEEDS:
@@ -1640,25 +1656,54 @@ def main() -> None:
                 f"{validation_year}-12-31",
                 starting_cash=100_000,
             )
-            score = walk_forward_score(result)
+            benchmark = buy_and_hold_spy(
+                bundle,
+                f"{validation_year}-01-01",
+                f"{validation_year}-12-31",
+                100_000,
+            )
+            active = validation_is_active(result)
+            score = walk_forward_score(result, benchmark) if active else -math.inf
             row = {
                 "seed": seed,
                 "validation_year": validation_year,
                 "return": result["return"],
+                "spy_return": benchmark["return"],
+                "excess_return": result["return"] - benchmark["return"],
                 "sharpe": result["sharpe"],
+                "spy_sharpe": benchmark["sharpe"],
                 "max_drawdown": result["max_drawdown"],
+                "spy_max_drawdown": benchmark["max_drawdown"],
                 "turnover": result["turnover"],
+                "average_exposure": result["average_exposure"],
+                "average_holdings": result["average_holdings"],
+                "active": active,
                 "score": score,
             }
             rows.append(row)
             print(
                 f"Return {result['return']:+.2%} | Sharpe {result['sharpe']:.2f} | "
-                f"drawdown {result['max_drawdown']:.2%} | score {score:.3f}"
+                f"SPY {benchmark['return']:+.2%} | exposure "
+                f"{result['average_exposure']:.1%} | holdings "
+                f"{result['average_holdings']:.1f} | active {active} | "
+                f"score {score:.3f}"
             )
 
     walk_forward = pd.DataFrame(rows)
     WALK_FORWARD_PATH.write_text(walk_forward.to_csv(index=False), encoding="utf-8")
-    seed_scores = walk_forward.groupby("seed")["score"].median()
+    seed_activity = walk_forward.groupby("seed")["active"].all()
+    qualified_seeds = seed_activity[seed_activity].index
+    if len(qualified_seeds) == 0:
+        raise RuntimeError(
+            "Every candidate seed failed the activity gate. Final training was "
+            "cancelled so a zero-trade model cannot be saved. Inspect "
+            f"{WALK_FORWARD_PATH}."
+        )
+    seed_scores = (
+        walk_forward[walk_forward["seed"].isin(qualified_seeds)]
+        .groupby("seed")["score"]
+        .median()
+    )
     winning_seed = int(seed_scores.idxmax())
     print("\nMedian walk-forward scores:")
     for seed, score in seed_scores.items():
@@ -1680,10 +1725,23 @@ def main() -> None:
         ),
     )
     final_environment.close()
+    final_activity_check = simulate_model(
+        final_model,
+        bundle,
+        "2024-01-01",
+        "2024-12-31",
+        starting_cash=100_000,
+    )
+    if not validation_is_active(final_activity_check):
+        raise RuntimeError(
+            "The final model failed the exposure/holdings activity check and "
+            "was not saved."
+        )
     final_model.save(MODEL_PATH)
 
     settings = {
         "version": 3,
+        "strategy_revision": STRATEGY_REVISION,
         "training_start": TRAIN_START,
         "training_end": FINAL_TRAIN_END,
         "walk_forward_years": list(folds),
@@ -1693,14 +1751,35 @@ def main() -> None:
         "final_training_steps": final_steps,
         "quick_model": bool(args.quick),
         "factor_columns": FACTOR_COLUMNS,
+        "action_size": len(FACTOR_COLUMNS),
+        "cash_action": False,
         "maximum_stocks_examined": MAX_STOCKS_EXAMINED,
         "maximum_holdings": TOP_STOCKS_TO_HOLD,
         "holding_period_days": HOLDING_PERIOD_DAYS,
-        "membership_source": MEMBERSHIP_URL,
-        "universe_method": "point-in-time historical S&P 500 membership",
+        "membership_source": SECTOR_URL,
+        "universe_method": "frozen current S&P 500 constituents across all dates",
+        "survivorship_bias_warning": (
+            "Today's S&P 500 members are used in old years, excluding many "
+            "historical failures and removals."
+        ),
+        "reward": (
+            "net_log_return + 0.25 * active_log_return "
+            "- 0.10 * drawdown_worsening"
+        ),
+        "validation_activity_thresholds": {
+            "minimum_average_exposure": MIN_VALIDATION_AVERAGE_EXPOSURE,
+            "minimum_average_holdings": MIN_VALIDATION_AVERAGE_HOLDINGS,
+            "minimum_turnover": MIN_VALIDATION_TURNOVER,
+        },
+        "final_activity_check": {
+            "period": "2024",
+            "average_exposure": final_activity_check["average_exposure"],
+            "average_holdings": final_activity_check["average_holdings"],
+            "turnover": final_activity_check["turnover"],
+        },
         "price_source": "RL3_PRICE_DATA_DIR plus yfinance fallback",
         "membership_file_sha256": file_sha256(
-            CACHE_DIRECTORY / "sp500_membership_history.csv"
+            CACHE_DIRECTORY / "sp500_current_sectors.csv"
         ),
         "sector_file_sha256": file_sha256(
             CACHE_DIRECTORY / "sp500_current_sectors.csv"

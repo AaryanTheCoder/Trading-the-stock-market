@@ -32,6 +32,7 @@ from stable_baselines3 import PPO
 
 from RL_CODEX_3 import (
     BASE_EXECUTION_COST,
+    CACHE_DIRECTORY,
     DATA_QUALITY_PATH as TRAINING_DATA_QUALITY_PATH,
     FACTOR_COLUMNS,
     FINAL_TRAIN_END,
@@ -41,12 +42,14 @@ from RL_CODEX_3 import (
     METADATA_PATH,
     MODEL_PATH,
     SCRIPT_DIRECTORY,
+    STRATEGY_REVISION,
     TARGET_ANNUAL_VOLATILITY,
     TOP_STOCKS_TO_HOLD,
     apply_trade_controls,
     build_market_bundle,
     buy_and_hold_spy,
     construct_target_weights,
+    file_sha256,
     simulate_fixed_factor,
     simulate_model,
     simulate_strategy,
@@ -58,14 +61,14 @@ DOWNLOAD_START = "2024-01-01"  # Indicator warm-up only.
 SIMULATION_START = "2025-07-11"
 SIMULATION_END = "2026-07-11"  # Saturday; last market session is July 10.
 
-TRADE_LOG_PATH = SCRIPT_DIRECTORY / "CODEX_SIMULATION_3_TRADES.csv"
-EQUITY_PATH = SCRIPT_DIRECTORY / "CODEX_SIMULATION_3_EQUITY.csv"
-HOLDINGS_PATH = SCRIPT_DIRECTORY / "CODEX_SIMULATION_3_FINAL_HOLDINGS.csv"
-SUMMARY_PATH = SCRIPT_DIRECTORY / "CODEX_SIMULATION_3_SUMMARY.json"
+TRADE_LOG_PATH = SCRIPT_DIRECTORY / "CODEX_SIMULATION_3_V2_TRADES.csv"
+EQUITY_PATH = SCRIPT_DIRECTORY / "CODEX_SIMULATION_3_V2_EQUITY.csv"
+HOLDINGS_PATH = SCRIPT_DIRECTORY / "CODEX_SIMULATION_3_V2_FINAL_HOLDINGS.csv"
+SUMMARY_PATH = SCRIPT_DIRECTORY / "CODEX_SIMULATION_3_V2_SUMMARY.json"
 SIMULATION_DATA_QUALITY_PATH = (
-    SCRIPT_DIRECTORY / "CODEX_SIMULATION_3_DATA_QUALITY.json"
+    SCRIPT_DIRECTORY / "CODEX_SIMULATION_3_V2_DATA_QUALITY.json"
 )
-PAPER_DIRECTORY = SCRIPT_DIRECTORY / "RL3_PAPER_SIGNALS"
+PAPER_DIRECTORY = SCRIPT_DIRECTORY / "RL3_V2_PAPER_SIGNALS"
 
 
 def _json_metrics(result: dict[str, Any]) -> dict[str, Any]:
@@ -82,6 +85,8 @@ def _json_metrics(result: dict[str, Any]) -> dict[str, Any]:
         "turnover",
         "estimated_execution_costs",
         "average_holdings",
+        "average_exposure",
+        "minimum_exposure",
         "trading_days",
     ]
     output: dict[str, Any] = {}
@@ -117,7 +122,7 @@ def _equity_frame(
         {
             "rl3_ai": ai["equity_curve"],
             "spy_buy_hold": spy["equity_curve"],
-            "point_in_time_equal_weight": equal_weight["equity_curve"],
+            "current_universe_equal_weight": equal_weight["equity_curve"],
             "simple_60d_momentum": momentum["equity_curve"],
         },
         axis=1,
@@ -185,7 +190,7 @@ def write_forward_paper_signal(
         )
 
     PAPER_DIRECTORY.mkdir(parents=True, exist_ok=True)
-    path = PAPER_DIRECTORY / f"RL3_PAPER_SIGNAL_{signal_date.date().isoformat()}.csv"
+    path = PAPER_DIRECTORY / f"RL3_V2_PAPER_SIGNAL_{signal_date.date().isoformat()}.csv"
     if path.exists() and not overwrite:
         raise FileExistsError(
             f"{path} already exists. Refusing to rewrite forward evidence. "
@@ -215,6 +220,25 @@ def main() -> None:
     if not METADATA_PATH.exists():
         raise FileNotFoundError(f"{METADATA_PATH} is missing. Retrain RL Codex 3.")
     metadata = json.loads(METADATA_PATH.read_text(encoding="utf-8"))
+    if metadata.get("strategy_revision") != STRATEGY_REVISION:
+        raise RuntimeError(
+            "This is not an RL3 Revision 2 model. Retrain RL_CODEX_3.py before "
+            "running Simulation 3."
+        )
+    if (
+        metadata.get("action_size") != len(FACTOR_COLUMNS)
+        or metadata.get("cash_action") is not False
+    ):
+        raise RuntimeError("RL3 metadata has an incompatible action design.")
+    if metadata.get("universe_method") != (
+        "frozen current S&P 500 constituents across all dates"
+    ):
+        raise RuntimeError("RL3 metadata has an incompatible stock universe.")
+    if metadata.get("model_file_sha256") != file_sha256(model_file):
+        raise RuntimeError(
+            "The RL3 V2 model file does not match its frozen metadata. Retrain "
+            "or restore the matching model and metadata pair."
+        )
     if metadata.get("training_end") != FINAL_TRAIN_END:
         raise RuntimeError("RL3 metadata does not contain the expected training cutoff.")
     if metadata.get("quick_model") and not args.allow_quick_model:
@@ -228,10 +252,11 @@ def main() -> None:
         date.fromisoformat(SIMULATION_END) + timedelta(days=1)
     ).isoformat()
     print("=" * 96)
-    print("CODEX SIMULATION 3 - CURRENT S&P 500 RL PORTFOLIO, 2025-07-11 TO 2026-07-11")
+    print("CODEX SIMULATION 3 - RL3 REVISION 2, 2025-07-11 TO 2026-07-11")
     print("=" * 96)
     print(f"Model fingerprint: {metadata['fingerprint']}")
     print(f"Model learned only through: {metadata['training_end']}")
+    print(f"WARNING: {metadata['survivorship_bias_warning']}")
     print(f"Maximum stocks examined: {MAX_STOCKS_EXAMINED}")
     print(f"Maximum stocks held: {TOP_STOCKS_TO_HOLD}")
     print(f"Per-stock cap: {MAX_POSITION_WEIGHT:.1%}")
@@ -248,6 +273,12 @@ def main() -> None:
         price_data_directory=args.price_data_dir,
         quality_report_path=SIMULATION_DATA_QUALITY_PATH,
     )
+    universe_file = CACHE_DIRECTORY / "sp500_current_sectors.csv"
+    if metadata.get("membership_file_sha256") != file_sha256(universe_file):
+        raise RuntimeError(
+            "The current-company universe changed after training. Use the frozen "
+            "training universe or retrain RL3 Revision 2 before simulation."
+        )
     available = bundle.dates[
         (bundle.dates >= pd.Timestamp(SIMULATION_START))
         & (bundle.dates <= pd.Timestamp(SIMULATION_END))
@@ -305,6 +336,8 @@ def main() -> None:
         "created_on": date.today().isoformat(),
         "model_fingerprint": metadata["fingerprint"],
         "model_training_end": metadata["training_end"],
+        "strategy_revision": metadata["strategy_revision"],
+        "survivorship_bias_warning": metadata["survivorship_bias_warning"],
         "simulation_start": SIMULATION_START,
         "simulation_end": simulation_end,
         "development_backtest_warning": (
@@ -331,6 +364,8 @@ def main() -> None:
     print(f"RL3 total absolute weight changes : {ai['turnover']:.2f}x")
     print(f"RL3 estimated execution costs     : ${ai['estimated_execution_costs']:,.2f}")
     print(f"RL3 average stocks held           : {ai['average_holdings']:.1f}")
+    print(f"RL3 average market exposure       : {ai['average_exposure']:.1%}")
+    print(f"RL3 minimum market exposure       : {ai['minimum_exposure']:.1%}")
     print(f"RL3 individual trades             : {len(trades)}")
     print(f"Trade log                         : {TRADE_LOG_PATH}")
     print(f"Daily equity curves               : {EQUITY_PATH}")
