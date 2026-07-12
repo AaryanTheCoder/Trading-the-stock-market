@@ -1,0 +1,47 @@
+{
+  "version": 3,
+  "training_start": "2010-01-01",
+  "training_end": "2025-07-10",
+  "walk_forward_years": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "candidate_seeds": [
+    11,
+    22,
+    33
+  ],
+  "winning_seed": 11,
+  "walk_forward_steps": 50000,
+  "final_training_steps": 400000,
+  "quick_model": false,
+  "factor_columns": [
+    "factor_return_1d",
+    "factor_return_5d",
+    "factor_return_20d",
+    "factor_return_60d",
+    "factor_return_120d",
+    "factor_trend_20d",
+    "factor_trend_50d",
+    "factor_trend_200d",
+    "factor_volatility_20d",
+    "factor_rsi_14",
+    "factor_volume_20d",
+    "factor_daily_range",
+    "factor_relative_market_20d",
+    "factor_relative_market_60d",
+    "factor_relative_sector_20d"
+  ],
+  "maximum_stocks_examined": 500,
+  "maximum_holdings": 20,
+  "holding_period_days": 20,
+  "membership_source": "https://raw.githubusercontent.com/hanshof/sp500_constituents/main/sp_500_historical_components.csv",
+  "universe_method": "point-in-time historical S&P 500 membership",
+  "price_source": "RL3_PRICE_DATA_DIR plus yfinance fallback",
+  "membership_file_sha256": "02f37a12c11f82218fce422ecf7d95fae1074bd96e664c262a5ea42c120d5fe9",
+  "sector_file_sha256": "e1c9bf1929fc3425b0b84875848283372c49caf68b9663d1d5134ea6c8e9cecd",
+  "model_file_sha256": "f7342517f084c3da66728d956107e8a8ceeb03294b311810db56b676430c0b0b",
+  "fingerprint": "c57a169851cea479"
+}
