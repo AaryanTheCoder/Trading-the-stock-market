@@ -1,166 +1,342 @@
 {
-  "generated_at": "2026-07-11",
+  "generated_at": "2026-07-12",
   "start": "2009-01-01",
   "end": "2025-07-11",
-  "current_tickers_requested": 503,
-  "current_tickers_with_prices": 500,
+  "historical_tickers_requested": 783,
+  "historical_tickers_with_prices": 604,
   "missing_tickers": [
-    "FDXF",
-    "HONA",
-    "Q"
+    "ABC",
+    "ABMD",
+    "ACAS",
+    "ACS",
+    "ADS",
+    "ALXN",
+    "ANSS",
+    "ANTM",
+    "APC",
+    "APOL",
+    "ARG",
+    "ATGE",
+    "ATVI",
+    "AVP",
+    "AYE",
+    "BCR",
+    "BDK",
+    "BIG",
+    "BJS",
+    "BK",
+    "BLL",
+    "BNI",
+    "BRCM",
+    "BTUUQ",
+    "BXLT",
+    "CA",
+    "CAM",
+    "CBE",
+    "CBS",
+    "CDAY",
+    "CELG",
+    "CEPH",
+    "CERN",
+    "CFN",
+    "CITGQ",
+    "CMA",
+    "CMCSK",
+    "COG",
+    "COV",
+    "CPGX",
+    "CTL",
+    "CTLT",
+    "CTRA",
+    "CTX",
+    "CTXS",
+    "CVC",
+    "CXO",
+    "DAY",
+    "DDR",
+    "DF",
+    "DFS",
+    "DISCA",
+    "DISCK",
+    "DISH",
+    "DNR",
+    "DRE",
+    "DWDP",
+    "EKDKQ",
+    "ENDP",
+    "ESV",
+    "ETFC",
+    "FB",
+    "FBHS",
+    "FDO",
+    "FI",
+    "FII",
+    "FL",
+    "FLIR",
+    "FLT",
+    "FRC",
+    "FRX",
+    "FTR",
+    "GGP",
+    "GMCR",
+    "GPS",
+    "GR",
+    "HBI",
+    "HCBK",
+    "HES",
+    "HFC",
+    "HNZ",
+    "HOLX",
+    "HRS",
+    "HSP",
+    "IGT",
+    "IPG",
+    "JCP",
+    "JEC",
+    "JNPR",
+    "JNS",
+    "JNY",
+    "JOY",
+    "JWN",
+    "K",
+    "KORS",
+    "KRFT",
+    "KSU",
+    "LLTC",
+    "LM",
+    "LO",
+    "LSI",
+    "LVLT",
+    "LXK",
+    "MDP",
+    "MEE",
+    "MER",
+    "MJN",
+    "MMC",
+    "MOLX",
+    "MRO",
+    "MTLQQ",
+    "MWV",
+    "MWW",
+    "MXIM",
+    "MYL",
+    "NBL",
+    "NCC",
+    "NFX",
+    "NLOK",
+    "NLSN",
+    "NOVL",
+    "NYX",
+    "ODP",
+    "PARA",
+    "PBCT",
+    "PBG",
+    "PDCO",
+    "PEAK",
+    "PETM",
+    "PKI",
+    "PXD",
+    "QEP",
+    "QLGC",
+    "RAI",
+    "RDC",
+    "RE",
+    "RHT",
+    "ROH",
+    "RRD",
+    "RTN",
+    "RVTY (PREVIOUSLY PKI)",
+    "RX",
+    "SEE",
+    "SGP",
+    "SIAL",
+    "SIVB",
+    "SNI",
+    "SOV",
+    "SPLS",
+    "SRCL",
+    "STJ",
+    "SWN",
+    "SWY",
+    "SYMC",
+    "TGNA",
+    "TIE",
+    "TIF",
+    "TLAB",
+    "TMK",
+    "TSS",
+    "TWC",
+    "TWTR",
+    "UTX",
+    "VAR",
+    "VIAB",
+    "VIAC",
+    "WBA",
+    "WCG",
+    "WFM",
+    "WFT",
+    "WIN",
+    "WLTW",
+    "WPX",
+    "WRK",
+    "WYE",
+    "X",
+    "XEC",
+    "XLNX",
+    "XTO"
   ],
   "sampled_coverage": [
     {
       "date": "2010-01-04",
-      "members": 503,
-      "eligible": 338,
-      "coverage": 0.676
+      "members": 445,
+      "eligible": 290,
+      "coverage": 0.651685393258427
     },
     {
       "date": "2010-08-25",
-      "members": 503,
-      "eligible": 338,
-      "coverage": 0.676
+      "members": 446,
+      "eligible": 294,
+      "coverage": 0.6591928251121076
     },
     {
       "date": "2011-04-15",
-      "members": 503,
-      "eligible": 353,
-      "coverage": 0.706
+      "members": 448,
+      "eligible": 301,
+      "coverage": 0.671875
     },
     {
       "date": "2011-12-06",
-      "members": 503,
-      "eligible": 356,
-      "coverage": 0.712
+      "members": 450,
+      "eligible": 302,
+      "coverage": 0.6711111111111111
     },
     {
       "date": "2012-07-30",
-      "members": 503,
-      "eligible": 364,
-      "coverage": 0.728
+      "members": 455,
+      "eligible": 311,
+      "coverage": 0.6835164835164835
     },
     {
       "date": "2013-03-25",
-      "members": 503,
-      "eligible": 374,
-      "coverage": 0.748
+      "members": 458,
+      "eligible": 323,
+      "coverage": 0.7052401746724891
     },
     {
       "date": "2013-11-12",
-      "members": 503,
-      "eligible": 384,
-      "coverage": 0.768
+      "members": 461,
+      "eligible": 331,
+      "coverage": 0.7180043383947939
     },
     {
       "date": "2014-07-08",
-      "members": 503,
-      "eligible": 389,
-      "coverage": 0.778
+      "members": 464,
+      "eligible": 333,
+      "coverage": 0.7176724137931034
     },
     {
       "date": "2015-02-27",
-      "members": 503,
-      "eligible": 395,
-      "coverage": 0.79
+      "members": 464,
+      "eligible": 337,
+      "coverage": 0.7262931034482759
     },
     {
       "date": "2015-10-19",
-      "members": 503,
-      "eligible": 399,
-      "coverage": 0.798
+      "members": 470,
+      "eligible": 343,
+      "coverage": 0.7297872340425532
     },
     {
       "date": "2016-06-10",
-      "members": 503,
-      "eligible": 434,
-      "coverage": 0.868
+      "members": 479,
+      "eligible": 378,
+      "coverage": 0.7891440501043842
     },
     {
       "date": "2017-02-01",
-      "members": 503,
-      "eligible": 440,
-      "coverage": 0.88
+      "members": 484,
+      "eligible": 388,
+      "coverage": 0.8016528925619835
     },
     {
       "date": "2017-09-22",
-      "members": 503,
-      "eligible": 444,
-      "coverage": 0.888
+      "members": 492,
+      "eligible": 401,
+      "coverage": 0.8150406504065041
     },
     {
       "date": "2018-05-16",
-      "members": 503,
-      "eligible": 448,
-      "coverage": 0.896
+      "members": 494,
+      "eligible": 406,
+      "coverage": 0.8218623481781376
     },
     {
       "date": "2019-01-08",
-      "members": 503,
-      "eligible": 471,
-      "coverage": 0.942
+      "members": 497,
+      "eligible": 420,
+      "coverage": 0.8450704225352113
     },
     {
       "date": "2019-08-29",
-      "members": 503,
-      "eligible": 472,
-      "coverage": 0.944
+      "members": 497,
+      "eligible": 425,
+      "coverage": 0.8551307847082495
     },
     {
       "date": "2020-04-22",
-      "members": 503,
-      "eligible": 480,
-      "coverage": 0.96
+      "members": 500,
+      "eligible": 436,
+      "coverage": 0.872
     },
     {
       "date": "2020-12-10",
+      "members": 501,
+      "eligible": 442,
+      "coverage": 0.884
+    },
+    {
+      "date": "2021-08-04",
+      "members": 501,
+      "eligible": 452,
+      "coverage": 0.904
+    },
+    {
+      "date": "2022-03-25",
+      "members": 500,
+      "eligible": 457,
+      "coverage": 0.914
+    },
+    {
+      "date": "2022-11-15",
+      "members": 498,
+      "eligible": 467,
+      "coverage": 0.9377510040160643
+    },
+    {
+      "date": "2023-07-12",
+      "members": 503,
+      "eligible": 478,
+      "coverage": 0.956
+    },
+    {
+      "date": "2024-03-04",
       "members": 503,
       "eligible": 482,
       "coverage": 0.964
     },
     {
-      "date": "2021-08-04",
-      "members": 503,
-      "eligible": 485,
-      "coverage": 0.97
-    },
-    {
-      "date": "2022-03-25",
-      "members": 503,
-      "eligible": 490,
-      "coverage": 0.98
-    },
-    {
-      "date": "2022-11-15",
-      "members": 503,
-      "eligible": 491,
-      "coverage": 0.982
-    },
-    {
-      "date": "2023-07-12",
-      "members": 503,
-      "eligible": 492,
-      "coverage": 0.984
-    },
-    {
-      "date": "2024-03-04",
-      "members": 503,
-      "eligible": 495,
-      "coverage": 0.99
-    },
-    {
       "date": "2024-10-23",
       "members": 503,
-      "eligible": 497,
-      "coverage": 0.994
+      "eligible": 484,
+      "coverage": 0.968
     },
     {
       "date": "2025-06-18",
       "members": 503,
-      "eligible": 499,
-      "coverage": 0.998
+      "eligible": 490,
+      "coverage": 0.98
     }
   ],
-  "minimum_sampled_coverage": 0.676,
-  "warning": "Today's S&P 500 members are used across all dates, which creates survivorship bias. Yahoo failures and pre-IPO periods are excluded."
+  "minimum_sampled_coverage": 0.651685393258427,
+  "warning": "Point-in-time membership reduces survivorship bias, but the free membership and Yahoo price histories may still be incomplete."
 }
