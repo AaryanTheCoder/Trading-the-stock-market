@@ -1,0 +1,191 @@
+{
+  "generated_at": "2026-07-12",
+  "start": "2024-01-01",
+  "end": "2026-07-12",
+  "historical_tickers_requested": 532,
+  "historical_tickers_with_prices": 510,
+  "missing_tickers": [
+    "ANSS",
+    "BK",
+    "CDAY",
+    "CMA",
+    "CTLT",
+    "CTRA",
+    "DAY",
+    "DFS",
+    "FI",
+    "FLT",
+    "HES",
+    "HOLX",
+    "IPG",
+    "JNPR",
+    "K",
+    "MMC",
+    "MRO",
+    "PARA",
+    "PEAK",
+    "PXD",
+    "WBA",
+    "WRK"
+  ],
+  "sampled_coverage": [
+    {
+      "date": "2025-01-02",
+      "members": 503,
+      "eligible": 487,
+      "coverage": 0.974
+    },
+    {
+      "date": "2025-01-10",
+      "members": 503,
+      "eligible": 488,
+      "coverage": 0.976
+    },
+    {
+      "date": "2025-01-17",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-01-27",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-02-03",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-02-10",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-02-18",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-02-25",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-03-04",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-03-11",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-03-18",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-03-25",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-04-01",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-04-08",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-04-15",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-04-23",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-04-30",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-05-07",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-05-14",
+      "members": 503,
+      "eligible": 489,
+      "coverage": 0.978
+    },
+    {
+      "date": "2025-05-21",
+      "members": 503,
+      "eligible": 490,
+      "coverage": 0.98
+    },
+    {
+      "date": "2025-05-29",
+      "members": 503,
+      "eligible": 490,
+      "coverage": 0.98
+    },
+    {
+      "date": "2025-06-05",
+      "members": 503,
+      "eligible": 490,
+      "coverage": 0.98
+    },
+    {
+      "date": "2025-06-12",
+      "members": 503,
+      "eligible": 490,
+      "coverage": 0.98
+    },
+    {
+      "date": "2025-06-20",
+      "members": 503,
+      "eligible": 490,
+      "coverage": 0.98
+    },
+    {
+      "date": "2025-06-27",
+      "members": 503,
+      "eligible": 490,
+      "coverage": 0.98
+    },
+    {
+      "date": "2025-07-07",
+      "members": 502,
+      "eligible": 490,
+      "coverage": 0.98
+    }
+  ],
+  "minimum_sampled_coverage": 0.974,
+  "warning": "Point-in-time membership reduces survivorship bias, but the free membership and Yahoo price histories may still be incomplete."
+}
