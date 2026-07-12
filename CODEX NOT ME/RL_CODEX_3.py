@@ -282,8 +282,12 @@ def download_prices(
 ) -> tuple[dict[str, pd.DataFrame], list[str]]:
     """Download adjusted OHLCV data in chunks and cache one CSV per ticker."""
     requested = sorted({yahoo_symbol(symbol) for symbol in symbols})
+    # Yahoo's end date is exclusive. A seven-day allowance covers weekends and
+    # short market holidays without accepting a cache that is months out of date.
+    latest_acceptable_cache_date = pd.Timestamp(end) - pd.Timedelta(days=7)
     prices: dict[str, pd.DataFrame] = {}
     missing: list[str] = []
+    stale_cache: dict[str, pd.DataFrame] = {}
     cache_directory = CACHE_DIRECTORY / "prices"
     cache_directory.mkdir(parents=True, exist_ok=True)
 
@@ -310,9 +314,15 @@ def download_prices(
                 to_download.append(symbol)
                 continue
             selected = frame.loc[start:end].copy()
-            if len(selected) >= 20:
+            cache_reaches_request = (
+                not frame.empty
+                and pd.Timestamp(frame.index.max()) >= latest_acceptable_cache_date
+            )
+            if len(selected) >= 20 and cache_reaches_request:
                 prices[symbol] = frame
             else:
+                if len(selected) >= 20:
+                    stale_cache[symbol] = frame
                 to_download.append(symbol)
         except (OSError, ValueError, pd.errors.ParserError):
             to_download.append(symbol)
@@ -354,7 +364,14 @@ def download_prices(
                 prices[symbol] = frame
                 _write_price_cache(symbol, frame)
             except (KeyError, ValueError):
-                missing.append(symbol)
+                # A delisted company may correctly have no recent prices. Keep
+                # its older cached history so earlier simulation dates remain
+                # accurate; it still cannot be bought after its prices stop.
+                fallback = stale_cache.get(symbol)
+                if fallback is not None:
+                    prices[symbol] = fallback
+                else:
+                    missing.append(symbol)
 
     missing.extend(symbol for symbol in requested if symbol not in prices)
     missing = [symbol for symbol in set(missing) if symbol not in prices]
