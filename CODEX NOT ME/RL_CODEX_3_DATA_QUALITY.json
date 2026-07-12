@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-07-11",
+  "start": "2009-01-01",
+  "end": "2025-07-11",
+  "current_tickers_requested": 503,
+  "current_tickers_with_prices": 500,
+  "missing_tickers": [
+    "FDXF",
+    "HONA",
+    "Q"
+  ],
+  "sampled_coverage": [
+    {
+      "date": "2010-01-04",
+      "members": 503,
+      "eligible": 338,
+      "coverage": 0.676
+    },
+    {
+      "date": "2010-08-25",
+      "members": 503,
+      "eligible": 338,
+      "coverage": 0.676
+    },
+    {
+      "date": "2011-04-15",
+      "members": 503,
+      "eligible": 353,
+      "coverage": 0.706
+    },
+    {
+      "date": "2011-12-06",
+      "members": 503,
+      "eligible": 356,
+      "coverage": 0.712
+    },
+    {
+      "date": "2012-07-30",
+      "members": 503,
+      "eligible": 364,
+      "coverage": 0.728
+    },
+    {
+      "date": "2013-03-25",
+      "members": 503,
+      "eligible": 374,
+      "coverage": 0.748
+    },
+    {
+      "date": "2013-11-12",
+      "members": 503,
+      "eligible": 384,
+      "coverage": 0.768
+    },
+    {
+      "date": "2014-07-08",
+      "members": 503,
+      "eligible": 389,
+      "coverage": 0.778
+    },
+    {
+      "date": "2015-02-27",
+      "members": 503,
+      "eligible": 395,
+      "coverage": 0.79
+    },
+    {
+      "date": "2015-10-19",
+      "members": 503,
+      "eligible": 399,
+      "coverage": 0.798
+    },
+    {
+      "date": "2016-06-10",
+      "members": 503,
+      "eligible": 434,
+      "coverage": 0.868
+    },
+    {
+      "date": "2017-02-01",
+      "members": 503,
+      "eligible": 440,
+      "coverage": 0.88
+    },
+    {
+      "date": "2017-09-22",
+      "members": 503,
+      "eligible": 444,
+      "coverage": 0.888
+    },
+    {
+      "date": "2018-05-16",
+      "members": 503,
+      "eligible": 448,
+      "coverage": 0.896
+    },
+    {
+      "date": "2019-01-08",
+      "members": 503,
+      "eligible": 471,
+      "coverage": 0.942
+    },
+    {
+      "date": "2019-08-29",
+      "members": 503,
+      "eligible": 472,
+      "coverage": 0.944
+    },
+    {
+      "date": "2020-04-22",
+      "members": 503,
+      "eligible": 480,
+      "coverage": 0.96
+    },
+    {
+      "date": "2020-12-10",
+      "members": 503,
+      "eligible": 482,
+      "coverage": 0.964
+    },
+    {
+      "date": "2021-08-04",
+      "members": 503,
+      "eligible": 485,
+      "coverage": 0.97
+    },
+    {
+      "date": "2022-03-25",
+      "members": 503,
+      "eligible": 490,
+      "coverage": 0.98
+    },
+    {
+      "date": "2022-11-15",
+      "members": 503,
+      "eligible": 491,
+      "coverage": 0.982
+    },
+    {
+      "date": "2023-07-12",
+      "members": 503,
+      "eligible": 492,
+      "coverage": 0.984
+    },
+    {
+      "date": "2024-03-04",
+      "members": 503,
+      "eligible": 495,
+      "coverage": 0.99
+    },
+    {
+      "date": "2024-10-23",
+      "members": 503,
+      "eligible": 497,
+      "coverage": 0.994
+    },
+    {
+      "date": "2025-06-18",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    }
+  ],
+  "minimum_sampled_coverage": 0.676,
+  "warning": "Today's S&P 500 members are used across all dates, which creates survivorship bias. Yahoo failures and pre-IPO periods are excluded."
+}
