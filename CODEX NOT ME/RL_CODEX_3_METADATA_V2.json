@@ -1,0 +1,64 @@
+{
+  "version": 3,
+  "strategy_revision": 2,
+  "training_run_signature": "514bc7f3658c19cf",
+  "training_start": "2010-01-01",
+  "training_end": "2025-07-10",
+  "walk_forward_years": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "candidate_seeds": [
+    11,
+    22,
+    33
+  ],
+  "winning_seed": 22,
+  "walk_forward_steps": 50000,
+  "final_training_steps": 400000,
+  "quick_model": false,
+  "factor_columns": [
+    "factor_return_1d",
+    "factor_return_5d",
+    "factor_return_20d",
+    "factor_return_60d",
+    "factor_return_120d",
+    "factor_trend_20d",
+    "factor_trend_50d",
+    "factor_trend_200d",
+    "factor_volatility_20d",
+    "factor_rsi_14",
+    "factor_volume_20d",
+    "factor_daily_range",
+    "factor_relative_market_20d",
+    "factor_relative_market_60d",
+    "factor_relative_sector_20d"
+  ],
+  "action_size": 15,
+  "cash_action": false,
+  "maximum_stocks_examined": 500,
+  "maximum_holdings": 20,
+  "holding_period_days": 20,
+  "membership_source": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+  "universe_method": "frozen current S&P 500 constituents across all dates",
+  "survivorship_bias_warning": "Today's S&P 500 members are used in old years, excluding many historical failures and removals.",
+  "reward": "net_log_return + 0.25 * active_log_return - 0.10 * drawdown_worsening",
+  "validation_activity_thresholds": {
+    "minimum_average_exposure": 0.35,
+    "minimum_average_holdings": 5.0,
+    "minimum_turnover": 0.05
+  },
+  "final_activity_check": {
+    "period": "2024",
+    "average_exposure": 0.902202063408343,
+    "average_holdings": 84.0,
+    "turnover": 7.799999999999999
+  },
+  "price_source": "RL3_PRICE_DATA_DIR plus yfinance fallback",
+  "membership_file_sha256": "e1c9bf1929fc3425b0b84875848283372c49caf68b9663d1d5134ea6c8e9cecd",
+  "sector_file_sha256": "e1c9bf1929fc3425b0b84875848283372c49caf68b9663d1d5134ea6c8e9cecd",
+  "model_file_sha256": "b7fe1b69ff8fa77bfbc8bf7046fd27fadee7f07db2bb0386813c2762461a970c",
+  "fingerprint": "51a8d0fd6819ec5b"
+}

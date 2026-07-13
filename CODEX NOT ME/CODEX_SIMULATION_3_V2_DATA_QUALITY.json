@@ -1,0 +1,170 @@
+{
+  "generated_at": "2026-07-13",
+  "start": "2024-01-01",
+  "end": "2026-07-12",
+  "current_tickers_requested": 503,
+  "current_tickers_with_prices": 502,
+  "missing_tickers": [
+    "HONA"
+  ],
+  "sampled_coverage": [
+    {
+      "date": "2025-01-02",
+      "members": 503,
+      "eligible": 497,
+      "coverage": 0.994
+    },
+    {
+      "date": "2025-01-27",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-02-18",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-03-11",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-04-01",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-04-23",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-05-14",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-06-05",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-06-27",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-07-21",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-08-11",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-09-02",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-09-23",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-10-14",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-11-04",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-11-25",
+      "members": 503,
+      "eligible": 499,
+      "coverage": 0.998
+    },
+    {
+      "date": "2025-12-17",
+      "members": 503,
+      "eligible": 500,
+      "coverage": 1.0
+    },
+    {
+      "date": "2026-01-09",
+      "members": 503,
+      "eligible": 500,
+      "coverage": 1.0
+    },
+    {
+      "date": "2026-02-02",
+      "members": 503,
+      "eligible": 500,
+      "coverage": 1.0
+    },
+    {
+      "date": "2026-02-24",
+      "members": 503,
+      "eligible": 500,
+      "coverage": 1.0
+    },
+    {
+      "date": "2026-03-17",
+      "members": 503,
+      "eligible": 500,
+      "coverage": 1.0
+    },
+    {
+      "date": "2026-04-08",
+      "members": 503,
+      "eligible": 500,
+      "coverage": 1.0
+    },
+    {
+      "date": "2026-04-29",
+      "members": 503,
+      "eligible": 500,
+      "coverage": 1.0
+    },
+    {
+      "date": "2026-05-20",
+      "members": 503,
+      "eligible": 500,
+      "coverage": 1.0
+    },
+    {
+      "date": "2026-06-11",
+      "members": 503,
+      "eligible": 500,
+      "coverage": 1.0
+    },
+    {
+      "date": "2026-07-06",
+      "members": 503,
+      "eligible": 500,
+      "coverage": 1.0
+    }
+  ],
+  "minimum_sampled_coverage": 0.994,
+  "warning": "Today's S&P 500 members are used across all old dates. This creates survivorship bias and makes historical results optimistic."
+}
