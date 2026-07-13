@@ -63,6 +63,10 @@ MODEL_PATH = SCRIPT_DIRECTORY / "rl_codex_3_portfolio_policy_v2"
 METADATA_PATH = SCRIPT_DIRECTORY / "RL_CODEX_3_METADATA_V2.json"
 WALK_FORWARD_PATH = SCRIPT_DIRECTORY / "RL_CODEX_3_WALK_FORWARD_V2.csv"
 DATA_QUALITY_PATH = SCRIPT_DIRECTORY / "RL_CODEX_3_DATA_QUALITY_V2.json"
+FINAL_CHECKPOINT_PATH = SCRIPT_DIRECTORY / "rl_codex_3_v2_final_checkpoint"
+FINAL_CHECKPOINT_METADATA_PATH = (
+    SCRIPT_DIRECTORY / "RL_CODEX_3_V2_FINAL_CHECKPOINT.json"
+)
 
 SECTOR_URL = (
     "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/"
@@ -1291,12 +1295,23 @@ class PortfolioFactorEnvironment(gym.Env):
 class TrainingProgressCallback(BaseCallback):
     """Print training progress at each 10% milestone."""
 
-    def __init__(self, total_steps: int, label: str):
+    def __init__(
+        self,
+        total_steps: int,
+        label: str,
+        *,
+        checkpoint_path: Path | None = None,
+        checkpoint_metadata_path: Path | None = None,
+        checkpoint_identity: dict[str, Any] | None = None,
+    ):
         super().__init__(verbose=0)
         self.total_steps = max(1, int(total_steps))
         self.label = label
         self.report_every = max(1, self.total_steps // 10)
         self.next_report = self.report_every
+        self.checkpoint_path = checkpoint_path
+        self.checkpoint_metadata_path = checkpoint_metadata_path
+        self.checkpoint_identity = checkpoint_identity
 
     def _on_step(self) -> bool:
         completed = int(self.model.num_timesteps)
@@ -1308,6 +1323,20 @@ class TrainingProgressCallback(BaseCallback):
                 f"({percentage}%)",
                 flush=True,
             )
+            if self.checkpoint_path is not None:
+                if self.checkpoint_metadata_path is None or self.checkpoint_identity is None:
+                    raise RuntimeError("Checkpoint paths require checkpoint identity metadata.")
+                self.model.save(self.checkpoint_path)
+                checkpoint = dict(self.checkpoint_identity)
+                checkpoint["model_steps"] = completed
+                self.checkpoint_metadata_path.write_text(
+                    json.dumps(checkpoint, indent=2), encoding="utf-8"
+                )
+                print(
+                    f"{self.label}: saved resumable checkpoint at "
+                    f"{completed:,} steps",
+                    flush=True,
+                )
             while self.next_report <= completed:
                 self.next_report += self.report_every
         return True
@@ -1630,9 +1659,42 @@ def main() -> None:
         f"turnover {preflight['turnover']:.2f}x"
     )
 
+    universe_hash = file_sha256(CACHE_DIRECTORY / "sp500_current_sectors.csv")
+    run_identity = {
+        "strategy_revision": STRATEGY_REVISION,
+        "quick_model": bool(args.quick),
+        "folds": list(folds),
+        "candidate_seeds": list(CANDIDATE_SEEDS),
+        "walk_steps": walk_steps,
+        "final_steps": final_steps,
+        "universe_sha256": universe_hash,
+        "action_size": len(FACTOR_COLUMNS),
+        "reward_revision": 2,
+    }
+    run_signature = experiment_fingerprint(run_identity)
     rows: list[dict[str, Any]] = []
+    if WALK_FORWARD_PATH.exists():
+        existing = pd.read_csv(WALK_FORWARD_PATH)
+        if (
+            "run_signature" in existing.columns
+            and not existing.empty
+            and set(existing["run_signature"].astype(str)) == {run_signature}
+        ):
+            rows = existing.to_dict("records")
+            print(
+                f"Resuming walk-forward progress: {len(rows)} completed "
+                f"of {len(CANDIDATE_SEEDS) * len(folds)} folds."
+            )
+        else:
+            print("Existing walk-forward file belongs to another run; starting fresh.")
+    completed_folds = {
+        (int(row["seed"]), int(row["validation_year"])) for row in rows
+    }
     for seed in CANDIDATE_SEEDS:
         for validation_year in folds:
+            if (seed, validation_year) in completed_folds:
+                print(f"Skipping completed seed {seed}, validation {validation_year}.")
+                continue
             training_end = f"{validation_year - 1}-12-31"
             print(
                 f"\nSeed {seed}: train {TRAIN_START} to {training_end}; "
@@ -1665,6 +1727,7 @@ def main() -> None:
             active = validation_is_active(result)
             score = walk_forward_score(result, benchmark) if active else -math.inf
             row = {
+                "run_signature": run_signature,
                 "seed": seed,
                 "validation_year": validation_year,
                 "return": result["return"],
@@ -1681,6 +1744,9 @@ def main() -> None:
                 "score": score,
             }
             rows.append(row)
+            WALK_FORWARD_PATH.write_text(
+                pd.DataFrame(rows).to_csv(index=False), encoding="utf-8"
+            )
             print(
                 f"Return {result['return']:+.2%} | Sharpe {result['sharpe']:.2f} | "
                 f"SPY {benchmark['return']:+.2%} | exposure "
@@ -1717,13 +1783,50 @@ def main() -> None:
     final_environment = PortfolioFactorEnvironment(
         bundle, TRAIN_START, FINAL_TRAIN_END
     )
-    final_model = make_model(final_environment, winning_seed)
-    final_model.learn(
-        total_timesteps=final_steps,
-        callback=TrainingProgressCallback(
-            final_steps, f"Final seed {winning_seed}"
-        ),
-    )
+    checkpoint_identity = {
+        "run_signature": run_signature,
+        "winning_seed": winning_seed,
+        "final_steps": final_steps,
+    }
+    checkpoint_file = Path(f"{FINAL_CHECKPOINT_PATH}.zip")
+    completed_final_steps = 0
+    final_model: PPO
+    if checkpoint_file.exists() and FINAL_CHECKPOINT_METADATA_PATH.exists():
+        saved_checkpoint = json.loads(
+            FINAL_CHECKPOINT_METADATA_PATH.read_text(encoding="utf-8")
+        )
+        identity_matches = all(
+            saved_checkpoint.get(key) == value
+            for key, value in checkpoint_identity.items()
+        )
+        if identity_matches:
+            final_model = PPO.load(
+                FINAL_CHECKPOINT_PATH, env=final_environment, device="cpu"
+            )
+            completed_final_steps = int(final_model.num_timesteps)
+            print(
+                f"Resuming final model from {completed_final_steps:,} "
+                f"of {final_steps:,} steps."
+            )
+        else:
+            print("Existing final checkpoint belongs to another run; starting fresh.")
+            final_model = make_model(final_environment, winning_seed)
+    else:
+        final_model = make_model(final_environment, winning_seed)
+
+    remaining_final_steps = max(0, final_steps - completed_final_steps)
+    if remaining_final_steps > 0:
+        final_model.learn(
+            total_timesteps=remaining_final_steps,
+            reset_num_timesteps=completed_final_steps == 0,
+            callback=TrainingProgressCallback(
+                final_steps,
+                f"Final seed {winning_seed}",
+                checkpoint_path=FINAL_CHECKPOINT_PATH,
+                checkpoint_metadata_path=FINAL_CHECKPOINT_METADATA_PATH,
+                checkpoint_identity=checkpoint_identity,
+            ),
+        )
     final_environment.close()
     final_activity_check = simulate_model(
         final_model,
@@ -1742,6 +1845,7 @@ def main() -> None:
     settings = {
         "version": 3,
         "strategy_revision": STRATEGY_REVISION,
+        "training_run_signature": run_signature,
         "training_start": TRAIN_START,
         "training_end": FINAL_TRAIN_END,
         "walk_forward_years": list(folds),
