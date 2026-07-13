@@ -146,6 +146,18 @@ FACTOR_COLUMNS = [
     "factor_relative_sector_20d",
 ]
 
+# This script is a reinforcement-learning experiment for stock trading.
+# The agent does not directly choose buy/sell orders. Instead, it learns a
+# vector of factor preferences, and the rest of the code turns those
+# preferences into a real portfolio with risk limits, costs, and turnover
+# controls. The overall flow is:
+# 1) download historical market data,
+# 2) build stock features for every date,
+# 3) let PPO choose factor weights,
+# 4) convert those weights into a portfolio,
+# 5) simulate realistic next-open execution and fees,
+# 6) score the result and save the learned policy.
+
 
 def yahoo_symbol(symbol: str) -> str:
     """Convert common index notation such as BRK.B into Yahoo notation."""
@@ -373,6 +385,8 @@ def add_asset_features(
     sector_close: pd.Series | None,
 ) -> pd.DataFrame:
     """Create scale-limited features using current and previous data only."""
+    # Every stock gets a feature row for each date. These features are the
+    # signals the RL agent can use to decide which stocks look attractive.
     featured = frame.copy()
     close = featured["close"]
     daily_return = close.pct_change(fill_method=None)
@@ -475,6 +489,9 @@ def make_market_features(
 
 @dataclass
 class MarketBundle:
+    # This object is a cache-heavy data container for the whole experiment.
+    # It stores the universe of stocks, their prices, sector labels, market
+    # context, and precomputed arrays that make repeated lookups fast.
     membership: MembershipHistory
     prices: dict[str, pd.DataFrame]
     sectors: dict[str, str]
@@ -833,6 +850,9 @@ def construct_target_weights(
     action: np.ndarray,
 ) -> tuple[dict[str, float], dict[str, float], float]:
     """Turn PPO factor preferences into a risk-controlled stock portfolio."""
+    # PPO outputs a vector of preferences over the factor columns. This block
+    # converts that vector into a ranked list of stocks and then into a
+    # portfolio that respects position caps and sector caps.
     cross_section, tickers, factor_matrix = bundle.ranked_components(when)
     if cross_section.empty:
         return {}, {}, 0.0
@@ -988,6 +1008,10 @@ def execute_next_open_and_hold(
     enforce_trade_controls: bool = True,
 ) -> TransitionResult:
     """Move old holdings overnight, trade next open, then hold to next signal."""
+    # This function simulates the live experience of the strategy between two
+    # decision dates. It first lets old positions drift overnight, then places
+    # trades at the next market open, and finally holds the portfolio until the
+    # next decision point while applying fees and forced exits.
     period_dates = bundle.dates_after_through(signal_date, next_signal_date)
     if len(period_dates) == 0:
         return TransitionResult(
@@ -1168,6 +1192,9 @@ def decision_dates(
 # ---------------------------------------------------------------------------
 
 class PortfolioFactorEnvironment(gym.Env):
+    # This class wraps the trading problem as a Gymnasium environment so PPO can
+    # learn by trial and error. Each step corresponds to one decision date, and
+    # the action is the vector of factor preferences that the policy chooses.
     metadata = {"render_modes": []}
 
     def __init__(
@@ -1594,6 +1621,9 @@ def file_sha256(path: Path) -> str:
 
 
 def main() -> None:
+    # This is the top-level training pipeline. It loads data, runs a preflight
+    # sanity check, performs walk-forward validation to pick a seed, trains the
+    # final model, and writes outputs to disk.
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh-data", action="store_true")
     parser.add_argument("--allow-incomplete-data", action="store_true")
