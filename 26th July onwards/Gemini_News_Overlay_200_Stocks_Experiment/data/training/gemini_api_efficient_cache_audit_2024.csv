@@ -1,0 +1,8 @@
+as_of,stocks,universe_size,audit_pass_count,audit_pass_rate,total_tokens,prompt_versions,models,batch_files
+2024-01-02,10,200,0,0.0,9407,['news-score-v1'],['gemini-2.5-flash'],1
+2024-02-29,10,200,1,0.1,6553,['news-score-v1'],['gemini-2.5-flash'],1
+2024-04-26,10,200,2,0.2,10293,['news-score-v1'],['gemini-2.5-flash'],1
+2024-06-25,10,200,1,0.1,6581,['news-score-v1'],['gemini-2.5-flash'],1
+2024-08-21,10,200,0,0.0,12223,['news-score-v1'],['gemini-2.5-flash'],1
+2024-10-17,10,200,4,0.4,9072,['news-score-v1'],['gemini-2.5-flash'],1
+2024-12-13,10,200,0,0.0,3997,['news-score-v1'],['gemini-2.5-flash'],1

@@ -1,0 +1,27 @@
+{
+  "name": "Gemini experiment 200-stock price foundation",
+  "universe_file": "../data/training/universe_200.csv",
+  "universe_size": 200,
+  "selection_data_start": "2021-01-01",
+  "selection_data_end": "2024-12-31",
+  "test_data_start": "2025-01-01",
+  "weights": {
+    "ret_252": 1.0
+  },
+  "holding_days": 20,
+  "top_k": 10,
+  "keep_rank": 20,
+  "fee": 0.001,
+  "validation": {
+    "return_2021": 0.2980968125383363,
+    "return_2022": 0.06528489379154467,
+    "return_2023": 0.6006572101400853,
+    "return_2024": 1.814995710046826,
+    "compounded_return": 5.230873362688384,
+    "mean_sharpe": 1.5165532275008249,
+    "worst_drawdown": -0.25452040531764175,
+    "objective": 5.364116150513867
+  },
+  "survivorship_bias_warning": "Universe selected from constituents known in 2026.",
+  "fingerprint": "57e446032d50a2533766c96cb55362270b71f84a49fb48b0bc3fcc16d9387db0"
+}

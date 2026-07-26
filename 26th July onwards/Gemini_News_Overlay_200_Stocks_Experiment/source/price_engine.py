@@ -115,31 +115,34 @@ def load_market_data(tickers: Iterable[str] = STOCKS) -> MarketData:
     """Load cached adjusted OHLCV data without writing outside this directory."""
     ticker_list = tuple(tickers)
     raw = {ticker: _read_one(ticker) for ticker in ticker_list}
+    # Use a union calendar so recent listings do not erase older training
+    # history for every other stock. A stock becomes eligible only after its
+    # own rolling features are complete.
     dates: pd.DatetimeIndex | None = None
     for frame in raw.values():
-        dates = frame.index if dates is None else dates.intersection(frame.index)
+        dates = frame.index if dates is None else dates.union(frame.index)
     if dates is None:
         raise RuntimeError("No price data loaded.")
     dates = dates.sort_values()
 
     close_frame = pd.DataFrame(
-        {ticker: raw[ticker].loc[dates, "close"] for ticker in ticker_list},
+        {ticker: raw[ticker]["close"].reindex(dates) for ticker in ticker_list},
         index=dates,
     )
     open_frame = pd.DataFrame(
-        {ticker: raw[ticker].loc[dates, "open"] for ticker in ticker_list},
+        {ticker: raw[ticker]["open"].reindex(dates) for ticker in ticker_list},
         index=dates,
     )
     high_frame = pd.DataFrame(
-        {ticker: raw[ticker].loc[dates, "high"] for ticker in ticker_list},
+        {ticker: raw[ticker]["high"].reindex(dates) for ticker in ticker_list},
         index=dates,
     )
     low_frame = pd.DataFrame(
-        {ticker: raw[ticker].loc[dates, "low"] for ticker in ticker_list},
+        {ticker: raw[ticker]["low"].reindex(dates) for ticker in ticker_list},
         index=dates,
     )
     volume_frame = pd.DataFrame(
-        {ticker: raw[ticker].loc[dates, "volume"] for ticker in ticker_list},
+        {ticker: raw[ticker]["volume"].reindex(dates) for ticker in ticker_list},
         index=dates,
     )
 
@@ -294,12 +297,16 @@ def simulate_scores(
                 turnover_total += turnover
                 value *= max(0.0, 1.0 - fee * turnover)
             returns = data.close[today + 1] / data.close[today] - 1.0
+            returns = np.where(np.isfinite(returns), returns, 0.0)
             multiplier = float(1.0 + np.sum(target * returns))
             value *= multiplier
             weights = target * (1.0 + returns) / multiplier
         elif execution == "next_open":
             # Existing positions first earn the close-to-next-open move.
             overnight_returns = data.open[today + 1] / data.close[today] - 1.0
+            overnight_returns = np.where(
+                np.isfinite(overnight_returns), overnight_returns, 0.0
+            )
             overnight_multiplier = float(1.0 + np.sum(weights * overnight_returns))
             value *= overnight_multiplier
             pretrade = weights * (1.0 + overnight_returns) / overnight_multiplier
@@ -326,6 +333,9 @@ def simulate_scores(
             else:
                 posttrade = pretrade
             intraday_returns = data.close[today + 1] / data.open[today + 1] - 1.0
+            intraday_returns = np.where(
+                np.isfinite(intraday_returns), intraday_returns, 0.0
+            )
             multiplier = float(1.0 + np.sum(posttrade * intraday_returns))
             value *= multiplier
             weights = posttrade * (1.0 + intraday_returns) / multiplier
@@ -370,5 +380,132 @@ def equal_weight_benchmark(data: MarketData, start: str, end: str) -> dict:
     positions = data.date_positions(start, end)
     first, last = int(positions[0]), int(positions[-1])
     multipliers = data.close[last] / data.close[first]
+    multipliers = multipliers[np.isfinite(multipliers)]
+    if len(multipliers) == 0:
+        raise RuntimeError("No stocks have complete benchmark-period prices.")
     final = 100_000.0 * (1.0 - FEE) * float(np.mean(multipliers))
     return {"final_balance": final, "return": final / 100_000.0 - 1.0}
+
+
+def simulate_target_weights(
+    data: MarketData,
+    target_weights: np.ndarray,
+    *,
+    start: str,
+    end: str,
+    holding_days: int,
+    fee: float = FEE,
+    execution: str = "close",
+) -> dict:
+    """Simulate explicit target allocations supplied on each rebalance date."""
+    if target_weights.shape != data.close.shape:
+        raise ValueError("target_weights must match the date-by-ticker price shape.")
+    positions = data.date_positions(start, end)
+    if len(positions) < 2:
+        raise ValueError("Backtest period has fewer than two sessions.")
+    first, last = int(positions[0]), int(positions[-1])
+    rebalance_set = set(positions[::holding_days].tolist())
+    weights = np.zeros(len(data.tickers), dtype=np.float64)
+    value = 100_000.0
+    values = [value]
+    value_dates = [data.dates[first]]
+    turnover_total = 0.0
+    trade_rows = []
+
+    for today in range(first, last):
+        rebalance_today = today in rebalance_set
+        target = weights.copy()
+        if rebalance_today:
+            row = target_weights[today]
+            if not np.all(np.isfinite(row)) or np.any(row < -1e-12):
+                raise ValueError(f"Invalid explicit target on {data.dates[today]}.")
+            if not np.isclose(row.sum(), 1.0, atol=1e-8):
+                raise ValueError(
+                    f"Explicit target does not sum to one on {data.dates[today]}."
+                )
+            target = row.copy()
+
+        if execution == "close":
+            if rebalance_today:
+                changes = target - weights
+                for number in np.flatnonzero(np.abs(changes) > 1e-9):
+                    trade_rows.append(
+                        {
+                            "signal_date": data.dates[today].date().isoformat(),
+                            "execution_date": data.dates[today].date().isoformat(),
+                            "ticker": data.tickers[number],
+                            "action": "BUY" if changes[number] > 0 else "SELL",
+                            "weight_before": float(weights[number]),
+                            "weight_after": float(target[number]),
+                            "weight_change": float(changes[number]),
+                        }
+                    )
+                turnover = float(np.abs(changes).sum())
+                turnover_total += turnover
+                value *= max(0.0, 1.0 - fee * turnover)
+            returns = data.close[today + 1] / data.close[today] - 1.0
+            returns = np.where(np.isfinite(returns), returns, 0.0)
+            multiplier = float(1.0 + np.sum(target * returns))
+            value *= multiplier
+            weights = target * (1.0 + returns) / multiplier
+        elif execution == "next_open":
+            overnight = data.open[today + 1] / data.close[today] - 1.0
+            overnight = np.where(np.isfinite(overnight), overnight, 0.0)
+            overnight_multiplier = float(1.0 + np.sum(weights * overnight))
+            value *= overnight_multiplier
+            pretrade = weights * (1.0 + overnight) / overnight_multiplier
+            if rebalance_today:
+                changes = target - pretrade
+                for number in np.flatnonzero(np.abs(changes) > 1e-9):
+                    trade_rows.append(
+                        {
+                            "signal_date": data.dates[today].date().isoformat(),
+                            "execution_date": data.dates[today + 1].date().isoformat(),
+                            "ticker": data.tickers[number],
+                            "action": "BUY" if changes[number] > 0 else "SELL",
+                            "weight_before": float(pretrade[number]),
+                            "weight_after": float(target[number]),
+                            "weight_change": float(changes[number]),
+                        }
+                    )
+                turnover = float(np.abs(changes).sum())
+                turnover_total += turnover
+                value *= max(0.0, 1.0 - fee * turnover)
+                posttrade = target
+            else:
+                posttrade = pretrade
+            intraday = data.close[today + 1] / data.open[today + 1] - 1.0
+            intraday = np.where(np.isfinite(intraday), intraday, 0.0)
+            multiplier = float(1.0 + np.sum(posttrade * intraday))
+            value *= multiplier
+            weights = posttrade * (1.0 + intraday) / multiplier
+        else:
+            raise ValueError(f"Unknown execution mode: {execution}")
+        values.append(value)
+        value_dates.append(data.dates[today + 1])
+
+    equity = pd.Series(values, index=pd.DatetimeIndex(value_dates), name="equity")
+    returns = equity.pct_change(fill_method=None).dropna()
+    volatility = float(returns.std(ddof=1) * np.sqrt(252))
+    sharpe = (
+        float(returns.mean() / returns.std(ddof=1) * np.sqrt(252))
+        if returns.std(ddof=1) > 0
+        else 0.0
+    )
+    return {
+        "first_date": equity.index[0],
+        "last_date": equity.index[-1],
+        "final_balance": float(value),
+        "return": float(value / 100_000.0 - 1.0),
+        "max_drawdown": float((equity / equity.cummax() - 1.0).min()),
+        "annual_volatility": volatility,
+        "sharpe": sharpe,
+        "turnover": turnover_total,
+        "equity": equity,
+        "trades": pd.DataFrame(trade_rows),
+        "final_weights": {
+            data.tickers[number]: float(weight)
+            for number, weight in enumerate(weights)
+            if weight > 1e-8
+        },
+    }

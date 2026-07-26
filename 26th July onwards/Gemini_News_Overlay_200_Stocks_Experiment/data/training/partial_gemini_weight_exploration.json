@@ -1,0 +1,23 @@
+{
+  "status": "PROVISIONAL_NOT_FOR_MODEL_SELECTION",
+  "fully_covered_dates": [
+    "2024-01-02",
+    "2024-01-31",
+    "2024-02-29"
+  ],
+  "covered_rebalances": 3,
+  "required_rebalances": 13,
+  "skipped_dates": {
+    "2024-03-28": "Gemini cache coverage mismatch for 2024-03-28: 10 missing, 0 unexpected. Missing sample=['AVGO', 'CEG', 'CRWD', 'DASH', 'DECK'], unexpected sample=[]",
+    "2024-04-26": "No Gemini caches for 2024-04-26; run tools/collect_gemini_scores.py.",
+    "2024-05-24": "No Gemini caches for 2024-05-24; run tools/collect_gemini_scores.py.",
+    "2024-06-25": "No Gemini caches for 2024-06-25; run tools/collect_gemini_scores.py.",
+    "2024-07-24": "No Gemini caches for 2024-07-24; run tools/collect_gemini_scores.py.",
+    "2024-08-21": "No Gemini caches for 2024-08-21; run tools/collect_gemini_scores.py.",
+    "2024-09-19": "No Gemini caches for 2024-09-19; run tools/collect_gemini_scores.py.",
+    "2024-10-17": "No Gemini caches for 2024-10-17; run tools/collect_gemini_scores.py.",
+    "2024-11-14": "No Gemini caches for 2024-11-14; run tools/collect_gemini_scores.py.",
+    "2024-12-13": "No Gemini caches for 2024-12-13; run tools/collect_gemini_scores.py."
+  },
+  "warning": "Gemini was applied only on fully cached dates; all other dates use price-only scores. This is a response experiment, not validation."
+}

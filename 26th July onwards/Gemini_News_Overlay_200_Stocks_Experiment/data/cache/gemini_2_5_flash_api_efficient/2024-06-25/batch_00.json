@@ -1,0 +1,540 @@
+{
+  "schema_version": 1,
+  "prompt_version": "news-score-v1",
+  "model": "gemini-2.5-flash",
+  "as_of": "2024-06-25",
+  "created_at": "2026-07-26T07:05:14.236130+00:00",
+  "prompt_sha256": "82e0fe31520409a3e5b6869be285732ad0085399c59c091b694593c18f6104da",
+  "requested_tickers": [
+    "CVNA",
+    "VRT",
+    "VST",
+    "SMCI",
+    "COIN",
+    "APP",
+    "DELL",
+    "CEG",
+    "NVDA",
+    "CRWD"
+  ],
+  "records": [
+    {
+      "ticker": "CVNA",
+      "company": "Carvana",
+      "sector": "Consumer Discretionary",
+      "as_of": "2024-06-25",
+      "raw_news_score": 1.0,
+      "confidence": 0.9,
+      "effective_news_score": 0.9,
+      "insufficient_information": false,
+      "audit_passed": true,
+      "audit_reasons": [],
+      "summary": "Carvana reported exceptionally strong first-quarter 2024 results, achieving record net income and adjusted EBITDA, and providing a positive outlook for the second quarter, signaling a significant operational turnaround.",
+      "catalyst": "Record Q1 2024 profitability and positive Q2 guidance, demonstrating a successful operational turnaround and improved financial health.",
+      "risk": "Potential for inventory constraints to negatively impact future sales volumes, and some analyst caution regarding the sustainability of strong catalysts throughout the year.",
+      "accepted_sources": [
+        {
+          "title": "Carvana Stock Surges Over 30% on Surprise Profit | Kiplinger",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPzFJgqi3oKgxxi0RStv2GrxmWBjaOBZOMZYUWuDCGQSyugvahMpnv15YN9Qa-_2ebe0qgavC68u5hXwoOzVSFGt5z_p3v7tADscAiv7Pjsj9xKCTk06R8tnL1pPNbFGwE_Kr35RS5-tgXF-sukVr0RziMJ5Co5ybAAtTqO41ynNMdsvXoBgX0RGxqxRw=",
+          "published_date": "2024-05-02"
+        },
+        {
+          "title": "Carvana stock price is soaring after the 'best financial results in company history'",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXNKyq3r5u4CxCue6I2vnrG36p2Iczq8GM8iWW-7PwPruRjfDH8L2_SXMKfuGHzxdK1ldE0zXxvziqhWyXKdth9cTapRTAOvK3u8DnfkidjM4O06suqTLoDHsKi-CdMANwA8qXPx-53FC0Wt2G3E06mqIIS9Q0TtLfIHjuV9PysbS8Pq1lk7jUVGPH2YeI8RmfE8n4VUc3J24lKZCUmWLPNgBW6u8=",
+          "published_date": "2024-05-02"
+        },
+        {
+          "title": "Carvana (CVNA) Q1 2024 Earnings Report - Results, Call & Slides - TipRanks.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGCtq1p9iOIFxtBrFMDKgaSjmp7U7-1005Mdilukb0pn0BYtjeR3N25G0vYo8jLAhNfOfMFbcfKtNbL-PcjMcND8sUvQtuHc4X4ouQ7HurpdOtPLJ-gvj6NqLiRaFw7WvB1GX4VFjVCP_0zt47scorQlanlopfi1NscEA==",
+          "published_date": "2024-05-01"
+        },
+        {
+          "title": "Best Meme Stocks to Watch in July 2026 | IG International",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQhzEpLAJ6PHqVjrjlv4XV5hh1ALfpU4BMsdgNX7Iq04z8812g6-SnnGTtaFHERzNtTLP448wu8j_hTnoGswSVHb7LcQ8Ojluc1QABsz09ldkyt_WYNvIDLRYO0sybQoeFGSxeHQew1M88kHR9EcEuADfQ8puz1lKTk6PEbKgHV_25wy0=",
+          "published_date": "2024-05-16"
+        },
+        {
+          "title": "Carvana Wins CSO Award for Innovative Security Approach",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJoEDDOOTwsX_n9VARGJghyXUaaEW3i_KywH4FaSzB8Yz5_ZFCNfBQ32EHd1jKxXfoQ6S0CsTKiAWLjYBDgRZjsZOylC5VKbsRQgKsIE_9DMkpxm_wBh5vOIyc-LUT9w9Y_Pz-rVZJYZ63hNxbsfGktoV0B7jHd_zP6cCdzurtjg==",
+          "published_date": "2024-06-18"
+        },
+        {
+          "title": "Carvana's Inventory 'Constrained' as Online Used Car Retailer Posts Record Q1",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFflpmUIbJCZo2xFKbtn-A6kUbr3XdGTNUfpRVyWlF0_Zwj0GAHw_AzTm3zZ_U-um7kAgS6H1EM_eE47iSQ_Cw0RiQ04TJ3R_KXuGpNplGZpLvakVfq0w0_3qmszX5ZXY7fBPP_uAxT7E1Pbg99KUJCtZweTNcJgHHFVvtYOtRVAuq0rXi10nfieiZEhof6ebMQEeo95nzWEIPu8qZTRARSB9aVxxJ0fNIs0Jg=",
+          "published_date": "2024-05-01"
+        },
+        {
+          "title": "Carvana Marks Second Anniversary of ADESA Acquisition with New Integration and Performance Milestones",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjTJkxI8GiJcoJUQ2uH1yCqkb7c5ZXiaE-a0YgGxUfZDXU09jCY3vBolv7R8N9s6GAco5-xmTAFZu3DaPVsvqtN10eEqMv7UkwbsL2sd49aEh8ZtUGTv69BJcxl5UO5sjrUEH49bhuR2Sxnj0OfOJsGNvOgMZW_3gCa9N2hkx6Nw==",
+          "published_date": "2024-05-09"
+        },
+        {
+          "title": "Carvana stock rebound boosts fortunes of CEO and his dad by billions | Fox Business",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNixIZTWplSV3oHpxuXD9UHgir5YUcPU32kb0Sy2X96zif08nifSoN1HuvxrXBNoLi58VY1p33klmo1u3yrxNLRDonSEbNBRDnT0HYlzKGm816RWswgfa-JnL36LWjU2-baI-Sf7JJHwJfPdDaHdAYZR8LQU5qD8yGS2k2WVviSYZAXtD14WCYrTYrZR8aLn5swAtb9g==",
+          "published_date": "2024-05-03"
+        },
+        {
+          "title": "Capital Structure Update Press Release_June 2024 - Carvana Investor Relations",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmT5Fq0Zm4AqjbH6AJT8IjQ1GvRGetcNU7eS09OxvclQYX4DKBOBLpUOGtiM3xAR4jyTnfsnJYEkpm-CnfcAAR8h_tnRRfhaBdbl9PpaikIaytcDW9DTIRgGxM62bGh5A9oRLSEcQiGm_pKzg1-RWyB5yPBGStmMYhCwfXU2ljFvhea-GKAe2dkO8ILnhze060repMYs53mPlbi5RLszk9k_1hDIdsJ8BWtzHRVzuobV39aGMNkvg9NaKFRr0=",
+          "published_date": "2024-06-06"
+        },
+        {
+          "title": "3 Stocks That Have Seen Higher Share Gains Than Super Micro Computer",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1-LdLCuhQyRhLkN8pjdSg4D_yMQ_t-Qd5k-jnsuD-SMC2-FbBlPvlTP2l0OrNvxIx-lXJ_2UCckl6LeQ2R__9vHS6HsQL5z4XH3JXusGh0nEJtFLlZ-Yo_ryg38bl5ffESVbx-FAI8N46KE6kigEkWPdLsxOVNl_dEj9_kuYEciI5YwGF9LYDkkOPrGGQ-Jdn9XX5KHa58A0qX6vWcRvWiMFVSJwL_NfuNYY=",
+          "published_date": "2024-06-06"
+        }
+      ],
+      "rejected_sources": [
+        {
+          "title": "CVNA Forecast \u2014 Price Target \u2014 Prediction for 2027 - TradingView",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFR1cvlK5Bmc8ILLFq99KUzAOuknWp7Zh1YbtfxiCeapoQJcUYgRSAxOiwYkeBuCp1V1wEFK7J_7HIQiwBuQNwbutzquj2rUQBaVntxn8uoh_hlceAq70usZB-pAXnsxAmRZTstGlTPZs202_HKyHLoFe8U8ABjEbnnoFySl4-3",
+          "published_date": "2026-07-26"
+        }
+      ]
+    },
+    {
+      "ticker": "VRT",
+      "company": "Vertiv",
+      "sector": "Industrials",
+      "as_of": "2024-06-25",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "VST",
+      "company": "Vistra Corp.",
+      "sector": "Utilities",
+      "as_of": "2024-06-25",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "SMCI",
+      "company": "Supermicro",
+      "sector": "Information Technology",
+      "as_of": "2024-06-25",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "COIN",
+      "company": "Coinbase",
+      "sector": "Financials",
+      "as_of": "2024-06-25",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "APP",
+      "company": "AppLovin",
+      "sector": "Information Technology",
+      "as_of": "2024-06-25",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "sector": "Information Technology",
+      "as_of": "2024-06-25",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "CEG",
+      "company": "Constellation Energy",
+      "sector": "Utilities",
+      "as_of": "2024-06-25",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "NVDA",
+      "company": "Nvidia",
+      "sector": "Information Technology",
+      "as_of": "2024-06-25",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "CRWD",
+      "company": "CrowdStrike",
+      "sector": "Information Technology",
+      "as_of": "2024-06-25",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    }
+  ],
+  "metadata": {
+    "web_search_queries": [
+      "Carvana CVNA news after:2024-03-26 before:2024-06-26",
+      "CVNA stock analyst rating after:2024-03-26 before:2024-06-26",
+      "Carvana Q1 2024 earnings preview after:2024-03-26 before:2024-06-26"
+    ],
+    "grounding_sources": [
+      {
+        "title": "kiplinger.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPzFJgqi3oKgxxi0RStv2GrxmWBjaOBZOMZYUWuDCGQSyugvahMpnv15YN9Qa-_2ebe0qgavC68u5hXwoOzVSFGt5z_p3v7tADscAiv7Pjsj9xKCTk06R8tnL1pPNbFGwE_Kr35RS5-tgXF-sukVr0RziMJ5Co5ybAAtTqO41ynNMdsvXoBgX0RGxqxRw="
+      },
+      {
+        "title": "fastcompany.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXNKyq3r5u4CxCue6I2vnrG36p2Iczq8GM8iWW-7PwPruRjfDH8L2_SXMKfuGHzxdK1ldE0zXxvziqhWyXKdth9cTapRTAOvK3u8DnfkidjM4O06suqTLoDHsKi-CdMANwA8qXPx-53FC0Wt2G3E06mqIIS9Q0TtLfIHjuV9PysbS8Pq1lk7jUVGPH2YeI8RmfE8n4VUc3J24lKZCUmWLPNgBW6u8="
+      },
+      {
+        "title": "tipranks.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGCtq1p9iOIFxtBrFMDKgaSjmp7U7-1005Mdilukb0pn0BYtjeR3N25G0vYo8jLAhNfOfMFcbfKtNbL-PcjMcND8sUvQtuHc4X4ouQ7HurpdOtPLJ-gvj6NqLiRaFw7WvB1GX4VFjVCP_0zt47scorQlanlopfi1NscEA=="
+      },
+      {
+        "title": "ig.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQhzEpLAJ6PHqVjrjlv4XV5hh1ALfpU4BMsdgNX7Iq04z8812g6-SnnGTtaFHERzNtTLP448wu8j_hTnoGswSVHb7LcQ8Ojluc1QABsz09ldkyt_WYNvIDlRvO0sybQoeFGSxeHQew1M88kHR9EcEuADfQ8puz1lKTk6PEbKgHV_25wy0="
+      },
+      {
+        "title": "pymnts.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFflpmUIbJCZo2xFKbtn-A6kUbr3XdGTNUfpRVyWlF0_Zwj0GAHw_AzTm3zZ_U-um7kAgS6H1EM_eE47iSQ_Cw0RiQ04TJ3R_KXuGpNplGZpLvakVfq0w0_3qmszX5ZXY7fBPP_uAxT7E1Pbg99KUJCtZweTNcJgHHFVvtYOtRVAuq0rXi10nfieiZEhof6ebMQEeo95nzWEIPu8qZTRARSB9aVxxJ0fNIs0Jg="
+      },
+      {
+        "title": "foxbusiness.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNixIZTWplSV3oHpxuXD9UHgir5YUcPU32kb0Sy2X96zif08nifSoN1HuvxrXBNoLi58VY1p33klmo1u3yrxNLRDonSEbNBRDnT0HYlzKGm816RWswgfa-JnL36LWjU2-baI-Sf7JJHwJfPdDaHdAYZR8LQU5qD8yGS2k2WVviSYZAXtD14WCYrTYrZR8aLn5swAtb9g=="
+      },
+      {
+        "title": "carvana.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmT5Fq0Zm4AqjbH6AJT8IjQ1GvRGetcNU7eS09OxvclQYX4DKBOBLpUOGtiM3xAR4jyTnfsxJYEkpm-CnfcAAR8h_tnRRfhaBdbl9PpaikIaytcDW9DTIRgGxM62bGh5A9oRLSEcQiGm_pKzg1-RWyB5yPBGStmMYhCwfXU2ljFvhea-GKAe2dkO8ILnhze060repMYs53mPlbi5RLszk9k_1hDIdsJ8BWtzHRVzuobV39aGMNkvg9NaKFRr0="
+      },
+      {
+        "title": "247wallst.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1-LdLCuhQyRhLkN8pjdSg4D_yMQ_t-Qd5k-jnsuD-SMC2-FbBlPvlTP2l0OrNvxIx-lXJ_2UCckl6LeQ2R__9vHS6HsQL5z4XH3JXusGh0nEJtFLlZ-Yo_ryg38bl5ffESVbx-FAI8N46KE6kigEkWPdLsxOVNl_dEj9_kuYEciI5YwGF9LYDkkOPrGGQ-Jdn9XX5KHa58A0qX6vWcRvWiMFVSJwL_NfuNYY="
+      }
+    ],
+    "grounding_supports": [
+      {
+        "segment": {
+          "endIndex": 438,
+          "text": "```json\n{\n  \"as_of\": \"2024-06-25\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"CVNA\",\n      \"news_score\": 100,\n      \"confidence\": 0.9,\n      \"insufficient_information\": false,\n      \"summary\": \"Carvana reported exceptionally strong first-quarter 2024 results, achieving record net income and adjusted EBITDA, and providing a positive outlook for the second quarter, signaling a significant operational turnaround."
+        },
+        "groundingChunkIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 438,
+          "endIndex": 595,
+          "text": "\",\n      \"catalyst\": \"Record Q1 2024 profitability and positive Q2 guidance, demonstrating a successful operational turnaround and improved financial health."
+        },
+        "groundingChunkIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 595,
+          "endIndex": 786,
+          "text": "\",\n      \"risk\": \"Potential for inventory constraints to negatively impact future sales volumes, and some analyst caution regarding the sustainability of strong catalysts throughout the year."
+        },
+        "groundingChunkIndices": [
+          0,
+          4
+        ]
+      }
+    ],
+    "requested_count": 10,
+    "returned_count": 1,
+    "audit_pass_count": 1,
+    "usage_metadata": {
+      "promptTokenCount": 587,
+      "candidatesTokenCount": 2708,
+      "totalTokenCount": 6581,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 587
+        }
+      ],
+      "toolUsePromptTokenCount": 1503,
+      "toolUsePromptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1503
+        }
+      ],
+      "thoughtsTokenCount": 1783,
+      "serviceTier": "standard"
+    },
+    "finish_reason": "STOP"
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "```json\n{\n  \"as_of\": \"2024-06-25\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"CVNA\",\n      \"news_score\": 100,\n      \"confidence\": 0.9,\n      \"insufficient_information\": false,\n      \"summary\": \"Carvana reported exceptionally strong first-quarter 2024 results, achieving record net income and adjusted EBITDA, and providing a positive outlook for the second quarter, signaling a significant operational turnaround.\",\n      \"catalyst\": \"Record Q1 2024 profitability and positive Q2 guidance, demonstrating a successful operational turnaround and improved financial health.\",\n      \"risk\": \"Potential for inventory constraints to negatively impact future sales volumes, and some analyst caution regarding the sustainability of strong catalysts throughout the year.\",\n      \"sources\": [\n        {\n          \"title\": \"CVNA Forecast \u2014 Price Target \u2014 Prediction for 2027 - TradingView\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFR1cvlK5Bmc8ILLFq99KUzAOuknWp7Zh1YbtfxiCeapoQJcUYgRSAxOiwYkeBuCp1V1wEFK7J_7HIQiwBuQNwbutzquj2rUQBaVntxn8uoh_hlceAq70usZB-pAXnsxAmRZTstGlTPZs202_HKyHLoFe8U8ABjEbnnoFySl4-3\",\n          \"published_date\": \"2026-07-26\"\n        },\n        {\n          \"title\": \"Carvana Stock Surges Over 30% on Surprise Profit | Kiplinger\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPzFJgqi3oKgxxi0RStv2GrxmWBjaOBZOMZYUWuDCGQSyugvahMpnv15YN9Qa-_2ebe0qgavC68u5hXwoOzVSFGt5z_p3v7tADscAiv7Pjsj9xKCTk06R8tnL1pPNbFGwE_Kr35RS5-tgXF-sukVr0RziMJ5Co5ybAAtTqO41ynNMdsvXoBgX0RGxqxRw=\",\n          \"published_date\": \"2024-05-02\"\n        },\n        {\n          \"title\": \"Carvana stock price is soaring after the 'best financial results in company history'\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXNKyq3r5u4CxCue6I2vnrG36p2Iczq8GM8iWW-7PwPruRjfDH8L2_SXMKfuGHzxdK1ldE0zXxvziqhWyXKdth9cTapRTAOvK3u8DnfkidjM4O06suqTLoDHsKi-CdMANwA8qXPx-53FC0Wt2G3E06mqIIS9Q0TtLfIHjuV9PysbS8Pq1lk7jUVGPH2YeI8RmfE8n4VUc3J24lKZCUmWLPNgBW6u8=\",\n          \"published_date\": \"2024-05-02\"\n        },\n        {\n          \"title\": \"Carvana (CVNA) Q1 2024 Earnings Report - Results, Call & Slides - TipRanks.com\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGCtq1p9iOIFxtBrFMDKgaSjmp7U7-1005Mdilukb0pn0BYtjeR3N25G0vYo8jLAhNfOfMFbcfKtNbL-PcjMcND8sUvQtuHc4X4ouQ7HurpdOtPLJ-gvj6NqLiRaFw7WvB1GX4VFjVCP_0zt47scorQlanlopfi1NscEA==\",\n          \"published_date\": \"2024-05-01\"\n        },\n        {\n          \"title\": \"Best Meme Stocks to Watch in July 2026 | IG International\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQhzEpLAJ6PHqVjrjlv4XV5hh1ALfpU4BMsdgNX7Iq04z8812g6-SnnGTtaFHERzNtTLP448wu8j_hTnoGswSVHb7LcQ8Ojluc1QABsz09ldkyt_WYNvIDLRYO0sybQoeFGSxeHQew1M88kHR9EcEuADfQ8puz1lKTk6PEbKgHV_25wy0=\",\n          \"published_date\": \"2024-05-16\"\n        },\n        {\n          \"title\": \"Carvana Wins CSO Award for Innovative Security Approach\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJoEDDOOTwsX_n9VARGJghyXUaaEW3i_KywH4FaSzB8Yz5_ZFCNfBQ32EHd1jKxXfoQ6S0CsTKiAWLjYBDgRZjsZOylC5VKbsRQgKsIE_9DMkpxm_wBh5vOIyc-LUT9w9Y_Pz-rVZJYZ63hNxbsfGktoV0B7jHd_zP6cCdzurtjg==\",\n          \"published_date\": \"2024-06-18\"\n        },\n        {\n          \"title\": \"Carvana's Inventory 'Constrained' as Online Used Car Retailer Posts Record Q1\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFflpmUIbJCZo2xFKbtn-A6kUbr3XdGTNUfpRVyWlF0_Zwj0GAHw_AzTm3zZ_U-um7kAgS6H1EM_eE47iSQ_Cw0RiQ04TJ3R_KXuGpNplGZpLvakVfq0w0_3qmszX5ZXY7fBPP_uAxT7E1Pbg99KUJCtZweTNcJgHHFVvtYOtRVAuq0rXi10nfieiZEhof6ebMQEeo95nzWEIPu8qZTRARSB9aVxxJ0fNIs0Jg=\",\n          \"published_date\": \"2024-05-01\"\n        },\n        {\n          \"title\": \"Carvana Marks Second Anniversary of ADESA Acquisition with New Integration and Performance Milestones\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjTJkxI8GiJcoJUQ2uH1yCqkb7c5ZXiaE-a0YgGxUfZDXU09jCY3vBolv7R8N9s6GAco5-xmTAFZu3DaPVsvqtN10eEqMv7UkwbsL2sd49aEh8ZtUGTv69BJcxl5UO5sjrUEH49bhuR2Sxnj0OfOJsGNvOgMZW_3gCa9N2hkx6Nw==\",\n          \"published_date\": \"2024-05-09\"\n        },\n        {\n          \"title\": \"Carvana stock rebound boosts fortunes of CEO and his dad by billions | Fox Business\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNixIZTWplSV3oHpxuXD9UHgir5YUcPU32kb0Sy2X96zif08nifSoN1HuvxrXBNoLi58VY1p33klmo1u3yrxNLRDonSEbNBRDnT0HYlzKGm816RWswgfa-JnL36LWjU2-baI-Sf7JJHwJfPdDaHdAYZR8LQU5qD8yGS2k2WVviSYZAXtD14WCYrTYrZR8aLn5swAtb9g==\",\n          \"published_date\": \"2024-05-03\"\n        },\n        {\n          \"title\": \"Capital Structure Update Press Release_June 2024 - Carvana Investor Relations\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmT5Fq0Zm4AqjbH6AJT8IjQ1GvRGetcNU7eS09OxvclQYX4DKBOBLpUOGtiM3xAR4jyTnfsnJYEkpm-CnfcAAR8h_tnRRfhaBdbl9PpaikIaytcDW9DTIRgGxM62bGh5A9oRLSEcQiGm_pKzg1-RWyB5yPBGStmMYhCwfXU2ljFvhea-GKAe2dkO8ILnhze060repMYs53mPlbi5RLszk9k_1hDIdsJ8BWtzHRVzuobV39aGMNkvg9NaKFRr0=\",\n          \"published_date\": \"2024-06-06\"\n        },\n        {\n          \"title\": \"3 Stocks That Have Seen Higher Share Gains Than Super Micro Computer\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1-LdLCuhQyRhLkN8pjdSg4D_yMQ_t-Qd5k-jnsuD-SMC2-FbBlPvlTP2l0OrNvxIx-lXJ_2UCckl6LeQ2R__9vHS6HsQL5z4XH3JXusGh0nEJtFLlZ-Yo_ryg38bl5ffESVbx-FAI8N46KE6kigEkWPdLsxOVNl_dEj9_kuYEciI5YwGF9LYDkkOPrGGQ-Jdn9XX5KHa58A0qX6vWcRvWiMFVSJwL_NfuNYY=\",\n          \"published_date\": \"2024-06-06\"\n        }\n      ]\n    }\n  ]\n}\n```"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "groundingMetadata": {
+          "searchEntryPoint": {
+            "renderedContent": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZHwENTojhaP8yanrfw8bgRn4W9Q_kNlxBPziIOKqvf9sjQld2cKJKlhS9nq9KYIYQMG-u-bO9uFTjBuE9t0o3Bp3V4xp8FvCjjKCMEMBdI6TCi9MJlMoPCk4nuJkSojPxXiQQZJprOvncmRwcwGLYlZ428bJ701pKzlSjQhPoYF1pFjRVIOle2bu6cnH2fOgdp3EN-qrJ46g6R_m1lCu01AoSZEURvPOYwORj55yo-T3twQWNReq9q6jSzumNwpk=\">CVNA stock analyst rating after:2024-03-26 before:2024-06-26</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgPILWaRpIAmveGx1GE8Deey9X7GN3fJI96V0bML3DuLuRVpkmeZHtbWEcFjpYbCw5JBYPtN2pVNfEDMnSkByvUpDOZPLS_EU8KwWcmIm0MIacgm-NmMboid4xxEsixZ1hIKc4PiViOVP_vntndw4c7gGobHuVvuzTxF39RxruLVbUHuo1wxows-MPq1QzchW30rN_Q3efQcGBZ-B1RB6AJ8VSHJQrtp1TZKRX9lI4OfpgHs37aHtB\">Carvana CVNA news after:2024-03-26 before:2024-06-26</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgOBpydHZi7SEP3pl_HyMz6eJR1riVXabuJJ4iSF3zd6ZfkJx0mmKFmoLsIFK_HrojUmRyeLDPR26Zjs5crmgfYMFfysjm12PyV3Cqx_xIsuia9ghVKOYMuvfdKEiEhu5B-_LohRRqVentrM8euq5fTLAqpYCuphvKMCfyq63RyvgFtIHCxkR1f5E5q-Zx1z8V7-ofrMZj28rau4vdy-xkJFryUrQeJl5w8NGhNhNEMhKlbFxuDBDlg7MabVi_NLg3H4vipJv1\">Carvana Q1 2024 earnings preview after:2024-03-26 before:2024-06-26</a>\n  </div>\n</div>\n"
+          },
+          "groundingChunks": [
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPzFJgqi3oKgxxi0RStv2GrxmWBjaOBZOMZYUWuDCGQSyugvahMpnv15YN9Qa-_2ebe0qgavC68u5hXwoOzVSFGt5z_p3v7tADscAiv7Pjsj9xKCTk06R8tnL1pPNbFGwE_Kr35RS5-tgXF-sukVr0RziMJ5Co5ybAAtTqO41ynNMdsvXoBgX0RGxqxRw=",
+                "title": "kiplinger.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXNKyq3r5u4CxCue6I2vnrG36p2Iczq8GM8iWW-7PwPruRjfDH8L2_SXMKfuGHzxdK1ldE0zXxvziqhWyXKdth9cTapRTAOvK3u8DnfkidjM4O06suqTLoDHsKi-CdMANwA8qXPx-53FC0Wt2G3E06mqIIS9Q0TtLfIHjuV9PysbS8Pq1lk7jUVGPH2YeI8RmfE8n4VUc3J24lKZCUmWLPNgBW6u8=",
+                "title": "fastcompany.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGCtq1p9iOIFxtBrFMDKgaSjmp7U7-1005Mdilukb0pn0BYtjeR3N25G0vYo8jLAhNfOfMFcbfKtNbL-PcjMcND8sUvQtuHc4X4ouQ7HurpdOtPLJ-gvj6NqLiRaFw7WvB1GX4VFjVCP_0zt47scorQlanlopfi1NscEA==",
+                "title": "tipranks.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQhzEpLAJ6PHqVjrjlv4XV5hh1ALfpU4BMsdgNX7Iq04z8812g6-SnnGTtaFHERzNtTLP448wu8j_hTnoGswSVHb7LcQ8Ojluc1QABsz09ldkyt_WYNvIDlRvO0sybQoeFGSxeHQew1M88kHR9EcEuADfQ8puz1lKTk6PEbKgHV_25wy0=",
+                "title": "ig.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFflpmUIbJCZo2xFKbtn-A6kUbr3XdGTNUfpRVyWlF0_Zwj0GAHw_AzTm3zZ_U-um7kAgS6H1EM_eE47iSQ_Cw0RiQ04TJ3R_KXuGpNplGZpLvakVfq0w0_3qmszX5ZXY7fBPP_uAxT7E1Pbg99KUJCtZweTNcJgHHFVvtYOtRVAuq0rXi10nfieiZEhof6ebMQEeo95nzWEIPu8qZTRARSB9aVxxJ0fNIs0Jg=",
+                "title": "pymnts.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNixIZTWplSV3oHpxuXD9UHgir5YUcPU32kb0Sy2X96zif08nifSoN1HuvxrXBNoLi58VY1p33klmo1u3yrxNLRDonSEbNBRDnT0HYlzKGm816RWswgfa-JnL36LWjU2-baI-Sf7JJHwJfPdDaHdAYZR8LQU5qD8yGS2k2WVviSYZAXtD14WCYrTYrZR8aLn5swAtb9g==",
+                "title": "foxbusiness.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmT5Fq0Zm4AqjbH6AJT8IjQ1GvRGetcNU7eS09OxvclQYX4DKBOBLpUOGtiM3xAR4jyTnfsxJYEkpm-CnfcAAR8h_tnRRfhaBdbl9PpaikIaytcDW9DTIRgGxM62bGh5A9oRLSEcQiGm_pKzg1-RWyB5yPBGStmMYhCwfXU2ljFvhea-GKAe2dkO8ILnhze060repMYs53mPlbi5RLszk9k_1hDIdsJ8BWtzHRVzuobV39aGMNkvg9NaKFRr0=",
+                "title": "carvana.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1-LdLCuhQyRhLkN8pjdSg4D_yMQ_t-Qd5k-jnsuD-SMC2-FbBlPvlTP2l0OrNvxIx-lXJ_2UCckl6LeQ2R__9vHS6HsQL5z4XH3JXusGh0nEJtFLlZ-Yo_ryg38bl5ffESVbx-FAI8N46KE6kigEkWPdLsxOVNl_dEj9_kuYEciI5YwGF9LYDkkOPrGGQ-Jdn9XX5KHa58A0qX6vWcRvWiMFVSJwL_NfuNYY=",
+                "title": "247wallst.com"
+              }
+            }
+          ],
+          "groundingSupports": [
+            {
+              "segment": {
+                "endIndex": 438,
+                "text": "```json\n{\n  \"as_of\": \"2024-06-25\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"CVNA\",\n      \"news_score\": 100,\n      \"confidence\": 0.9,\n      \"insufficient_information\": false,\n      \"summary\": \"Carvana reported exceptionally strong first-quarter 2024 results, achieving record net income and adjusted EBITDA, and providing a positive outlook for the second quarter, signaling a significant operational turnaround."
+              },
+              "groundingChunkIndices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 438,
+                "endIndex": 595,
+                "text": "\",\n      \"catalyst\": \"Record Q1 2024 profitability and positive Q2 guidance, demonstrating a successful operational turnaround and improved financial health."
+              },
+              "groundingChunkIndices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 595,
+                "endIndex": 786,
+                "text": "\",\n      \"risk\": \"Potential for inventory constraints to negatively impact future sales volumes, and some analyst caution regarding the sustainability of strong catalysts throughout the year."
+              },
+              "groundingChunkIndices": [
+                0,
+                4
+              ]
+            }
+          ],
+          "webSearchQueries": [
+            "Carvana CVNA news after:2024-03-26 before:2024-06-26",
+            "CVNA stock analyst rating after:2024-03-26 before:2024-06-26",
+            "Carvana Q1 2024 earnings preview after:2024-03-26 before:2024-06-26"
+          ]
+        }
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 587,
+      "candidatesTokenCount": 2708,
+      "totalTokenCount": 6581,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 587
+        }
+      ],
+      "toolUsePromptTokenCount": 1503,
+      "toolUsePromptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1503
+        }
+      ],
+      "thoughtsTokenCount": 1783,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "lbFlapyVHqvjjuMPq4vI4Qg"
+  }
+}

@@ -1,0 +1,450 @@
+{
+  "schema_version": 1,
+  "prompt_version": "news-score-v1",
+  "model": "gemini-2.5-flash",
+  "as_of": "2025-01-02",
+  "created_at": "2026-07-26T07:11:54.752234+00:00",
+  "prompt_sha256": "c7397b763321a9c47c997ab011a4b343241b11e6188e4ce30dd22976fdc0c157",
+  "requested_tickers": [
+    "APP",
+    "CVNA",
+    "PLTR",
+    "VST",
+    "HOOD",
+    "NVDA",
+    "VRT",
+    "UAL",
+    "CEG",
+    "RCL"
+  ],
+  "records": [
+    {
+      "ticker": "APP",
+      "company": "AppLovin",
+      "sector": "Information Technology",
+      "as_of": "2025-01-02",
+      "raw_news_score": 0.4,
+      "confidence": 0.7,
+      "effective_news_score": 0.27999999999999997,
+      "insufficient_information": false,
+      "audit_passed": true,
+      "audit_reasons": [],
+      "summary": "AppLovin received several strong buy ratings and high price targets from analysts in late 2024 and late 2025, with some analysts boosting targets even after news of a potential SEC probe into its data collection practices. The overall outlook from analysts remained positive, viewing the financial risks from the probe as manageable.",
+      "catalyst": "Strong analyst endorsements and high price targets from firms like B of A Securities, Oppenheimer, Royal Bank of Canada, and Wells Fargo.",
+      "risk": "A potential SEC probe into AppLovin's data collection practices, specifically device fingerprinting, could lead to financial penalties or class-action lawsuits and reputational damage.",
+      "accepted_sources": [
+        {
+          "title": "Applovin Corp APP - Analyst Price Targets & Ratings History - AnaChart",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGMl4TCpEukYJQFgBQ9_5jKCf0pCEwJI3RJa6abdcV1UzA_wI6Xtl6HWVKAtYC6uod6ic0w2D7zaYxb1Nm3QJfQpIdBnyiWsbo0vnnJG4wdmgggRWXwH2Gw2zK",
+          "published_date": "2024-11-20"
+        }
+      ],
+      "rejected_sources": [
+        {
+          "title": "AppLovin Analyst Ratings and Price Targets | NASDAQ:APP | Benzinga",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOoOrFMqiqLhusNj1lPI2y2wRDXXv-qZ4KL_y-kU8w-yggytFDNutPc-7XmttrhD10MkJ_5r-uvOsBQOfvRInZDg77F9w9aFCa4TSDnYZGT5t52Re_X1quONYsJWcIVD6DFcV0kaYimmKAPSwo",
+          "published_date": "2025-10-01"
+        },
+        {
+          "title": "AppLovin Drops 14%: Should Investors Worry About SEC Probe? | Investing.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFY6yZxkNJ3QYps4Me_Z9r9eUiCDt1z3PDluOuz7FbJP3QDy1RneIeLoPoWl9D-hmd4Ufc-gWvPkQApctub7mxegqsBujxp_o-Lur_HF1qHxy_CACR3ymuBCrBkkq2YD4k_yTUzJi3P8evtmhCDpLsWrc1VIKTkskHpdz3Vx0Rt1cJ5iUcjqJGInClpREdlAdM5MNSAZnSyZjy_Z9_Sp_CS",
+          "published_date": "2025-10-16"
+        }
+      ]
+    },
+    {
+      "ticker": "CVNA",
+      "company": "Carvana",
+      "sector": "Consumer Discretionary",
+      "as_of": "2025-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "PLTR",
+      "company": "Palantir Technologies",
+      "sector": "Information Technology",
+      "as_of": "2025-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "VST",
+      "company": "Vistra Corp.",
+      "sector": "Utilities",
+      "as_of": "2025-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "HOOD",
+      "company": "Robinhood Markets",
+      "sector": "Financials",
+      "as_of": "2025-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "NVDA",
+      "company": "Nvidia",
+      "sector": "Information Technology",
+      "as_of": "2025-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "VRT",
+      "company": "Vertiv",
+      "sector": "Industrials",
+      "as_of": "2025-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "UAL",
+      "company": "United Airlines Holdings",
+      "sector": "Industrials",
+      "as_of": "2025-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "CEG",
+      "company": "Constellation Energy",
+      "sector": "Utilities",
+      "as_of": "2025-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "RCL",
+      "company": "Royal Caribbean Group",
+      "sector": "Consumer Discretionary",
+      "as_of": "2025-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "missing_ticker",
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "",
+      "catalyst": "",
+      "risk": "",
+      "accepted_sources": [],
+      "rejected_sources": []
+    }
+  ],
+  "metadata": {
+    "web_search_queries": [
+      "AppLovin APP news 2024-10-04..2025-01-02",
+      "AppLovin APP analyst ratings 2024-10-04..2025-01-02",
+      "AppLovin APP catalyst 2024-10-04..2025-01-02",
+      "AppLovin APP risk 2024-10-04..2025-01-02"
+    ],
+    "grounding_sources": [
+      {
+        "title": "benzinga.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOoOrFMqiqLhusNj1lPI2y2wRDXXv-qZ4KL_y-kU8w-yggytFDNutPc-7XmttrhD10MkJ_5r-uvOsBQOfvRInZDg77F9w9aFCa4TSDnYZGT5t52Re_X1quONYsJWcIVD6DFcV0kaYimmKAPSwo"
+      },
+      {
+        "title": "anachart.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGMl4TCpEukYJQFgBQ9_5jKCf0pCEwJI3RJa6abdcV1UzA_wI6Xtl6HWVKAtYC6uod6ic0w2D7zaYxb1Nm3QJfQpIdBnyiWsbo0vnnJG4wdmgggRWXwH2Gw2zK"
+      },
+      {
+        "title": "investing.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFY6yZxkNJ3QYps4Me_Z9r9eUiCDt1z3PDluOuz7FbJP3QDy1RneIeLoPoWl9D-hmd4Ufc-gWvPkQApctub7mxegqsBujxp_o-Lur_HF1qHxy_CACR3ymuBCrBkkq2YD4k_yTUzJi3P8evtmhCDpLsWrc1VIKTkskHpdz3Vx0Rt1cJ5iUcjqJGInClpREdlAdM5MNSAZnSyZjy_Z9_Sp_CS"
+      }
+    ],
+    "grounding_supports": [
+      {
+        "segment": {
+          "endIndex": 439,
+          "text": "```json\n{\n  \"as_of\": \"2025-01-02\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"APP\",\n      \"news_score\": 40,\n      \"confidence\": 0.7,\n      \"insufficient_information\": false,\n      \"summary\": \"AppLovin received several strong buy ratings and high price targets from analysts in late 2024 and late 2025, with some analysts boosting targets even after news of a potential SEC probe into its data collection practices."
+        },
+        "groundingChunkIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 440,
+          "endIndex": 550,
+          "text": "The overall outlook from analysts remained positive, viewing the financial risks from the probe as manageable."
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 550,
+          "endIndex": 709,
+          "text": "\",\n      \"catalyst\": \"Strong analyst endorsements and high price targets from firms like B of A Securities, Oppenheimer, Royal Bank of Canada, and Wells Fargo."
+        },
+        "groundingChunkIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 709,
+          "endIndex": 911,
+          "text": "\",\n      \"risk\": \"A potential SEC probe into AppLovin's data collection practices, specifically device fingerprinting, could lead to financial penalties or class-action lawsuits and reputational damage."
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      }
+    ],
+    "requested_count": 10,
+    "returned_count": 1,
+    "audit_pass_count": 1,
+    "usage_metadata": {
+      "promptTokenCount": 595,
+      "candidatesTokenCount": 949,
+      "totalTokenCount": 8461,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 595
+        }
+      ],
+      "toolUsePromptTokenCount": 2660,
+      "toolUsePromptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2660
+        }
+      ],
+      "thoughtsTokenCount": 4257,
+      "serviceTier": "standard"
+    },
+    "finish_reason": "STOP"
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "```json\n{\n  \"as_of\": \"2025-01-02\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"APP\",\n      \"news_score\": 40,\n      \"confidence\": 0.7,\n      \"insufficient_information\": false,\n      \"summary\": \"AppLovin received several strong buy ratings and high price targets from analysts in late 2024 and late 2025, with some analysts boosting targets even after news of a potential SEC probe into its data collection practices. The overall outlook from analysts remained positive, viewing the financial risks from the probe as manageable.\",\n      \"catalyst\": \"Strong analyst endorsements and high price targets from firms like B of A Securities, Oppenheimer, Royal Bank of Canada, and Wells Fargo.\",\n      \"risk\": \"A potential SEC probe into AppLovin's data collection practices, specifically device fingerprinting, could lead to financial penalties or class-action lawsuits and reputational damage.\",\n      \"sources\": [\n        {\n          \"title\": \"AppLovin Analyst Ratings and Price Targets | NASDAQ:APP | Benzinga\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOoOrFMqiqLhusNj1lPI2y2wRDXXv-qZ4KL_y-kU8w-yggytFDNutPc-7XmttrhD10MkJ_5r-uvOsBQOfvRInZDg77F9w9aFCa4TSDnYZGT5t52Re_X1quONYsJWcIVD6DFcV0kaYimmKAPSwo\",\n          \"published_date\": \"2025-10-01\"\n        },\n        {\n          \"title\": \"Applovin Corp APP - Analyst Price Targets & Ratings History - AnaChart\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGMl4TCpEukYJQFgBQ9_5jKCf0pCEwJI3RJa6abdcV1UzA_wI6Xtl6HWVKAtYC6uod6ic0w2D7zaYxb1Nm3QJfQpIdBnyiWsbo0vnnJG4wdmgggRWXwH2Gw2zK\",\n          \"published_date\": \"2024-11-20\"\n        },\n        {\n          \"title\": \"AppLovin Drops 14%: Should Investors Worry About SEC Probe? | Investing.com\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFY6yZxkNJ3QYps4Me_Z9r9eUiCDt1z3PDluOuz7FbJP3QDy1RneIeLoPoWl9D-hmd4Ufc-gWvPkQApctub7mxegqsBujxp_o-Lur_HF1qHxy_CACR3ymuBCrBkkq2YD4k_yTUzJi3P8evtmhCDpLsWrc1VIKTkskHpdz3Vx0Rt1cJ5iUcjqJGInClpREdlAdM5MNSAZnSyZjy_Z9_Sp_CS\",\n          \"published_date\": \"2025-10-16\"\n        }\n      ]\n    }\n  ]\n}\n```"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "groundingMetadata": {
+          "searchEntryPoint": {
+            "renderedContent": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAY7e1Dhu4i71zBzIr79jgL7ysdFm0ieXWcfmTDWQRFpqQGxPaaBnJMCbuL9WyZLnC4Q3mGch81nNj0jerp7Dy211PhXqR1XjKz0zrJRNkw67ETtRK2xZkEDvKWcHYtz7wV4PghJcCudz_m6zeN0NWBmidnZ1o5mY4SKVTjOps8ShI3WSAcZejnA0W1I9R7vnXOKaWdZHT2Y8t1XamwRjdDfjfb0iNMIVL_F4=\">AppLovin APP risk 2024-10-04..2025-01-02</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMsagYn56K2jLwaMDrRSThNqz44i_XPTdI2dQ3LW2V6bwiec17bQ3y5Y8jM0TSJ_zcYdpTsfhzs1m42v4dcFgqEOtJ9IyIWY-n7PFDEQJaLu4UGO6pQ8jdXnsyhSNIkQcy4jL4Irtrs54RRXwc0CnKROs4L5YDD2X7VCv1GnE21_-o1ca5G3AQZj_sg75FLetJCGA6CkyFyROusOiGyp_ufZH8NsQSUnxFk47l90hT\">AppLovin APP catalyst 2024-10-04..2025-01-02</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEIfLQiUw3sxZwTWdOcAyjDwXPO8dUNl0LYfB0hFx-KSjyZU89FkIV1koYOa-l-564-ZALs0JfZIuJXeQnQ5Ndwk5psyFXC0483hgZmEMdZvjWtzO-2vSanNvUIxtOrTCuD65_I_TnNPC7PCN7rULyKCisCLrMM7UWsqRTbqW4RsfurbR6CTpBfGpAXiu3588fQEpz_UC3mJgUmWAfeS4pNzYfNuo-dGdm6KPA=\">AppLovin APP news 2024-10-04..2025-01-02</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGB3_av6dqRCQY7gQ3Ec9tZAhyQ8PuHMHXSXAzwGp0uW9cFqLF9ziv1HGvL64NajC7XpImtohLoZu_uqhTDUjYF_p7cqZmjV6nqTdHDg7pfGNRuu1YZGDRbMRbdAyHJ66xhEGqzMQs4WHMV_yiaxH15LMX9Nex7ISYWPcocIPOSs3gFxnVwn9CwJDoVZezyw-xuKfC4SLqgBvwhb9S6inStaKQk6fRjhvGtyqQXkOvfY3qJWCM9kXo=\">AppLovin APP analyst ratings 2024-10-04..2025-01-02</a>\n  </div>\n</div>\n"
+          },
+          "groundingChunks": [
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOoOrFMqiqLhusNj1lPI2y2wRDXXv-qZ4KL_y-kU8w-yggytFDNutPc-7XmttrhD10MkJ_5r-uvOsBQOfvRInZDg77F9w9aFCa4TSDnYZGT5t52Re_X1quONYsJWcIVD6DFcV0kaYimmKAPSwo",
+                "title": "benzinga.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGMl4TCpEukYJQFgBQ9_5jKCf0pCEwJI3RJa6abdcV1UzA_wI6Xtl6HWVKAtYC6uod6ic0w2D7zaYxb1Nm3QJfQpIdBnyiWsbo0vnnJG4wdmgggRWXwH2Gw2zK",
+                "title": "anachart.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFY6yZxkNJ3QYps4Me_Z9r9eUiCDt1z3PDluOuz7FbJP3QDy1RneIeLoPoWl9D-hmd4Ufc-gWvPkQApctub7mxegqsBujxp_o-Lur_HF1qHxy_CACR3ymuBCrBkkq2YD4k_yTUzJi3P8evtmhCDpLsWrc1VIKTkskHpdz3Vx0Rt1cJ5iUcjqJGInClpREdlAdM5MNSAZnSyZjy_Z9_Sp_CS",
+                "title": "investing.com"
+              }
+            }
+          ],
+          "groundingSupports": [
+            {
+              "segment": {
+                "endIndex": 439,
+                "text": "```json\n{\n  \"as_of\": \"2025-01-02\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"APP\",\n      \"news_score\": 40,\n      \"confidence\": 0.7,\n      \"insufficient_information\": false,\n      \"summary\": \"AppLovin received several strong buy ratings and high price targets from analysts in late 2024 and late 2025, with some analysts boosting targets even after news of a potential SEC probe into its data collection practices."
+              },
+              "groundingChunkIndices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 440,
+                "endIndex": 550,
+                "text": "The overall outlook from analysts remained positive, viewing the financial risks from the probe as manageable."
+              },
+              "groundingChunkIndices": [
+                2
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 550,
+                "endIndex": 709,
+                "text": "\",\n      \"catalyst\": \"Strong analyst endorsements and high price targets from firms like B of A Securities, Oppenheimer, Royal Bank of Canada, and Wells Fargo."
+              },
+              "groundingChunkIndices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 709,
+                "endIndex": 911,
+                "text": "\",\n      \"risk\": \"A potential SEC probe into AppLovin's data collection practices, specifically device fingerprinting, could lead to financial penalties or class-action lawsuits and reputational damage."
+              },
+              "groundingChunkIndices": [
+                2
+              ]
+            }
+          ],
+          "webSearchQueries": [
+            "AppLovin APP news 2024-10-04..2025-01-02",
+            "AppLovin APP analyst ratings 2024-10-04..2025-01-02",
+            "AppLovin APP catalyst 2024-10-04..2025-01-02",
+            "AppLovin APP risk 2024-10-04..2025-01-02"
+          ]
+        }
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 595,
+      "candidatesTokenCount": 949,
+      "totalTokenCount": 8461,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 595
+        }
+      ],
+      "toolUsePromptTokenCount": 2660,
+      "toolUsePromptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 2660
+        }
+      ],
+      "thoughtsTokenCount": 4257,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "IrNlap-eB6q4juMPzIiluQ4"
+  }
+}

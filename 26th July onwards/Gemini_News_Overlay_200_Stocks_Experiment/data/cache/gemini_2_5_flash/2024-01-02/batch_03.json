@@ -1,0 +1,762 @@
+{
+  "schema_version": 1,
+  "prompt_version": "news-score-v1",
+  "model": "gemini-2.5-flash",
+  "as_of": "2024-01-02",
+  "created_at": "2026-07-26T06:01:53.878130+00:00",
+  "prompt_sha256": "d009bbcf2149045144b7709665ae733e5472e9df1c0340d622e45637c44156b2",
+  "requested_tickers": [
+    "AVGO",
+    "DASH",
+    "DELL",
+    "CRM",
+    "GE"
+  ],
+  "records": [
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom",
+      "sector": "Information Technology",
+      "as_of": "2024-01-02",
+      "raw_news_score": 0.8,
+      "confidence": 0.9,
+      "effective_news_score": 0.7200000000000001,
+      "insufficient_information": false,
+      "audit_passed": true,
+      "audit_reasons": [],
+      "summary": "Broadcom completed its $69 billion acquisition of VMware in November 2023, a move expected to be transformational and drive significant revenue and EBITDA growth in fiscal year 2024. The company also reported strong fourth-quarter and fiscal year 2023 financial results in December 2023, provided positive guidance for fiscal year 2024, and increased its quarterly common stock dividend by 14%. Additionally, Broadcom announced new product innovations, including a switch with an on-chip neural network and a 5nm single-chip router, and won a HEVC patent infringement case against Netflix.",
+      "catalyst": "The completion of the VMware acquisition is a major strategic move expected to significantly expand Broadcom's infrastructure software business and drive future growth. Strong financial performance and an increased dividend signal confidence in future cash flows and commitment to shareholder returns.",
+      "risk": "Integrating a large acquisition like VMware always carries execution risks, and the shift in VMware's operating model to subscription-based bundles could impact customer relationships.",
+      "accepted_sources": [
+        {
+          "title": "Broadcom Inc. Announces Fourth Quarter and Fiscal Year 2024 Financial Results and Quarterly Dividend",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaINKIpO2GP1u0BOtrOumbmJL1v4I0HeOBH_sDWBIMb3ikKwEYgkKVLbz_V_8Cyl4ngUZUNimKd46TAaTsem-npS95QXVay6955NdYhb4jujQVlwHWWUqQ5aturcVFDEKert7Sq1DDsiKvzsc4LVLGEtaSg4cwP6leWTkHeU0CMxehus4crlvGtbRo31oYZPXIroqqPNCFXyAA3V-aRb45JbgF5nGyXkLls6YBR_GFUR35MNSnjQ==",
+          "published_date": "2023-12-07"
+        },
+        {
+          "title": "Broadcom Inc. Announces Fourth Quarter and Fiscal Year 2023 Financial Results and Quarterly Dividend - SEC.gov",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQMYxUvdMKSByLsVh66lRDL-O36nxGZQ6X5j739CgF9tBOQZYCa6hD6wMWqVD5X8CeOBZ-ICll_aSxnjv8h3O5I4V9oiMbZXGs5LTHC9gMzhIBO22mndHQF4NIJJeswBL0JSJpVXHOdyGRI0h3UR0cvuo1_0VQtjtk-koOqbtUIcxr3eLLZ5eXGfq3WXNMAlQylircFo=",
+          "published_date": "2023-12-07"
+        },
+        {
+          "title": "Broadcom Completes $69 Billion Acquisition of VMware - Compass Lexecon",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4Lw2UC4qKFiA6gG07hTi6Ec2QkwdmrJJowMKAOtUTcE8Wh6BtioCjkiJepjU9m2u_0r6pZiIrd-Ex6FqPdujqq5G_Gc5m-b5Mdky8WWFEi7uJzz1Kmli0zA8xEIxnKDmJT_MJ11pzvo4_MN1YWO9HMo4BZtTN9O_5MufE25lJ42o5m_hj_iujuwrKCR8M6P-S3A==",
+          "published_date": "2023-11-23"
+        },
+        {
+          "title": "Broadcom Completes Acquisition of VMware",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9Ca4NKub0xdRGjwAA2IOUta7ZCLWLDOqwX0AqumyDwzS011FR4u3ZgmbzqZC52UWXxE_5HIQKE5EJV0IxKDbskdtixXKEHjjKOFUIy1HEljqvceLi5hvLSNYE5vzOdEn3E6Eszfvq5aX4S5euImqp4UJc54UY_wA=",
+          "published_date": "2023-11-22"
+        },
+        {
+          "title": "Broadcom Delivers Solid Results Despite Slowing Growth | Investing.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwvbEv0W5IQwY4E54zd8ERJ7VQwsnvFeqFEajA5LrexcHa6kK-rG4jQBhFSLcYDnt--tIzHV_fJd9_qPAnKgOEGSlJaa6VTCFF1i9HtUaXUHTy0E15miQROZ8dTIlIUgz0-U5GrWZhkkp9kPbAr-89GYnElx4U9QJb2ZiHw11PoKL45cimjWSiBOmSDc5rdXKzZ-h_3WW_L6-S2fKE",
+          "published_date": "2023-12-08"
+        },
+        {
+          "title": "Broadcom and VMware Intend to Close Transaction on November 22, 2023 - PR Newswire",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXGDRVBmNqUujn_9Y8LZXLQCwyo9BoinlXCWBcaOXjewYrK_brYXKaApMbaxE8xt1HwVZwp1AzBgTzUjVF1pYpw02wsV4hz9GEbPkRYpFlRQ5N0myf9PoZUscjF8ARk16ZJYUrDGQwhOPrh-Wi4i1PoN1OOYYJMBv-1dNqsXB3t1LlJqBgbXttgd-1riftQMS2Rba4nGz-9-txk-7jv2vNIN1hqn2mHsi5JWpPsXHa8tVjy-PP",
+          "published_date": "2023-11-22"
+        },
+        {
+          "title": "Product News Releases - Broadcom Inc.",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMeZei5bo7Mgh4-sNJ4XVz2w1oIfkKBSlkmN3NxtPEATVrdvRBUUkabC2o98_Ga9FHRWM0U8-3ZvKeOmEuLWYVbq_UHnD56MYJ0JwH8f-fccnylwa6KOaJpED_g8IOznNWMYHFr6FvoWfJD9YhpHbg",
+          "published_date": "2023-12-22"
+        }
+      ],
+      "rejected_sources": [
+        {
+          "title": "Broadcom's Acquisition of VMware & Major Changes - Weidenhammer Systems Corp",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcBAhaMDf6ET1SueaxULUL8lDTkp9t6yDACTgbpBSMXbqkOAPlAvrM4iqQRZGODiWdUD2XfifFT3QEu0njAF0YLaZ81Ud0MN4_kQ4R7KZTzvDHl98CXnierJ75GBGLPEUvy3PzCqdQWiEyO1FxZtUkmg3bQtNEPz1H9SjoOXeYV_a4verB_f242OdFE7h0HY2fP05bNk1fs7C0Og==",
+          "published_date": "2026-05-06"
+        }
+      ]
+    },
+    {
+      "ticker": "DASH",
+      "company": "DoorDash",
+      "sector": "Consumer Discretionary",
+      "as_of": "2024-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "DoorDash announced on January 4, 2024, that its fourth-quarter 2023 financial results would be released after market close on February 15, 2024. No other significant news or financial results were published within the specified search window (October 4, 2023, to January 2, 2024) that would act as a direct catalyst or risk.",
+      "catalyst": "None.",
+      "risk": "None.",
+      "accepted_sources": [],
+      "rejected_sources": [
+        {
+          "title": "DoorDash to Announce Fourth Quarter 2023 Results on February 15, 2024",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZyrvlM2BNNjJdXrBvjn91tGEFFi9GavqoTQGkKftwN2x2VsfsB6lXIA-U3QohtG65gcrwmMS3PtntiRVJ-qHRHPgdSX3UkODzHOa13oCzhp3Kosh57Y5pmtV6U6kAycrcABodmWuN3Ec2STGM7DcbGcJhp2vUOfrlvymQDCXmzHLU8Q0seLsIYqXfSqrXrD8Z76vFRtzCIsjPtu2OPJX74FL88BSgEM2UrRlgfxSjaHWfGDnB35y_Co2u",
+          "published_date": "2024-01-04"
+        }
+      ]
+    },
+    {
+      "ticker": "DELL",
+      "company": "Dell Technologies",
+      "sector": "Information Technology",
+      "as_of": "2024-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "No significant news or financial results for Dell Technologies were published within the specified search window (October 4, 2023, to January 2, 2024) that would act as a direct catalyst or risk. Information regarding AI innovation and financial results was published after the cutoff date.",
+      "catalyst": "None.",
+      "risk": "None.",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "CRM",
+      "company": "Salesforce",
+      "sector": "Information Technology",
+      "as_of": "2024-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "No significant news or financial results for Salesforce were published within the specified search window (October 4, 2023, to January 2, 2024) that would act as a direct catalyst or risk. All relevant earnings reports and news found were published outside this period.",
+      "catalyst": "None.",
+      "risk": "None.",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "GE",
+      "company": "GE Aerospace",
+      "sector": "Industrials",
+      "as_of": "2024-01-02",
+      "raw_news_score": 0.7,
+      "confidence": 0.8,
+      "effective_news_score": 0.5599999999999999,
+      "insufficient_information": false,
+      "audit_passed": true,
+      "audit_reasons": [],
+      "summary": "GE announced on October 24, 2023, its plan to spin off GE Vernova and launch GE Aerospace as an independent, investment-grade public company in the beginning of the second quarter of 2024. This move is the final step in GE's multi-year transformation, with GE Aerospace set to trade on the New York Stock Exchange under the ticker 'GE'.",
+      "catalyst": "The planned spin-off of GE Vernova and the launch of GE Aerospace as a standalone entity are significant strategic developments, expected to allow GE Aerospace to focus on its core propulsion, services, and systems business, potentially driving long-term growth.",
+      "risk": "The execution of a major corporate spin-off always carries inherent risks related to operational separation, market reception of the new entities, and potential short-term disruptions.",
+      "accepted_sources": [
+        {
+          "title": "GE Announces Planned Spin-Off Timing Beginning of Second Quarter of 2024; Selects Listing Exchanges and Ticker Symbols for Future Independent GE Vernova and GE Aerospace",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHdJ0KIvlNVC1thq6q2tk59I1D-ePtEZel6jmmeDkgvRc9oN-OE21TewY-bYc7mgYfGAYCHx2fWEgGL0Ykcj7OhpKnb6AnAtfEX1OsR6nHe9zppa2TE1tuyE9vaCR-JSVM_mZFwaqgHfZr5fBWpPepbcr0aHiT6hcVBgysWc4Ha9L08HBKWDG4DstWiHLvd1Wii6TPO88o2BY8b_R8kZ58l-vtnpPJzJWuvwPJpq0sS_vSgbXR1uf4",
+          "published_date": "2023-10-24"
+        }
+      ],
+      "rejected_sources": [
+        {
+          "title": "GE - GE Aerospace",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBvK3zflm0oS_4-DKrMCRnJ6EOHuCV5n5RFjAPdK3BDKewI5Lx5OEp2UNGgMKHHiY_jukGO0wWh1Wk4Em4ORNyZFNBKgueNBSvP3cwDGAnUywdkrHD8_tkM4FPsuxXp5pp1JE7",
+          "published_date": "2024-04-02"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "web_search_queries": [
+      "Broadcom news 2023-10-04 to 2024-01-02",
+      "Broadcom earnings 2023-10-04 to 2024-01-02",
+      "Broadcom VMware acquisition news 2023-10-04 to 2024-01-02",
+      "DoorDash news 2023-10-04 to 2024-01-02",
+      "DoorDash earnings 2023-10-04 to 2024-01-02",
+      "Dell Technologies news 2023-10-04 to 2024-01-02",
+      "Dell Technologies earnings 2023-10-04 to 2024-01-02",
+      "Salesforce news 2023-10-04 to 2024-01-02",
+      "Salesforce earnings 2023-10-04 to 2024-01-02",
+      "GE Aerospace news 2023-10-04 to 2024-01-02",
+      "GE Aerospace earnings 2023-10-04 to 2024-01-02"
+    ],
+    "grounding_sources": [
+      {
+        "title": "sec.gov",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQMYxUvdMKSByLsVh66lRDL-O36nxGZQ6X5j739CgF9tBOQZYCa6hD6wMWqVD5X8CeOBZ-ICll_aSxnjv8h3O5I4V9oiMbZXGs5LTHC9gMzhIBO22mndHQF4NIqJeswBL0JSyJpVXHOdyGRI0h3UR0cvuo1_0VQtjtk-koOqbtUIcxr3eLLZ5eXGfq3WXNMAlQylircFo="
+      },
+      {
+        "title": "compasslexecon.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4Lw2UC4qKFiA6gG07hTi6Ec2QkwdmrJJowMKAOtUTcE8Wh6BtioCjkiJepjU9m2u_0r6pZiIrd-Ex6FqPdujqq5G_Gc5m-b5Mdky8WWFEi7uJzz1Kmli0zA8xEIxnKDmJT_MJ11pzvo4_MN1YWO9HMo4BZtTN9O_5MufE25lJ42o5m_hj_iujuwrKCR8M6P-S3A=="
+      },
+      {
+        "title": "broadcom.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9Ca4NKub0xdRGjwAA2IOUta7ZCLWLDOqwX0AqumyDwzS011FR4u3ZgmbzqZC52UWXxE_5HIQKE5EJV0IxKDbskdtixXKEHjjKOFUIy1HEljqvceLi5hvLSNYE5vzOdEn3E6Eszfvq5aX4S5euImqp4UJc54UY_wA="
+      },
+      {
+        "title": "investing.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwvbEv0W5IQwY4E54zd8ERJ7VQwsnvFeqFEajA5LrexcHa6kK-rG4jQBhFSLcYDnt--tIzHV_fJd9_qPAnKgOEGSlJaa6VTCFF1i9HtUaXUHTy0E15miQROZ8dTIlIUgz0-U5GrWZhkkp9kPbAr-89GYnElx4U9QJb2ZiHw11PoKL45cimjWSiBOmSDc5rdXKzZ-h_3WW_L6-S2fKE"
+      },
+      {
+        "title": "prnewswire.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXGDRVBmNqUujn_9Y8LZXLQCwyo9BoinlXCWBcaOXjewYrK_brYXKaApMbaxE8xt1HwVZwp1AzBgTzUjVF1pYpw02wsV4hz9GEbPkRYpFlRQ5N0myf9PoZUscjF8ARk16ZJYUrDGQwhOPrh-Wi4i1PoN1OOYYJMBv-1dNqsXB3t1LlJqBgbXttgd-1riftQMS2Rba4nGz-9-txk-7jv2vNIN1hqn2mHsi5JWpPsXHa8tVjy-PP"
+      },
+      {
+        "title": "broadcom.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaINKIpO2GP1u0BOtrOumbmJL1v4I0HeOBH_sDWBIMb3ikKwEYgkKVLbz_V_8Cyl4ngUZUNimKd46TAaTsem-npS95QXVay6955NdYhb4jujQVlwHWWUqQ5aturcVFDEKert7Sq1DDsiKvzsc4LVLGEtaSg4cwP6leWTkHeU0CMxehus4crlvGtbRo31oYZPXIroqqPNCFXyAA3V-aRb45JbgF5nGyXkLls6YBR_GFUR35MNSnjQ=="
+      },
+      {
+        "title": "broadcom.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMeZei5bo7Mgh4-sNJ4XVz2w1oIfkKBSlkmN3NxtPEATVrdvRBUUkabC2o98_Ga9FHRWM0U8-3ZvKeOmEuLWYVbq_UHnD56MYJ0JwH8f-fccnylwa6KOaJpED_g8IOznNWMYHFr6FvoWfJD9YhpHbg"
+      },
+      {
+        "title": "hammer.net",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcBAhaMDf6ET1SueaxULUL8lDTkp9t6yDACTgbpBSMXbqkOAPlAvrM4iqQRZGODiWdUD2XfifFT3QEu0njAF0YLaZ81Ud0MN4_kQ4R7KZTzvDHl98CXnierJ75GBGLPEUvy3PzCqdQWiEyO1FxZtUkmg3bQtNEPz1H9SjoOXeYV_a4verB_f242OdFE7h0HY2fP05bNk1fs7C0Og=="
+      },
+      {
+        "title": "doordash.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZyrvlM2BNNjJdXrBvjn91tGEFFi9GavqoTQGkKftwN2x2VsfsB6lXIA-U3QohtG65gcrwmMS3PtntiRVJ-qHRHPgdSX3UkODzHOa13oCzhp3Kosh57Y5pmtV6U6kAycrcABodmWuN3Ec2STGM7DcbGcJhp2vUOfrlvymQDCXmzHLU8Q0seLsIYqXfSqrXrD8Z76vFRtzCIsjPtu2OPJX74FL88BSgEM2UrRlgfxSjaHWfGDnB35y_Co2u"
+      },
+      {
+        "title": "dell.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyp5IqMBEkMDqRfhWE3aOpCiomYXgu3RK8lYZebAXzCeiSm_AHrYf9QVRACta-CEtM7ADa5agLOtFm70EMCV9T6y24rp9gfJw_hGJ7X4-0L6cB--jEIjzMV5XdbEL4RdWLLHIWOSeyzmVMEK_3zLZ_6U4S2_nZdJRdQHo_72OKNBCBPq04yk5tow=="
+      },
+      {
+        "title": "dell.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmyY9kWAIcSnphSqFsZ4SaoOeBe73bPPFt7vJFQW_1myR5rc_CSyxmy_OQCVQ_krHa3CrJi01VhakoDqpgTF-wTLcl6P0YrM5YR6PAChWJmepSEKwrkGKsklmkf7wVpMV43x1pnpPqudI_XafJViQHbWesnING2PAjzBSnDihI7sF7HdQaVAigP1aDyv4Oa3m6uuMzUyB3OQeo71Y1Gi8BqlocuKmHijODiTzA9rzLDHwcRln1BoLJWmJHZvr40Lha6IJGxc7JT29ukJkh23u-jJ5-rG-L5xSiFFVVRUQPdGvQmg3f2aPbSBvDv4CWPvLDDUQkbOhQSBM="
+      },
+      {
+        "title": "delltechnologies.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiZLX3AeIv0hvSxm1H41LVEZjS2e-eE0m8A7Fyfh81QFv9WiUHR9qawZCHeKPqmXNIAsuYrh8d7nShdefwrM7IElbcClS5YGSv3I5qsuvx3rfrJ1pWhz0pb6czcAEl53OaDtAuZclB3mlfS81-_aGVMT5zAba33Dy9Q9Iu2kSSz_Q1t-xi0Fi1ChwBkhSkNaZIoNevCmcmYKza_LKEawy_0ymZE_MxKzd3Jf08p0dehkrrZQf1w6rri8DDbExbrJUiMLfmNA=="
+      },
+      {
+        "title": "moomoo.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBB49QuTrJ6D3TTFcR7NxT5e0DOqG_dkVVx74OUvTq0fiJlwC2WRaDREik6dQZ85_3xEew4OM10vZuvfDWaFYnUYJy-uucBXpjAit5SzAWvAy8ygFqn-g-NI0lLOYEeWiHJYpvtGo="
+      },
+      {
+        "title": "companiesmarketcap.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGl35joKEvEiwZ912RSEEFlu-h1vaRa6ptAsbQWHCDuwSb5byqK9Kq7jSEnwASCwVqe5rbdgzHdR4XnYoanyS_xPrfvd5WxOHpTgzOwgiGUVQJRM0tD6ATXnMyudBOFcxIZkx7IwfjAqw=="
+      },
+      {
+        "title": "fintel.io",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDL3AQzaCEIQmIT3KyrgTcHqRyzO8GAhWMbC53fKownJXMuZUfOj7y0S3XLmfDt9WZkKR0AoRg4UU-KwGfjqyIcX0esKC7-VShmzaP6xbiNxtqXghhDUw="
+      },
+      {
+        "title": "salesforce.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxTH3bOkuDcSkRLLKjU4gWprKTd1ftlYkp1j6J7zADQkEnCtVDbEIYJfRp1Dj1MmyRj4sS6J83YSA9D6S1lupK81UInXfdOPcD0RA2HUqJrepL4A85yAkJ6vccbiAfSB5Ftifg20hqiuQh"
+      },
+      {
+        "title": "marketbeat.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGNkWGVtU48goyM0yMAN5Enm_giHm3FQdTlmYUObH3uUPZv1ch9zDonL8fSf-zn27SkF8P6M3ZlD-9XHozpCkAhg-VgVQLinG7mUzMhwRdMRFKLrLO3ZCYsi8rNPgZ_gw1ipWWpoKdehJchgROhA=="
+      },
+      {
+        "title": "geaerospace.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHdJ0KIvlNVC1thq6q2tk59I1D-ePtEZel6jmmeDkgvRc9oN-OE21TewY-bYc7mgYfGAYCHx2fWEgGL0Ykcj7OhpKnb6AnAtfEX1OsR6nHe9zppa2TE1tuyE9vaCR-JSVM_mZFwaqgHfZr5fBWpPepbcr0aHiT6hcVBgysWc4Ha9L08HBKWDG4DstWiHLvd1Wii6TPO88o2BY8b_R8kZ58l-vtnpPJzJWuvwPJpq0sS_vSgbXR1uf4"
+      },
+      {
+        "title": "ge.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBvK3zflm0oS_4-DKrMCRnJ6EOHuCV5n5RFjAPdK3BDKewI5Lx5OEp2UNGgMKHHiY_jukGO0wWh1Wk4Em4ORNyZFNBKgueNBSvP3cwDGAnUywdkrHD8_tkM4FPsuxXp5pp1JE7"
+      }
+    ],
+    "grounding_supports": [
+      {
+        "segment": {
+          "endIndex": 400,
+          "text": "```json\n{\n  \"as_of\": \"2024-01-02\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"AVGO\",\n      \"news_score\": 80,\n      \"confidence\": 0.9,\n      \"insufficient_information\": false,\n      \"summary\": \"Broadcom completed its $69 billion acquisition of VMware in November 2023, a move expected to be transformational and drive significant revenue and EBITDA growth in fiscal year 2024."
+        },
+        "groundingChunkIndices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 401,
+          "endIndex": 612,
+          "text": "The company also reported strong fourth-quarter and fiscal year 2023 financial results in December 2023, provided positive guidance for fiscal year 2024, and increased its quarterly common stock dividend by 14%."
+        },
+        "groundingChunkIndices": [
+          5,
+          0,
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 613,
+          "endIndex": 807,
+          "text": "Additionally, Broadcom announced new product innovations, including a switch with an on-chip neural network and a 5nm single-chip router, and won a HEVC patent infringement case against Netflix."
+        },
+        "groundingChunkIndices": [
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 807,
+          "endIndex": 997,
+          "text": "\",\n      \"catalyst\": \"The completion of the VMware acquisition is a major strategic move expected to significantly expand Broadcom's infrastructure software business and drive future growth."
+        },
+        "groundingChunkIndices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 998,
+          "endIndex": 1130,
+          "text": "Strong financial performance and an increased dividend signal confidence in future cash flows and commitment to shareholder returns."
+        },
+        "groundingChunkIndices": [
+          5,
+          0,
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1130,
+          "endIndex": 1332,
+          "text": "\",\n      \"risk\": \"Integrating a large acquisition like VMware always carries execution risks, and the shift in VMware's operating model to subscription-based bundles could impact customer relationships."
+        },
+        "groundingChunkIndices": [
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1919,
+          "endIndex": 5252,
+          "text": "Announces Fourth Quarter and Fiscal Year 2023 Financial Results and Quarterly Dividend - SEC.gov\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQMYxUvdMKSByLsVh66lRDL-O36nxGZQ6X5j739CgF9tBOQZYCa6hD6wMWqVD5X8CeOBZ-ICll_aSxnjv8h3O5I4V9oiMbZXGs5LTHC9gMzhIBO22mndHQF4NIJJeswBL0JSJpVXHOdyGRI0h3UR0cvuo1_0VQtjtk-koOqbtUIcxr3eLLZ5eXGfq3WXNMAlQylircFo=\",\n          \"published_date\": \"2023-12-07\"\n        },\n        {\n          \"title\": \"Broadcom Completes $69 Billion Acquisition of VMware - Compass Lexecon\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4Lw2UC4qKFiA6gG07hTi6Ec2QkwdmrJJowMKAOtUTcE8Wh6BtioCjkiJepjU9m2u_0r6pZiIrd-Ex6FqPdujqq5G_Gc5m-b5Mdky8WWFEi7uJzz1Kmli0zA8xEIxnKDmJT_MJ11pzvo4_MN1YWO9HMo4BZtTN9O_5MufE25lJ42o5m_hj_iujuwrKCR8M6P-S3A==\",\n          \"published_date\": \"2023-11-23\"\n        },\n        {\n          \"title\": \"Broadcom Completes Acquisition of VMware\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9Ca4NKub0xdRGjwAA2IOUta7ZCLWLDOqwX0AqumyDwzS011FR4u3ZgmbzqZC52UWXxE_5HIQKE5EJV0IxKDbskdtixXKEHjjKOFUIy1HEljqvceLi5hvLSNYE5vzOdEn3E6Eszfvq5aX4S5euImqp4UJc54UY_wA=\",\n          \"published_date\": \"2023-11-22\"\n        },\n        {\n          \"title\": \"Broadcom Delivers Solid Results Despite Slowing Growth | Investing.com\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwvbEv0W5IQwY4E54zd8ERJ7VQwsnvFeqFEajA5LrexcHa6kK-rG4jQBhFSLcYDnt--tIzHV_fJd9_qPAnKgOEGSlJaa6VTCFF1i9HtUaXUHTy0E15miQROZ8dTIlIUgz0-U5GrWZhkkp9kPbAr-89GYnElx4U9QJb2ZiHw11PoKL45cimjWSiBOmSDc5rdXKzZ-h_3WW_L6-S2fKE\",\n          \"published_date\": \"2023-12-08\"\n        },\n        {\n          \"title\": \"Broadcom and VMware Intend to Close Transaction on November 22, 2023 - PR Newswire\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXGDRVBmNqUujn_9Y8LZXLQCwyo9BoinlXCWBcaOXjewYrK_brYXKaApMbaxE8xt1HwVZwp1AzBgTzUjVF1pYpw02wsV4hz9GEbPkRYpFlRQ5N0myf9PoZUscjF8ARk16ZJYUrDGQwhOPrh-Wi4i1PoN1OOYYJMBv-1dNqsXB3t1LlJqBgbXttgd-1riftQMS2Rba4nGz-9-txk-7jv2vNIN1hqn2mHsi5JWpPsXHa8tVjy-PP\",\n          \"published_date\": \"2023-11-22\"\n        },\n        {\n          \"title\": \"Product News Releases - Broadcom Inc.\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMeZei5bo7Mgh4-sNJ4XVz2w1oIfkKBSlkmN3NxtPEATVrdvRBUUkabC2o98_Ga9FHRWM0U8-3ZvKeOmEuLWYVbq_UHnD56MYJ0JwH8f-fccnylwa6KOaJpED_g8IOznNWMYHFr6FvoWfJD9YhpHbg\",\n          \"published_date\": \"2023-12-22\"\n        },\n        {\n          \"title\": \"Broadcom's Acquisition of VMware & Major Changes - Weidenhammer Systems Corp\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcBAhaMDf6ET1SueaxULUL8lDTkp9t6yDACTgbpBSMXbqkOAPlAvrM4iqQRZGODiWdUD2XfifFT3QEu0njAF0YLaZ81Ud0MN4_kQ4R7KZTzvDHl98CXnierJ75GBGLPEUvy3PzCqdQWiEyO1FxZtUkmg3bQtNEPz1H9SjoOXeYV_a4verB_f242OdFE7h0HY2fP05bNk1fs7C0Og==\",\n          \"published_date\": \"2026-05-06\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"DASH\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"DoorDash announced on January 4, 2024, that its fourth-quarter 2023 financial results would be released after market close on February 15, 2024."
+        },
+        "groundingChunkIndices": [
+          8
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 6344,
+          "endIndex": 6438,
+          "text": "Information regarding AI innovation and financial results was published after the cutoff date."
+        },
+        "groundingChunkIndices": [
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 6842,
+          "endIndex": 6922,
+          "text": "All relevant earnings reports and news found were published outside this period."
+        },
+        "groundingChunkIndices": [
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 6922,
+          "endIndex": 7326,
+          "text": "\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": []\n    },\n    {\n      \"ticker\": \"GE\",\n      \"news_score\": 70,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"GE announced on October 24, 2023, its plan to spin off GE Vernova and launch GE Aerospace as an independent, investment-grade public company in the beginning of the second quarter of 2024."
+        },
+        "groundingChunkIndices": [
+          17
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 7327,
+          "endIndex": 7474,
+          "text": "This move is the final step in GE's multi-year transformation, with GE Aerospace set to trade on the New York Stock Exchange under the ticker 'GE'."
+        },
+        "groundingChunkIndices": [
+          18,
+          17
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 7474,
+          "endIndex": 7758,
+          "text": "\",\n      \"catalyst\": \"The planned spin-off of GE Vernova and the launch of GE Aerospace as a standalone entity are significant strategic developments, expected to allow GE Aerospace to focus on its core propulsion, services, and systems business, potentially driving long-term growth."
+        },
+        "groundingChunkIndices": [
+          18,
+          17
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 7758,
+          "endIndex": 7960,
+          "text": "\",\n      \"risk\": \"The execution of a major corporate spin-off always carries inherent risks related to operational separation, market reception of the new entities, and potential short-term disruptions."
+        },
+        "groundingChunkIndices": [
+          17
+        ]
+      }
+    ],
+    "requested_count": 5,
+    "returned_count": 5,
+    "audit_pass_count": 2,
+    "usage_metadata": {
+      "promptTokenCount": 524,
+      "candidatesTokenCount": 3772,
+      "totalTokenCount": 9091,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 524
+        }
+      ],
+      "toolUsePromptTokenCount": 1502,
+      "toolUsePromptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1502
+        }
+      ],
+      "thoughtsTokenCount": 3293,
+      "serviceTier": "standard"
+    },
+    "finish_reason": "STOP"
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "```json\n{\n  \"as_of\": \"2024-01-02\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"AVGO\",\n      \"news_score\": 80,\n      \"confidence\": 0.9,\n      \"insufficient_information\": false,\n      \"summary\": \"Broadcom completed its $69 billion acquisition of VMware in November 2023, a move expected to be transformational and drive significant revenue and EBITDA growth in fiscal year 2024. The company also reported strong fourth-quarter and fiscal year 2023 financial results in December 2023, provided positive guidance for fiscal year 2024, and increased its quarterly common stock dividend by 14%. Additionally, Broadcom announced new product innovations, including a switch with an on-chip neural network and a 5nm single-chip router, and won a HEVC patent infringement case against Netflix.\",\n      \"catalyst\": \"The completion of the VMware acquisition is a major strategic move expected to significantly expand Broadcom's infrastructure software business and drive future growth. Strong financial performance and an increased dividend signal confidence in future cash flows and commitment to shareholder returns.\",\n      \"risk\": \"Integrating a large acquisition like VMware always carries execution risks, and the shift in VMware's operating model to subscription-based bundles could impact customer relationships.\",\n      \"sources\": [\n        {\n          \"title\": \"Broadcom Inc. Announces Fourth Quarter and Fiscal Year 2024 Financial Results and Quarterly Dividend\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaINKIpO2GP1u0BOtrOumbmJL1v4I0HeOBH_sDWBIMb3ikKwEYgkKVLbz_V_8Cyl4ngUZUNimKd46TAaTsem-npS95QXVay6955NdYhb4jujQVlwHWWUqQ5aturcVFDEKert7Sq1DDsiKvzsc4LVLGEtaSg4cwP6leWTkHeU0CMxehus4crlvGtbRo31oYZPXIroqqPNCFXyAA3V-aRb45JbgF5nGyXkLls6YBR_GFUR35MNSnjQ==\",\n          \"published_date\": \"2023-12-07\"\n        },\n        {\n          \"title\": \"Broadcom Inc. Announces Fourth Quarter and Fiscal Year 2023 Financial Results and Quarterly Dividend - SEC.gov\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQMYxUvdMKSByLsVh66lRDL-O36nxGZQ6X5j739CgF9tBOQZYCa6hD6wMWqVD5X8CeOBZ-ICll_aSxnjv8h3O5I4V9oiMbZXGs5LTHC9gMzhIBO22mndHQF4NIJJeswBL0JSJpVXHOdyGRI0h3UR0cvuo1_0VQtjtk-koOqbtUIcxr3eLLZ5eXGfq3WXNMAlQylircFo=\",\n          \"published_date\": \"2023-12-07\"\n        },\n        {\n          \"title\": \"Broadcom Completes $69 Billion Acquisition of VMware - Compass Lexecon\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4Lw2UC4qKFiA6gG07hTi6Ec2QkwdmrJJowMKAOtUTcE8Wh6BtioCjkiJepjU9m2u_0r6pZiIrd-Ex6FqPdujqq5G_Gc5m-b5Mdky8WWFEi7uJzz1Kmli0zA8xEIxnKDmJT_MJ11pzvo4_MN1YWO9HMo4BZtTN9O_5MufE25lJ42o5m_hj_iujuwrKCR8M6P-S3A==\",\n          \"published_date\": \"2023-11-23\"\n        },\n        {\n          \"title\": \"Broadcom Completes Acquisition of VMware\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9Ca4NKub0xdRGjwAA2IOUta7ZCLWLDOqwX0AqumyDwzS011FR4u3ZgmbzqZC52UWXxE_5HIQKE5EJV0IxKDbskdtixXKEHjjKOFUIy1HEljqvceLi5hvLSNYE5vzOdEn3E6Eszfvq5aX4S5euImqp4UJc54UY_wA=\",\n          \"published_date\": \"2023-11-22\"\n        },\n        {\n          \"title\": \"Broadcom Delivers Solid Results Despite Slowing Growth | Investing.com\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwvbEv0W5IQwY4E54zd8ERJ7VQwsnvFeqFEajA5LrexcHa6kK-rG4jQBhFSLcYDnt--tIzHV_fJd9_qPAnKgOEGSlJaa6VTCFF1i9HtUaXUHTy0E15miQROZ8dTIlIUgz0-U5GrWZhkkp9kPbAr-89GYnElx4U9QJb2ZiHw11PoKL45cimjWSiBOmSDc5rdXKzZ-h_3WW_L6-S2fKE\",\n          \"published_date\": \"2023-12-08\"\n        },\n        {\n          \"title\": \"Broadcom and VMware Intend to Close Transaction on November 22, 2023 - PR Newswire\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXGDRVBmNqUujn_9Y8LZXLQCwyo9BoinlXCWBcaOXjewYrK_brYXKaApMbaxE8xt1HwVZwp1AzBgTzUjVF1pYpw02wsV4hz9GEbPkRYpFlRQ5N0myf9PoZUscjF8ARk16ZJYUrDGQwhOPrh-Wi4i1PoN1OOYYJMBv-1dNqsXB3t1LlJqBgbXttgd-1riftQMS2Rba4nGz-9-txk-7jv2vNIN1hqn2mHsi5JWpPsXHa8tVjy-PP\",\n          \"published_date\": \"2023-11-22\"\n        },\n        {\n          \"title\": \"Product News Releases - Broadcom Inc.\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMeZei5bo7Mgh4-sNJ4XVz2w1oIfkKBSlkmN3NxtPEATVrdvRBUUkabC2o98_Ga9FHRWM0U8-3ZvKeOmEuLWYVbq_UHnD56MYJ0JwH8f-fccnylwa6KOaJpED_g8IOznNWMYHFr6FvoWfJD9YhpHbg\",\n          \"published_date\": \"2023-12-22\"\n        },\n        {\n          \"title\": \"Broadcom's Acquisition of VMware & Major Changes - Weidenhammer Systems Corp\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcBAhaMDf6ET1SueaxULUL8lDTkp9t6yDACTgbpBSMXbqkOAPlAvrM4iqQRZGODiWdUD2XfifFT3QEu0njAF0YLaZ81Ud0MN4_kQ4R7KZTzvDHl98CXnierJ75GBGLPEUvy3PzCqdQWiEyO1FxZtUkmg3bQtNEPz1H9SjoOXeYV_a4verB_f242OdFE7h0HY2fP05bNk1fs7C0Og==\",\n          \"published_date\": \"2026-05-06\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"DASH\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"DoorDash announced on January 4, 2024, that its fourth-quarter 2023 financial results would be released after market close on February 15, 2024. No other significant news or financial results were published within the specified search window (October 4, 2023, to January 2, 2024) that would act as a direct catalyst or risk.\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": [\n        {\n          \"title\": \"DoorDash to Announce Fourth Quarter 2023 Results on February 15, 2024\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZyrvlM2BNNjJdXrBvjn91tGEFFi9GavqoTQGkKftwN2x2VsfsB6lXIA-U3QohtG65gcrwmMS3PtntiRVJ-qHRHPgdSX3UkODzHOa13oCzhp3Kosh57Y5pmtV6U6kAycrcABodmWuN3Ec2STGM7DcbGcJhp2vUOfrlvymQDCXmzHLU8Q0seLsIYqXfSqrXrD8Z76vFRtzCIsjPtu2OPJX74FL88BSgEM2UrRlgfxSjaHWfGDnB35y_Co2u\",\n          \"published_date\": \"2024-01-04\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"DELL\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"No significant news or financial results for Dell Technologies were published within the specified search window (October 4, 2023, to January 2, 2024) that would act as a direct catalyst or risk. Information regarding AI innovation and financial results was published after the cutoff date.\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": []\n    },\n    {\n      \"ticker\": \"CRM\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"No significant news or financial results for Salesforce were published within the specified search window (October 4, 2023, to January 2, 2024) that would act as a direct catalyst or risk. All relevant earnings reports and news found were published outside this period.\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": []\n    },\n    {\n      \"ticker\": \"GE\",\n      \"news_score\": 70,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"GE announced on October 24, 2023, its plan to spin off GE Vernova and launch GE Aerospace as an independent, investment-grade public company in the beginning of the second quarter of 2024. This move is the final step in GE's multi-year transformation, with GE Aerospace set to trade on the New York Stock Exchange under the ticker 'GE'.\",\n      \"catalyst\": \"The planned spin-off of GE Vernova and the launch of GE Aerospace as a standalone entity are significant strategic developments, expected to allow GE Aerospace to focus on its core propulsion, services, and systems business, potentially driving long-term growth.\",\n      \"risk\": \"The execution of a major corporate spin-off always carries inherent risks related to operational separation, market reception of the new entities, and potential short-term disruptions.\",\n      \"sources\": [\n        {\n          \"title\": \"GE Announces Planned Spin-Off Timing Beginning of Second Quarter of 2024; Selects Listing Exchanges and Ticker Symbols for Future Independent GE Vernova and GE Aerospace\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHdJ0KIvlNVC1thq6q2tk59I1D-ePtEZel6jmmeDkgvRc9oN-OE21TewY-bYc7mgYfGAYCHx2fWEgGL0Ykcj7OhpKnb6AnAtfEX1OsR6nHe9zppa2TE1tuyE9vaCR-JSVM_mZFwaqgHfZr5fBWpPepbcr0aHiT6hcVBgysWc4Ha9L08HBKWDG4DstWiHLvd1Wii6TPO88o2BY8b_R8kZ58l-vtnpPJzJWuvwPJpq0sS_vSgbXR1uf4\",\n          \"published_date\": \"2023-10-24\"\n        },\n        {\n          \"title\": \"GE - GE Aerospace\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBvK3zflm0oS_4-DKrMCRnJ6EOHuCV5n5RFjAPdK3BDKewI5Lx5OEp2UNGgMKHHiY_jukGO0wWh1Wk4Em4ORNyZFNBKgueNBSvP3cwDGAnUywdkrHD8_tkM4FPsuxXp5pp1JE7\",\n          \"published_date\": \"2024-04-02\"\n        }\n      ]\n    }\n  ]\n}\n```"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "groundingMetadata": {
+          "searchEntryPoint": {
+            "renderedContent": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFeqLjmhhSK9BWSg9YyfIYMz23yeV17FpUR74raedJ8KrIOkgSvjP4JEzdlUOKOXbjgZJncHaKHn1gNLZVX5508UUzpupdB3TIMRTRBbHe4w5vHE1aOhHXsdpMQ_trWymYUdcgqKTbA4fGQPp8VPSZAAdHX_i3yOkTJPWM9o3QN8sUkrYX7vTuVKX-gADGcpVTIx0tPRCqaC4KDdzIJeA0dfqFHMTFRi8YAR9KYLw=\">Salesforce earnings 2023-10-04 to 2024-01-02</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbTKMCZ7-H14O-rldyPpuKkbVOzGgWcTafQGenIpj_uy_d2aGM9MCGGlK6R23bIUgdpGZ8d2wrPI0lrum67lH2ZEVSVktXb6ZR-r7EwbFJqLce46rBcwdi399xV4CeGd0ctovDtcVlHTlbr_zzDlf-zVRkIh5kQRTOk0uboQHgjP6yJLNJ9VEVkGS2mjeP1jaGFq2zyuzTdwvU-3myxlK-aiW-N8C-01E=\">DoorDash news 2023-10-04 to 2024-01-02</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdZu6OytphMkySAPzp0hl9z0fqUEKHzUbxE6iZsL_Wpxiy9XL4151QIfTawyyzvaEpK9ulhiga2mlhQirdEUeewbCPH3ufdDEXeOo_VUzhlUF33jPdWZnlqQGZBU4cUbSrwX_nBQhhNdaVcBiqjpLbRGBFxv034etm1-yOf26wpm1NcnTHShZrNfoNbyhJf1PkTzkWRY2CrpMDUnP72-Rf-M_Jz1uIhjqlK5Lu20Q3WDMu81vmmFjCLBqzEw==\">Broadcom VMware acquisition news 2023-10-04 to 2024-01-02</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNGtlGypBPRs_9yuEwCoaHwK3zEXt1EffwcDBohb6xR8--gM4f45rJfXVw5oQAdBfv84wZOgC4WEb0-E8gcFi8n_96Es_OR4lMjrhZ1FU7BLx9HvVGF7BW9c9XWz_FXuVJa6VEx70KCCFVmRFDQUpcS6KWjOYe9w8qhSDCAYhTMg73TIMBZfC05ieWmGO1SdJ2zBGe_YYKaHUDmTCKqwCwUqT5P6UmCl4=\">Broadcom news 2023-10-04 to 2024-01-02</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-UtIvwxS2XIL8jSCTqKMJMXfQn75oqxxokprCmCuVLNm0jRj5r8F8bzi2B5S2uLBnYd5fP30R8b1TkJ1uMaeDCt3SDX__2ldBlqFdNsDmH5VpXlGKMXVBSd5e09hWaS0oj9wZvjukM-y7AdvzVoWGfjdcXCUXWyGN9gecdamDcUdy3RLYH6oLhnXPG3GsolbX3z9iZl1895WxK279MV7FEe70LbRvDCg-Fpqk\">Broadcom earnings 2023-10-04 to 2024-01-02</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGI0UrNHk4uVudLsh-D5beHNx3etNlldlH1Iic_i4aLQhW6jmdZU4GB3wCnnSc6MVDixydZkt6WXUlKEy1XxlFi5GCUQBDDGENLqu46tIcGwg_sTQMDzl_kRO1GEGnmrPqA30661yxAXV0_RaddPKFacWJfUcUrSeqTJ0MjsXGR-h7wHKqHnTHjkv22ECn4ZTpEvRLOXJOL_fIXVagAtWoekFUd2Fz1ahItYkqu\">DoorDash earnings 2023-10-04 to 2024-01-02</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFhD_Mhr9i5rXL33e-PTXkq0N8qBCYL-J3zUHR9DNvW-FpOgVvTFcgoN7iw5bDXeT1pQGZ-iXqelCqI_mJwjy5MUGfg4HNYZWU6SVg6CaM4GjbXdPn1K0sGpVrrvhInXv9M4eAtr7Uqp6Y-FiKqBETXxW0LVGUSHOcmaG0_aOhUI_2Nze4aharlU6Y4Y8BFsjD1OhFtw8JcwJTdgTrsghRMb8kExO0WnKwE4ENEGUFBWrHtz7_IQ==\">Dell Technologies earnings 2023-10-04 to 2024-01-02</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxDovL-9Wb9Rt0qODpH_Bg8fX4oeVvpCO-h6hdJRrVkXkP6xZcBDBrIZXrHhgsc75TZS2ZkdPf5lYvjipblPz9tU0G_qo8FuF8moAPOxZNEmUTzlWaUNVUWlj7_1wXtoKJHu20EK8aSX1d9RHo5-3fcCyiezxRIB9HIIIx2ce6Ykgqdh8zDPOewnzcUXS8S9yxYtd_P903uk5SN-D-eiAkCKbvVitIxtnumnJ_l0m-3Io=\">Dell Technologies news 2023-10-04 to 2024-01-02</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdqGyUEbTraFVSvIJctizPbCANFuONGmClhMRLUCZ8ix7kkOHllepS6oRb7a3B2vKkMkdu4VR8koctrzLKt9JGhdbCTr0-eiXsi6d8kiANGQnYqZkrkpq3kwGIX3F6aN8P37Ak2Uv4mNyhMMVYjiJZ5_Ael8do2S7gwsXWdsGUsz9CFfQL636LPjLVeu5fNoOiN26DwLm0QwUJln3sFEH5rmL48TXevQOQTAVw\">GE Aerospace news 2023-10-04 to 2024-01-02</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGc0bQa0VrHvynGJrWOua9LG2hd37XUJrW2rK415BN7B1Hl7mG5NWuNiAFSS-V1NTn6U0PykMccLXqhvVTyx8WZ2v9YBHBxGxOv2AgUWl6wX7bpMYyhxg8Mq3Z0lwDF791DolKzVVyY8_mD2Q9jnb2unnT1S95XqqiegkCUWQXcE2b0-dAOQh9wUv1dEVk5vFp88D9BZL21ABnFhU2z7K9YDI8qznfScATTCJ742JSNyg==\">GE Aerospace earnings 2023-10-04 to 2024-01-02</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9s6RNFFU3moeSP4gaDHGSa-ge9hnuX1dubk0BZ95jfFn4oUNyxxrgjYa2A-8LlY-uDQ7XR-hFdX37uca1_LXpadQF7hCd9uUuMJkIi2ZkLRqYnSGRqo8je1l-X47gzguPnwhrQlJMl9adAVh1tDgbAGomwDD9_hajuTG_Rlw-0oyQ2Q2w0AdnQQvDuFJyIVyvagTLmjoUMumI061lAIwfdqEe4wAkrWHrDA==\">Salesforce news 2023-10-04 to 2024-01-02</a>\n  </div>\n</div>\n"
+          },
+          "groundingChunks": [
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQMYxUvdMKSByLsVh66lRDL-O36nxGZQ6X5j739CgF9tBOQZYCa6hD6wMWqVD5X8CeOBZ-ICll_aSxnjv8h3O5I4V9oiMbZXGs5LTHC9gMzhIBO22mndHQF4NIqJeswBL0JSyJpVXHOdyGRI0h3UR0cvuo1_0VQtjtk-koOqbtUIcxr3eLLZ5eXGfq3WXNMAlQylircFo=",
+                "title": "sec.gov"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4Lw2UC4qKFiA6gG07hTi6Ec2QkwdmrJJowMKAOtUTcE8Wh6BtioCjkiJepjU9m2u_0r6pZiIrd-Ex6FqPdujqq5G_Gc5m-b5Mdky8WWFEi7uJzz1Kmli0zA8xEIxnKDmJT_MJ11pzvo4_MN1YWO9HMo4BZtTN9O_5MufE25lJ42o5m_hj_iujuwrKCR8M6P-S3A==",
+                "title": "compasslexecon.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9Ca4NKub0xdRGjwAA2IOUta7ZCLWLDOqwX0AqumyDwzS011FR4u3ZgmbzqZC52UWXxE_5HIQKE5EJV0IxKDbskdtixXKEHjjKOFUIy1HEljqvceLi5hvLSNYE5vzOdEn3E6Eszfvq5aX4S5euImqp4UJc54UY_wA=",
+                "title": "broadcom.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwvbEv0W5IQwY4E54zd8ERJ7VQwsnvFeqFEajA5LrexcHa6kK-rG4jQBhFSLcYDnt--tIzHV_fJd9_qPAnKgOEGSlJaa6VTCFF1i9HtUaXUHTy0E15miQROZ8dTIlIUgz0-U5GrWZhkkp9kPbAr-89GYnElx4U9QJb2ZiHw11PoKL45cimjWSiBOmSDc5rdXKzZ-h_3WW_L6-S2fKE",
+                "title": "investing.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXGDRVBmNqUujn_9Y8LZXLQCwyo9BoinlXCWBcaOXjewYrK_brYXKaApMbaxE8xt1HwVZwp1AzBgTzUjVF1pYpw02wsV4hz9GEbPkRYpFlRQ5N0myf9PoZUscjF8ARk16ZJYUrDGQwhOPrh-Wi4i1PoN1OOYYJMBv-1dNqsXB3t1LlJqBgbXttgd-1riftQMS2Rba4nGz-9-txk-7jv2vNIN1hqn2mHsi5JWpPsXHa8tVjy-PP",
+                "title": "prnewswire.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaINKIpO2GP1u0BOtrOumbmJL1v4I0HeOBH_sDWBIMb3ikKwEYgkKVLbz_V_8Cyl4ngUZUNimKd46TAaTsem-npS95QXVay6955NdYhb4jujQVlwHWWUqQ5aturcVFDEKert7Sq1DDsiKvzsc4LVLGEtaSg4cwP6leWTkHeU0CMxehus4crlvGtbRo31oYZPXIroqqPNCFXyAA3V-aRb45JbgF5nGyXkLls6YBR_GFUR35MNSnjQ==",
+                "title": "broadcom.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMeZei5bo7Mgh4-sNJ4XVz2w1oIfkKBSlkmN3NxtPEATVrdvRBUUkabC2o98_Ga9FHRWM0U8-3ZvKeOmEuLWYVbq_UHnD56MYJ0JwH8f-fccnylwa6KOaJpED_g8IOznNWMYHFr6FvoWfJD9YhpHbg",
+                "title": "broadcom.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcBAhaMDf6ET1SueaxULUL8lDTkp9t6yDACTgbpBSMXbqkOAPlAvrM4iqQRZGODiWdUD2XfifFT3QEu0njAF0YLaZ81Ud0MN4_kQ4R7KZTzvDHl98CXnierJ75GBGLPEUvy3PzCqdQWiEyO1FxZtUkmg3bQtNEPz1H9SjoOXeYV_a4verB_f242OdFE7h0HY2fP05bNk1fs7C0Og==",
+                "title": "hammer.net"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZyrvlM2BNNjJdXrBvjn91tGEFFi9GavqoTQGkKftwN2x2VsfsB6lXIA-U3QohtG65gcrwmMS3PtntiRVJ-qHRHPgdSX3UkODzHOa13oCzhp3Kosh57Y5pmtV6U6kAycrcABodmWuN3Ec2STGM7DcbGcJhp2vUOfrlvymQDCXmzHLU8Q0seLsIYqXfSqrXrD8Z76vFRtzCIsjPtu2OPJX74FL88BSgEM2UrRlgfxSjaHWfGDnB35y_Co2u",
+                "title": "doordash.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyp5IqMBEkMDqRfhWE3aOpCiomYXgu3RK8lYZebAXzCeiSm_AHrYf9QVRACta-CEtM7ADa5agLOtFm70EMCV9T6y24rp9gfJw_hGJ7X4-0L6cB--jEIjzMV5XdbEL4RdWLLHIWOSeyzmVMEK_3zLZ_6U4S2_nZdJRdQHo_72OKNBCBPq04yk5tow==",
+                "title": "dell.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmyY9kWAIcSnphSqFsZ4SaoOeBe73bPPFt7vJFQW_1myR5rc_CSyxmy_OQCVQ_krHa3CrJi01VhakoDqpgTF-wTLcl6P0YrM5YR6PAChWJmepSEKwrkGKsklmkf7wVpMV43x1pnpPqudI_XafJViQHbWesnING2PAjzBSnDihI7sF7HdQaVAigP1aDyv4Oa3m6uuMzUyB3OQeo71Y1Gi8BqlocuKmHijODiTzA9rzLDHwcRln1BoLJWmJHZvr40Lha6IJGxc7JT29ukJkh23u-jJ5-rG-L5xSiFFVVRUQPdGvQmg3f2aPbSBvDv4CWPvLDDUQkbOhQSBM=",
+                "title": "dell.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiZLX3AeIv0hvSxm1H41LVEZjS2e-eE0m8A7Fyfh81QFv9WiUHR9qawZCHeKPqmXNIAsuYrh8d7nShdefwrM7IElbcClS5YGSv3I5qsuvx3rfrJ1pWhz0pb6czcAEl53OaDtAuZclB3mlfS81-_aGVMT5zAba33Dy9Q9Iu2kSSz_Q1t-xi0Fi1ChwBkhSkNaZIoNevCmcmYKza_LKEawy_0ymZE_MxKzd3Jf08p0dehkrrZQf1w6rri8DDbExbrJUiMLfmNA==",
+                "title": "delltechnologies.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBB49QuTrJ6D3TTFcR7NxT5e0DOqG_dkVVx74OUvTq0fiJlwC2WRaDREik6dQZ85_3xEew4OM10vZuvfDWaFYnUYJy-uucBXpjAit5SzAWvAy8ygFqn-g-NI0lLOYEeWiHJYpvtGo=",
+                "title": "moomoo.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGl35joKEvEiwZ912RSEEFlu-h1vaRa6ptAsbQWHCDuwSb5byqK9Kq7jSEnwASCwVqe5rbdgzHdR4XnYoanyS_xPrfvd5WxOHpTgzOwgiGUVQJRM0tD6ATXnMyudBOFcxIZkx7IwfjAqw==",
+                "title": "companiesmarketcap.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDL3AQzaCEIQmIT3KyrgTcHqRyzO8GAhWMbC53fKownJXMuZUfOj7y0S3XLmfDt9WZkKR0AoRg4UU-KwGfjqyIcX0esKC7-VShmzaP6xbiNxtqXghhDUw=",
+                "title": "fintel.io"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxTH3bOkuDcSkRLLKjU4gWprKTd1ftlYkp1j6J7zADQkEnCtVDbEIYJfRp1Dj1MmyRj4sS6J83YSA9D6S1lupK81UInXfdOPcD0RA2HUqJrepL4A85yAkJ6vccbiAfSB5Ftifg20hqiuQh",
+                "title": "salesforce.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGNkWGVtU48goyM0yMAN5Enm_giHm3FQdTlmYUObH3uUPZv1ch9zDonL8fSf-zn27SkF8P6M3ZlD-9XHozpCkAhg-VgVQLinG7mUzMhwRdMRFKLrLO3ZCYsi8rNPgZ_gw1ipWWpoKdehJchgROhA==",
+                "title": "marketbeat.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHdJ0KIvlNVC1thq6q2tk59I1D-ePtEZel6jmmeDkgvRc9oN-OE21TewY-bYc7mgYfGAYCHx2fWEgGL0Ykcj7OhpKnb6AnAtfEX1OsR6nHe9zppa2TE1tuyE9vaCR-JSVM_mZFwaqgHfZr5fBWpPepbcr0aHiT6hcVBgysWc4Ha9L08HBKWDG4DstWiHLvd1Wii6TPO88o2BY8b_R8kZ58l-vtnpPJzJWuvwPJpq0sS_vSgbXR1uf4",
+                "title": "geaerospace.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBvK3zflm0oS_4-DKrMCRnJ6EOHuCV5n5RFjAPdK3BDKewI5Lx5OEp2UNGgMKHHiY_jukGO0wWh1Wk4Em4ORNyZFNBKgueNBSvP3cwDGAnUywdkrHD8_tkM4FPsuxXp5pp1JE7",
+                "title": "ge.com"
+              }
+            }
+          ],
+          "groundingSupports": [
+            {
+              "segment": {
+                "endIndex": 400,
+                "text": "```json\n{\n  \"as_of\": \"2024-01-02\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"AVGO\",\n      \"news_score\": 80,\n      \"confidence\": 0.9,\n      \"insufficient_information\": false,\n      \"summary\": \"Broadcom completed its $69 billion acquisition of VMware in November 2023, a move expected to be transformational and drive significant revenue and EBITDA growth in fiscal year 2024."
+              },
+              "groundingChunkIndices": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 401,
+                "endIndex": 612,
+                "text": "The company also reported strong fourth-quarter and fiscal year 2023 financial results in December 2023, provided positive guidance for fiscal year 2024, and increased its quarterly common stock dividend by 14%."
+              },
+              "groundingChunkIndices": [
+                5,
+                0,
+                3
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 613,
+                "endIndex": 807,
+                "text": "Additionally, Broadcom announced new product innovations, including a switch with an on-chip neural network and a 5nm single-chip router, and won a HEVC patent infringement case against Netflix."
+              },
+              "groundingChunkIndices": [
+                6
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 807,
+                "endIndex": 997,
+                "text": "\",\n      \"catalyst\": \"The completion of the VMware acquisition is a major strategic move expected to significantly expand Broadcom's infrastructure software business and drive future growth."
+              },
+              "groundingChunkIndices": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 998,
+                "endIndex": 1130,
+                "text": "Strong financial performance and an increased dividend signal confidence in future cash flows and commitment to shareholder returns."
+              },
+              "groundingChunkIndices": [
+                5,
+                0,
+                3
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 1130,
+                "endIndex": 1332,
+                "text": "\",\n      \"risk\": \"Integrating a large acquisition like VMware always carries execution risks, and the shift in VMware's operating model to subscription-based bundles could impact customer relationships."
+              },
+              "groundingChunkIndices": [
+                7
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 1919,
+                "endIndex": 5252,
+                "text": "Announces Fourth Quarter and Fiscal Year 2023 Financial Results and Quarterly Dividend - SEC.gov\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQMYxUvdMKSByLsVh66lRDL-O36nxGZQ6X5j739CgF9tBOQZYCa6hD6wMWqVD5X8CeOBZ-ICll_aSxnjv8h3O5I4V9oiMbZXGs5LTHC9gMzhIBO22mndHQF4NIJJeswBL0JSJpVXHOdyGRI0h3UR0cvuo1_0VQtjtk-koOqbtUIcxr3eLLZ5eXGfq3WXNMAlQylircFo=\",\n          \"published_date\": \"2023-12-07\"\n        },\n        {\n          \"title\": \"Broadcom Completes $69 Billion Acquisition of VMware - Compass Lexecon\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4Lw2UC4qKFiA6gG07hTi6Ec2QkwdmrJJowMKAOtUTcE8Wh6BtioCjkiJepjU9m2u_0r6pZiIrd-Ex6FqPdujqq5G_Gc5m-b5Mdky8WWFEi7uJzz1Kmli0zA8xEIxnKDmJT_MJ11pzvo4_MN1YWO9HMo4BZtTN9O_5MufE25lJ42o5m_hj_iujuwrKCR8M6P-S3A==\",\n          \"published_date\": \"2023-11-23\"\n        },\n        {\n          \"title\": \"Broadcom Completes Acquisition of VMware\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9Ca4NKub0xdRGjwAA2IOUta7ZCLWLDOqwX0AqumyDwzS011FR4u3ZgmbzqZC52UWXxE_5HIQKE5EJV0IxKDbskdtixXKEHjjKOFUIy1HEljqvceLi5hvLSNYE5vzOdEn3E6Eszfvq5aX4S5euImqp4UJc54UY_wA=\",\n          \"published_date\": \"2023-11-22\"\n        },\n        {\n          \"title\": \"Broadcom Delivers Solid Results Despite Slowing Growth | Investing.com\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwvbEv0W5IQwY4E54zd8ERJ7VQwsnvFeqFEajA5LrexcHa6kK-rG4jQBhFSLcYDnt--tIzHV_fJd9_qPAnKgOEGSlJaa6VTCFF1i9HtUaXUHTy0E15miQROZ8dTIlIUgz0-U5GrWZhkkp9kPbAr-89GYnElx4U9QJb2ZiHw11PoKL45cimjWSiBOmSDc5rdXKzZ-h_3WW_L6-S2fKE\",\n          \"published_date\": \"2023-12-08\"\n        },\n        {\n          \"title\": \"Broadcom and VMware Intend to Close Transaction on November 22, 2023 - PR Newswire\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXGDRVBmNqUujn_9Y8LZXLQCwyo9BoinlXCWBcaOXjewYrK_brYXKaApMbaxE8xt1HwVZwp1AzBgTzUjVF1pYpw02wsV4hz9GEbPkRYpFlRQ5N0myf9PoZUscjF8ARk16ZJYUrDGQwhOPrh-Wi4i1PoN1OOYYJMBv-1dNqsXB3t1LlJqBgbXttgd-1riftQMS2Rba4nGz-9-txk-7jv2vNIN1hqn2mHsi5JWpPsXHa8tVjy-PP\",\n          \"published_date\": \"2023-11-22\"\n        },\n        {\n          \"title\": \"Product News Releases - Broadcom Inc.\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMeZei5bo7Mgh4-sNJ4XVz2w1oIfkKBSlkmN3NxtPEATVrdvRBUUkabC2o98_Ga9FHRWM0U8-3ZvKeOmEuLWYVbq_UHnD56MYJ0JwH8f-fccnylwa6KOaJpED_g8IOznNWMYHFr6FvoWfJD9YhpHbg\",\n          \"published_date\": \"2023-12-22\"\n        },\n        {\n          \"title\": \"Broadcom's Acquisition of VMware & Major Changes - Weidenhammer Systems Corp\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcBAhaMDf6ET1SueaxULUL8lDTkp9t6yDACTgbpBSMXbqkOAPlAvrM4iqQRZGODiWdUD2XfifFT3QEu0njAF0YLaZ81Ud0MN4_kQ4R7KZTzvDHl98CXnierJ75GBGLPEUvy3PzCqdQWiEyO1FxZtUkmg3bQtNEPz1H9SjoOXeYV_a4verB_f242OdFE7h0HY2fP05bNk1fs7C0Og==\",\n          \"published_date\": \"2026-05-06\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"DASH\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"DoorDash announced on January 4, 2024, that its fourth-quarter 2023 financial results would be released after market close on February 15, 2024."
+              },
+              "groundingChunkIndices": [
+                8
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 6344,
+                "endIndex": 6438,
+                "text": "Information regarding AI innovation and financial results was published after the cutoff date."
+              },
+              "groundingChunkIndices": [
+                9,
+                10,
+                11
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 6842,
+                "endIndex": 6922,
+                "text": "All relevant earnings reports and news found were published outside this period."
+              },
+              "groundingChunkIndices": [
+                12,
+                13,
+                14,
+                15,
+                16
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 6922,
+                "endIndex": 7326,
+                "text": "\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": []\n    },\n    {\n      \"ticker\": \"GE\",\n      \"news_score\": 70,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"GE announced on October 24, 2023, its plan to spin off GE Vernova and launch GE Aerospace as an independent, investment-grade public company in the beginning of the second quarter of 2024."
+              },
+              "groundingChunkIndices": [
+                17
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 7327,
+                "endIndex": 7474,
+                "text": "This move is the final step in GE's multi-year transformation, with GE Aerospace set to trade on the New York Stock Exchange under the ticker 'GE'."
+              },
+              "groundingChunkIndices": [
+                18,
+                17
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 7474,
+                "endIndex": 7758,
+                "text": "\",\n      \"catalyst\": \"The planned spin-off of GE Vernova and the launch of GE Aerospace as a standalone entity are significant strategic developments, expected to allow GE Aerospace to focus on its core propulsion, services, and systems business, potentially driving long-term growth."
+              },
+              "groundingChunkIndices": [
+                18,
+                17
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 7758,
+                "endIndex": 7960,
+                "text": "\",\n      \"risk\": \"The execution of a major corporate spin-off always carries inherent risks related to operational separation, market reception of the new entities, and potential short-term disruptions."
+              },
+              "groundingChunkIndices": [
+                17
+              ]
+            }
+          ],
+          "webSearchQueries": [
+            "Broadcom news 2023-10-04 to 2024-01-02",
+            "Broadcom earnings 2023-10-04 to 2024-01-02",
+            "Broadcom VMware acquisition news 2023-10-04 to 2024-01-02",
+            "DoorDash news 2023-10-04 to 2024-01-02",
+            "DoorDash earnings 2023-10-04 to 2024-01-02",
+            "Dell Technologies news 2023-10-04 to 2024-01-02",
+            "Dell Technologies earnings 2023-10-04 to 2024-01-02",
+            "Salesforce news 2023-10-04 to 2024-01-02",
+            "Salesforce earnings 2023-10-04 to 2024-01-02",
+            "GE Aerospace news 2023-10-04 to 2024-01-02",
+            "GE Aerospace earnings 2023-10-04 to 2024-01-02"
+          ]
+        }
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 524,
+      "candidatesTokenCount": 3772,
+      "totalTokenCount": 9091,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 524
+        }
+      ],
+      "toolUsePromptTokenCount": 1502,
+      "toolUsePromptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1502
+        }
+      ],
+      "thoughtsTokenCount": 3293,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "sKJlaoq1H_qsjuMP0pnfiA0"
+  }
+}
