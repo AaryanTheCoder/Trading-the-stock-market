@@ -1,0 +1,32 @@
+[
+  {
+    "policy": "RL Codex 2 long-term",
+    "first_date": "2025-01-02",
+    "last_date": "2026-07-24",
+    "trading_days": 390,
+    "starting_balance": 100000.0,
+    "final_balance": 128794.10134405392,
+    "return": 0.28794101344053935,
+    "benchmark_balance": 143558.72715992786,
+    "benchmark_return": 0.43558727159927857,
+    "max_drawdown": -0.2559698139414872,
+    "rebalances": 20,
+    "turnover": 21.331051140803105,
+    "average_holdings": 10.0
+  },
+  {
+    "policy": "RL Codex 2 original",
+    "first_date": "2025-01-02",
+    "last_date": "2026-07-24",
+    "trading_days": 390,
+    "starting_balance": 100000.0,
+    "final_balance": 145949.39972363063,
+    "return": 0.45949399723630635,
+    "benchmark_balance": 143558.72715992786,
+    "benchmark_return": 0.43558727159927857,
+    "max_drawdown": -0.19204569433584362,
+    "rebalances": 20,
+    "turnover": 2.716601901796192,
+    "average_holdings": 10.0
+  }
+]

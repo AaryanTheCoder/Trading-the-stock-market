@@ -1,0 +1,34 @@
+{
+  "name": "July26 pre-2025 cross-sectional momentum model",
+  "model_family": "validated linear factor ranker",
+  "universe": "RL Codex 2 fixed 100-stock universe",
+  "feature_information_cutoff": "signal date close",
+  "selection_data_start": "2021-01-01",
+  "selection_data_end": "2024-12-31",
+  "test_data_start": "2025-01-01",
+  "weights": {
+    "drawdown_252": 0.25,
+    "skip_252_20": 1.0
+  },
+  "holding_days": 40,
+  "top_k": 10,
+  "keep_rank": 20,
+  "fee": 0.001,
+  "validation": {
+    "return_2021": 0.2692165474857799,
+    "return_2022": -0.0019081623398722,
+    "return_2023": 0.2838401348683741,
+    "return_2024": 0.6201251884422967,
+    "compounded_return": 1.6349097955171985,
+    "mean_sharpe": 1.2271863963583929,
+    "worst_drawdown": -0.2079034338641242,
+    "objective": 1.7162991022795204
+  },
+  "selection_rule": "Highest pre-2025 objective: compounded four-year return + 0.5*worst calendar-year return + 0.1*mean Sharpe + 0.25*mean calendar-year drawdown",
+  "known_limitations": [
+    "Fixed present-day large-cap universe creates survivorship bias.",
+    "Final 2025+ result is a development backtest, not live evidence.",
+    "Close execution matches RL2 but is optimistic; next-open stress is reported."
+  ],
+  "fingerprint": "051b6a4aaf5af974d1fb7232e2aaa380325c25163ae4a6cff6f0315c713d2824"
+}
