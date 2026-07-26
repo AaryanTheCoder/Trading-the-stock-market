@@ -1,0 +1,27 @@
+{
+  "selection_cutoff": "2024-12-31",
+  "universe_size": 200,
+  "selection_method": "Top current S&P 500 members by average adjusted close times volume during 2024, after price/data-quality filters",
+  "survivorship_bias_warning": "The candidate list uses constituents known in 2026, so historical results exclude companies that left the index.",
+  "excluded_duplicate_share_classes": [
+    "FOX",
+    "GOOG",
+    "NWS"
+  ],
+  "eligible_count": 494,
+  "skipped_count": 9,
+  "universe_sha256": "48736775abafb722f4634979b47abbc4fa1d23f270a95152a5d1c95bb0b74adb",
+  "sector_counts": {
+    "Information Technology": 42,
+    "Health Care": 29,
+    "Financials": 29,
+    "Consumer Discretionary": 27,
+    "Industrials": 25,
+    "Consumer Staples": 16,
+    "Communication Services": 10,
+    "Energy": 9,
+    "Materials": 6,
+    "Utilities": 4,
+    "Real Estate": 3
+  }
+}

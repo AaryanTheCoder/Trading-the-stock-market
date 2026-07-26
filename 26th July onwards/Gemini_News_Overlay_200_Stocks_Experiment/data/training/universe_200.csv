@@ -1,0 +1,201 @@
+ticker,company,sector,sub_industry,average_2024_dollar_volume,median_2024_close,first_cached_date,last_cached_date,sessions_2024
+NVDA,Nvidia,Information Technology,Semiconductors,37792925181.20374,115.10551071166992,2009-01-02,2026-07-10,252
+TSLA,"Tesla, Inc.",Consumer Discretionary,Automobile Manufacturers,22053135151.65909,210.6949996948242,2010-06-29,2026-07-10,252
+AAPL,Apple Inc.,Information Technology,"Technology Hardware, Storage & Peripherals",11587584731.508945,212.42486572265625,2009-01-02,2026-07-10,252
+AMD,Advanced Micro Devices,Information Technology,Semiconductors,8581547042.885126,157.61499786376953,2009-01-02,2026-07-10,252
+MSFT,Microsoft,Information Technology,Systems Software,8491992816.3488,412.6361999511719,2009-01-02,2026-07-10,252
+AMZN,Amazon,Consumer Discretionary,Broadline Retail,7524532337.357482,183.43000030517578,2009-01-02,2026-07-10,252
+META,Meta Platforms,Communication Services,Interactive Media & Services,7284040987.724146,501.3694305419922,2012-05-18,2026-07-10,252
+SMCI,Supermicro,Information Technology,"Technology Hardware, Storage & Peripherals",5252520338.765452,62.566999435424805,2009-01-02,2026-07-10,252
+AVGO,Broadcom,Information Technology,Semiconductors,4671956983.353576,146.97584533691406,2009-08-06,2026-07-10,252
+GOOGL,Alphabet Inc. (Class A),Communication Services,Interactive Media & Services,4432878668.592041,163.56808471679688,2009-01-02,2026-07-10,252
+LLY,Lilly (Eli),Health Care,Pharmaceuticals,2551357898.954676,787.5146179199219,2009-01-02,2026-07-10,252
+COIN,Coinbase,Financials,Financial Exchanges & Data,2452178036.9079504,218.12000274658203,2021-04-14,2026-07-10,252
+NFLX,Netflix,Communication Services,Movies & Entertainment,2341820561.43517,64.78400039672852,2009-01-02,2026-07-10,252
+MU,Micron Technology,Information Technology,Semiconductors,2341338117.0557356,102.33720779418945,2009-01-02,2026-07-10,252
+PLTR,Palantir Technologies,Information Technology,Application Software,2266829999.427528,25.960000038146973,2020-09-30,2026-07-10,252
+UNH,UnitedHealth Group,Health Care,Managed Health Care,2060829627.6980808,494.2263641357422,2009-01-02,2026-07-10,252
+V,Visa Inc.,Financials,Transaction & Payment Processing Services,1900117520.8485558,272.1309509277344,2009-01-02,2026-07-10,252
+INTC,Intel,Information Technology,Semiconductors,1773921402.1549938,30.431952476501465,2009-01-02,2026-07-10,252
+JPM,JPMorgan Chase,Financials,Diversified Banks,1763258860.676399,193.31163787841797,2009-01-02,2026-07-10,252
+CRM,Salesforce,Information Technology,Application Software,1754956641.1360302,274.4343719482422,2009-01-02,2026-07-10,252
+XOM,ExxonMobil,Energy,Integrated Oil & Gas,1721913223.5822647,107.84683990478516,2009-01-02,2026-07-10,252
+ADBE,Adobe Inc.,Information Technology,Application Software,1707667809.2297752,520.1650085449219,2009-01-02,2026-07-10,252
+BA,Boeing,Industrials,Aerospace & Defense,1644954912.1723115,177.31000518798828,2009-01-02,2026-07-10,252
+COST,Costco,Consumer Staples,Consumer Staples Merchandise Retail,1580022515.8623104,836.7542419433594,2009-01-02,2026-07-10,252
+BRK-B,Berkshire Hathaway,Financials,Multi-Sector Holdings,1574169222.8048053,417.0800018310547,2009-01-02,2026-07-10,252
+CRWD,CrowdStrike,Information Technology,Systems Software,1497684745.1032426,78.27750015258789,2019-06-12,2026-07-10,252
+QCOM,Qualcomm,Information Technology,Semiconductors,1469510896.7728448,161.15298461914062,2009-01-02,2026-07-10,252
+BAC,Bank of America,Financials,Diversified Banks,1409800862.88573,37.632835388183594,2009-01-02,2026-07-10,252
+UBER,Uber,Industrials,Passenger Ground Transportation,1342270086.9541895,71.20500183105469,2019-05-10,2026-07-10,252
+PANW,Palo Alto Networks,Information Technology,Systems Software,1200156146.223474,167.87999725341797,2012-07-20,2026-07-10,252
+AMAT,Applied Materials,Information Technology,Semiconductor Materials & Equipment,1185397060.7582214,194.09407806396484,2009-01-02,2026-07-10,252
+DELL,Dell Technologies,Information Technology,"Technology Hardware, Storage & Peripherals",1183087137.8228748,115.76728820800781,2016-08-17,2026-07-10,252
+HD,Home Depot (The),Consumer Discretionary,Home Improvement Retail,1180201013.4917002,345.42454528808594,2009-01-02,2026-07-10,252
+WMT,Walmart,Consumer Staples,Consumer Staples Merchandise Retail,1162176896.0838652,66.6819953918457,2009-01-02,2026-07-10,252
+MA,Mastercard,Financials,Transaction & Payment Processing Services,1153626129.1213505,462.1614685058594,2009-01-02,2026-07-10,252
+ORCL,Oracle Corporation,Information Technology,Application Software,1152554735.3975146,134.81717681884766,2009-01-02,2026-07-10,252
+CVX,Chevron Corporation,Energy,Integrated Oil & Gas,1093301197.707297,140.5742950439453,2009-01-02,2026-07-10,252
+DIS,Walt Disney Company (The),Communication Services,Movies & Entertainment,1067136600.8690305,98.28880310058594,2009-01-02,2026-07-10,252
+NOW,ServiceNow,Information Technology,Systems Software,1052151569.3938845,156.35199737548828,2012-06-29,2026-07-10,252
+PG,Procter & Gamble,Consumer Staples,Personal Care Products,1050318159.502417,158.5085220336914,2009-01-02,2026-07-10,252
+JNJ,Johnson & Johnson,Health Care,Pharmaceuticals,1048847991.884607,147.76600646972656,2009-01-02,2026-07-10,252
+MRK,Merck & Co.,Health Care,Pharmaceuticals,1019357054.5910457,111.75369262695312,2009-01-02,2026-07-10,252
+WFC,Wells Fargo,Financials,Diversified Banks,1008889263.1096386,55.16451644897461,2009-01-02,2026-07-10,252
+TXN,Texas Instruments,Information Technology,Semiconductors,983787831.8528796,184.1841049194336,2009-01-02,2026-07-10,252
+GS,Goldman Sachs,Financials,Investment Banking & Brokerage,977951163.0180117,446.32788085937506,2009-01-02,2026-07-10,252
+MRVL,Marvell Technology,Information Technology,Semiconductors,959410768.5210727,70.72582626342773,2009-01-02,2026-07-10,252
+NKE,"Nike, Inc.",Consumer Discretionary,"Apparel, Accessories & Luxury Goods",948868410.1645969,84.39867401123047,2009-01-02,2026-07-10,252
+LRCX,Lam Research,Information Technology,Semiconductor Materials & Equipment,947979028.892626,84.26815032958984,2009-01-02,2026-07-10,252
+PFE,Pfizer,Health Care,Pharmaceuticals,945128190.2115557,24.35604190826416,2009-01-02,2026-07-10,252
+BKNG,Booking Holdings,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",942595090.9538875,149.19570922851562,2009-01-02,2026-07-10,252
+CSCO,Cisco,Information Technology,Communications Equipment,925648427.735418,46.81724739074707,2009-01-02,2026-07-10,252
+MCD,McDonald's,Consumer Discretionary,Restaurants,921584379.0222652,274.99072265625,2009-01-02,2026-07-10,252
+ABBV,AbbVie,Health Care,Biotechnology,920809979.1347867,164.40753173828125,2013-01-02,2026-07-10,252
+GE,GE Aerospace,Industrials,Aerospace & Defense,918320877.3527468,161.04295349121094,2009-01-02,2026-07-10,252
+SBUX,Starbucks,Consumer Discretionary,Restaurants,902479464.9585724,87.18956756591797,2009-01-02,2026-07-10,252
+PEP,PepsiCo,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,872460832.9205831,156.50601959228516,2009-01-02,2026-07-10,252
+TMO,Thermo Fisher Scientific,Health Care,Life Sciences Tools & Services,864611662.3655531,565.9017944335938,2009-01-02,2026-07-10,252
+ACN,Accenture,Information Technology,IT Consulting & Other Services,862644506.7524381,328.8895568847656,2009-01-02,2026-07-10,252
+PYPL,PayPal,Financials,Transaction & Payment Processing Services,856655264.6335405,64.25353240966797,2015-07-06,2026-07-10,252
+INTU,Intuit,Information Technology,Application Software,856582944.6988302,624.31201171875,2009-01-02,2026-07-10,252
+CAT,Caterpillar Inc.,Industrials,Construction Machinery & Heavy Transportation Equipment,855863200.8526877,339.02906799316406,2009-01-02,2026-07-10,252
+KO,Coca-Cola Company (The),Consumer Staples,Soft Drinks & Non-alcoholic Beverages,843690890.2129112,59.671674728393555,2009-01-02,2026-07-10,252
+LIN,Linde plc,Materials,Industrial Gases,824587009.5644633,434.6272277832031,2009-01-02,2026-07-10,252
+C,Citigroup,Financials,Diversified Banks,823925117.9495871,58.61866760253906,2009-01-02,2026-07-10,252
+TMUS,T-Mobile US,Communication Services,Wireless Telecommunication Services,774979703.7679399,172.47002410888672,2009-01-02,2026-07-10,252
+IBM,IBM,Information Technology,IT Consulting & Other Services,772248006.7420112,178.34441375732422,2009-01-02,2026-07-10,252
+AMGN,Amgen,Health Care,Biotechnology,751987170.2804323,287.7118835449219,2009-01-02,2026-07-10,252
+CMG,Chipotle Mexican Grill,Consumer Discretionary,Restaurants,751833779.7870455,57.97500038146973,2009-01-02,2026-07-10,252
+CMCSA,Comcast,Communication Services,Cable & Satellite,736039674.7293748,34.84179496765137,2009-01-02,2026-07-10,252
+NEE,NextEra Energy,Utilities,Multi-Utilities,715181060.3010101,69.5849723815918,2009-01-02,2026-07-10,252
+ANET,Arista Networks,Information Technology,Communications Equipment,704573598.014335,81.68375015258789,2014-06-06,2026-07-10,252
+VRT,Vertiv,Industrials,Electrical Components & Equipment,701827892.3711171,87.45550918579102,2018-08-02,2026-07-10,252
+LULU,Lululemon Athletica,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",700728748.2723358,320.3350067138672,2009-01-02,2026-07-10,252
+DHR,Danaher Corporation,Health Care,Life Sciences Tools & Services,693890735.4206449,246.9915771484375,2009-01-02,2026-07-10,252
+KLAC,KLA Corporation,Information Technology,Semiconductor Materials & Equipment,678483841.3209915,68.64764785766602,2009-01-02,2026-07-10,252
+CVS,CVS Health,Health Care,Health Care Services,672352380.0939682,55.52348518371582,2009-01-02,2026-07-10,252
+AXP,American Express,Financials,Consumer Finance,670474344.7953845,233.27622985839844,2009-01-02,2026-07-10,252
+MS,Morgan Stanley,Financials,Investment Banking & Brokerage,664280006.6737493,93.30931091308594,2009-01-02,2026-07-10,252
+ADI,Analog Devices,Information Technology,Semiconductors,661873892.9730976,211.52970123291016,2009-01-02,2026-07-10,252
+VZ,Verizon,Communication Services,Integrated Telecommunication Services,657005219.3087169,35.57480239868164,2009-01-02,2026-07-10,252
+COP,ConocoPhillips,Energy,Oil & Gas Exploration & Production,644214435.9057835,104.70965194702148,2009-01-02,2026-07-10,252
+RTX,RTX Corporation,Industrials,Aerospace & Defense,643937715.1940694,101.68505477905273,2009-01-02,2026-07-10,252
+GM,General Motors,Consumer Discretionary,Automobile Manufacturers,639693870.4160492,44.61783599853516,2010-11-18,2026-07-10,252
+HON,Honeywell Technologies,Industrials,Industrial Conglomerates,639007130.7797496,193.3436279296875,2009-01-02,2026-07-10,252
+ABNB,Airbnb,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",637105810.3960764,142.05999755859375,2020-12-10,2026-07-10,252
+ETN,Eaton Corporation,Industrials,Electrical Components & Equipment,634792403.3519806,308.4834289550781,2009-01-02,2026-07-10,252
+APP,AppLovin,Information Technology,Application Software,633097283.0920113,82.31999969482422,2021-04-15,2026-07-10,252
+ISRG,Intuitive Surgical,Health Care,Health Care Equipment,627968089.9918572,436.9949951171875,2009-01-02,2026-07-10,252
+BMY,Bristol Myers Squibb,Health Care,Pharmaceuticals,621207400.1026759,44.76342964172363,2009-01-02,2026-07-10,252
+TGT,Target Corporation,Consumer Staples,Consumer Staples Merchandise Retail,620336066.2623057,139.13994598388672,2009-01-02,2026-07-10,252
+WDAY,"Workday, Inc.",Information Technology,Application Software,617930099.5335897,255.69000244140625,2012-10-12,2026-07-10,252
+T,AT&T,Communication Services,Integrated Telecommunication Services,615685447.662098,16.8814058303833,2009-01-02,2026-07-10,252
+VST,Vistra Corp.,Utilities,Electric Utilities,610253450.5199871,83.60215377807617,2016-10-05,2026-07-10,252
+CEG,Constellation Energy,Utilities,Electric Utilities,599489225.9577948,194.4566650390625,2022-01-19,2026-07-10,252
+ABT,Abbott Laboratories,Health Care,Health Care Equipment,597372870.7903605,108.35794830322266,2009-01-02,2026-07-10,252
+XYZ,"Block, Inc.",Financials,Transaction & Payment Processing Services,595667389.639143,68.90999984741211,2015-11-19,2026-07-10,252
+HUM,Humana,Health Care,Managed Health Care,586437661.1852676,337.0022277832031,2009-01-02,2026-07-10,252
+SNPS,Synopsys,Information Technology,Application Software,578707344.3552169,546.9500122070312,2009-01-02,2026-07-10,252
+ELV,Elevance Health,Health Care,Managed Health Care,574106716.166021,490.4273986816406,2009-01-02,2026-07-10,252
+LOW,Lowe's,Consumer Discretionary,Home Improvement Retail,566613425.0517104,231.15480041503906,2009-01-02,2026-07-10,252
+FCX,Freeport-McMoRan,Materials,Copper,563470406.7834976,43.734710693359375,2009-01-02,2026-07-10,252
+VRTX,Vertex Pharmaceuticals,Health Care,Biotechnology,557262164.2694383,461.73500061035156,2009-01-02,2026-07-10,252
+F,Ford Motor Company,Consumer Discretionary,Automobile Manufacturers,555762284.0390698,10.146290302276611,2009-01-02,2026-07-10,252
+TJX,TJX Companies,Consumer Discretionary,Apparel Retail,552535707.3661138,107.74223327636719,2009-01-02,2026-07-10,252
+SPGI,S&P Global,Financials,Financial Exchanges & Data,551740994.5260899,423.14723205566406,2009-01-02,2026-07-10,252
+SCHW,Charles Schwab Corporation,Financials,Investment Banking & Brokerage,541956575.96568,69.1860580444336,2009-01-02,2026-07-10,252
+DE,Deere & Company,Industrials,Agricultural & Farm Machinery,540740569.6939983,380.2943420410156,2009-01-02,2026-07-10,252
+SHW,Sherwin-Williams,Materials,Specialty Chemicals,540716485.0648062,330.1007080078125,2009-01-02,2026-07-10,252
+UNP,Union Pacific Corporation,Industrials,Rail Transportation,537577919.8536706,229.83777618408203,2009-01-02,2026-07-10,252
+REGN,Regeneron Pharmaceuticals,Health Care,Biotechnology,532952841.91705614,959.6835632324219,2009-01-02,2026-07-10,252
+NXPI,NXP Semiconductors,Information Technology,Semiconductors,532253019.6246435,230.12179565429688,2010-08-06,2026-07-10,252
+PM,Philip Morris International,Consumer Staples,Tobacco,531470135.15672535,95.15623092651367,2009-01-02,2026-07-10,252
+OXY,Occidental Petroleum,Energy,Oil & Gas Exploration & Production,523817886.91943485,55.56696128845215,2009-01-02,2026-07-10,252
+CVNA,Carvana,Consumer Discretionary,Automotive Retail,518065200.3337334,25.338000297546387,2017-04-28,2026-07-10,252
+UPS,United Parcel Service,Industrials,Air Freight & Logistics,514950887.65710497,121.77891159057617,2009-01-02,2026-07-10,252
+CI,Cigna,Health Care,Health Care Services,513891847.99013895,324.5611114501953,2009-01-02,2026-07-10,252
+LMT,Lockheed Martin,Industrials,Aerospace & Defense,511985883.21943736,443.4622039794922,2009-01-02,2026-07-10,252
+GILD,Gilead Sciences,Health Care,Biotechnology,511917748.8639635,70.61377334594727,2009-01-02,2026-07-10,252
+DDOG,Datadog,Information Technology,Application Software,507364654.34555477,123.52000045776367,2019-09-19,2026-07-10,252
+FSLR,First Solar,Information Technology,Semiconductors,506741661.94458616,196.28500366210938,2009-01-02,2026-07-10,252
+PGR,Progressive Corporation,Financials,Property & Casualty Insurance,500092959.9754697,196.0001678466797,2009-01-02,2026-07-10,252
+CDNS,Cadence Design Systems,Information Technology,Application Software,499559768.5733856,292.1050109863281,2009-01-02,2026-07-10,252
+CCL,Carnival Corporation,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",498303432.2445108,16.50217628479004,2009-01-02,2026-07-10,252
+BLK,BlackRock,Financials,Asset Management & Custody Banks,494950091.09223384,790.3611450195312,2009-01-02,2026-07-10,252
+MDT,Medtronic,Health Care,Health Care Equipment,491332250.21393186,78.38782501220703,2009-01-02,2026-07-10,252
+SLB,Schlumberger,Energy,Oil & Gas Equipment & Services,488312804.90912026,43.61185264587402,2009-01-02,2026-07-10,252
+MCHP,Microchip Technology,Information Technology,Semiconductors,485393689.82554996,79.19322204589844,2009-01-02,2026-07-10,252
+ON,ON Semiconductor,Information Technology,Semiconductors,481486414.09125555,71.68000030517578,2009-01-02,2026-07-10,252
+FDX,FedEx,Industrials,Air Freight & Logistics,469902921.07240844,209.2031707763672,2009-01-02,2026-07-10,252
+DASH,DoorDash,Consumer Discretionary,Specialized Consumer Services,469419527.3099082,127.7400016784668,2020-12-09,2026-07-10,252
+KKR,KKR & Co.,Financials,Asset Management & Custody Banks,465421786.76906765,107.57327270507812,2010-07-15,2026-07-10,252
+MMM,3M,Industrials,Industrial Conglomerates,463804933.3401637,98.64894104003906,2009-01-02,2026-07-10,252
+MDLZ,Mondelez International,Consumer Staples,Packaged Foods & Meats,459247153.4433804,65.78462982177734,2009-01-02,2026-07-10,252
+BX,Blackstone Inc.,Financials,Asset Management & Custody Banks,452356238.9544926,121.4752082824707,2009-01-02,2026-07-10,252
+MPWR,Monolithic Power Systems,Information Technology,Semiconductors,451671326.9759405,723.1790771484375,2009-01-02,2026-07-10,252
+BSX,Boston Scientific,Health Care,Health Care Equipment,448022432.84183383,76.19000244140625,2009-01-02,2026-07-10,252
+AMT,American Tower,Real Estate,Telecom Tower REITs,440182269.0341102,185.40403747558594,2009-01-02,2026-07-10,252
+MCK,McKesson Corporation,Health Care,Health Care Distributors,439648338.08485967,532.810546875,2009-01-02,2026-07-10,252
+ZTS,Zoetis,Health Care,Pharmaceuticals,434475762.3643179,174.89008331298828,2013-02-01,2026-07-10,252
+CHTR,Charter Communications,Communication Services,Cable & Satellite,432596004.2210594,324.7149963378906,2010-01-05,2026-07-10,252
+UAL,United Airlines Holdings,Industrials,Passenger Airlines,430986488.3564374,48.51499938964844,2009-01-02,2026-07-10,252
+MPC,Marathon Petroleum,Energy,Oil & Gas Refining & Marketing,430538390.39367795,161.49065399169922,2011-06-24,2026-07-10,252
+SYK,Stryker Corporation,Health Care,Health Care Equipment,427679823.7857395,340.9874572753906,2009-01-02,2026-07-10,252
+MRNA,Moderna,Health Care,Biotechnology,425403242.8792333,98.55999755859375,2018-12-07,2026-07-10,252
+FISV,Fiserv,Financials,Transaction & Payment Processing Services,424289851.33846825,156.12999725341797,2009-01-02,2026-07-10,252
+DAL,Delta Air Lines,Industrials,Passenger Airlines,423055572.2421752,46.04033660888672,2009-01-02,2026-07-10,252
+APO,Apollo Global Management,Financials,Asset Management & Custody Banks,421130115.09367627,110.67975997924805,2011-03-30,2026-07-10,252
+EQIX,Equinix,Real Estate,Data Center REITs,419540114.8067898,788.6471862792969,2009-01-02,2026-07-10,252
+NEM,Newmont,Materials,Gold,419016776.5937593,40.547916412353516,2009-01-02,2026-07-10,252
+AZO,AutoZone,Consumer Discretionary,Automotive Retail,416306400.4461379,3049.2000732421875,2009-01-02,2026-07-10,252
+CB,Chubb Limited,Financials,Property & Casualty Insurance,414470940.5242981,258.59422302246094,2009-01-02,2026-07-10,252
+ADP,Automatic Data Processing,Industrials,Human Resource & Employment Services,412564584.2820849,237.2770538330078,2009-01-02,2026-07-10,252
+PLD,Prologis,Real Estate,Industrial REITs,412457801.4360367,113.62971115112305,2009-01-02,2026-07-10,252
+APH,Amphenol,Information Technology,Electronic Components,406633644.5438733,63.40454864501953,2009-01-02,2026-07-10,252
+ORLY,O’Reilly Automotive,Consumer Discretionary,Automotive Retail,404262577.0486423,73.56399917602539,2009-01-02,2026-07-10,252
+VLO,Valero Energy,Energy,Oil & Gas Refining & Marketing,403066892.85064876,135.59132385253906,2009-01-02,2026-07-10,252
+HCA,HCA Healthcare,Health Care,Health Care Facilities,400521339.1615731,321.867919921875,2011-03-10,2026-07-10,252
+ADSK,Autodesk,Information Technology,Application Software,398352762.8855993,253.8300018310547,2009-01-02,2026-07-10,252
+ULTA,Ulta Beauty,Consumer Discretionary,Other Specialty Retail,398287878.42344254,395.9150085449219,2009-01-02,2026-07-10,252
+DHI,D. R. Horton,Consumer Discretionary,Homebuilding,396622908.7819902,150.98025512695312,2009-01-02,2026-07-10,252
+APD,Air Products,Materials,Industrial Gases,396562410.658906,253.59107971191406,2009-01-02,2026-07-10,252
+HOOD,Robinhood Markets,Financials,Investment Banking & Brokerage,394458119.7868381,20.539999961853027,2021-07-29,2026-07-10,252
+WDC,Western Digital,Information Technology,"Technology Hardware, Storage & Peripherals",393354496.57004404,49.911325454711914,2009-01-02,2026-07-10,252
+CSX,CSX Corporation,Industrials,Rail Transportation,390903704.0249423,33.27705955505371,2009-01-02,2026-07-10,252
+CL,Colgate-Palmolive,Consumer Staples,Household Products,390118258.03816354,90.12052917480469,2009-01-02,2026-07-10,252
+NOC,Northrop Grumman,Industrials,Aerospace & Defense,388550517.2886682,455.85064697265625,2009-01-02,2026-07-10,252
+MO,Altria,Consumer Staples,Tobacco,385192736.6257501,40.2149715423584,2009-01-02,2026-07-10,252
+CME,CME Group,Financials,Financial Exchanges & Data,383509862.71872747,194.7492218017578,2009-01-02,2026-07-10,252
+CRH,CRH plc,Materials,Construction Materials,380884192.09637415,81.01908493041992,2009-01-02,2026-07-10,252
+CMI,Cummins,Industrials,Construction Machinery & Heavy Transportation Equipment,377825974.8623439,280.82080078125,2009-01-02,2026-07-10,252
+FTNT,Fortinet,Information Technology,Systems Software,377593479.4254,68.44000244140625,2009-11-18,2026-07-10,252
+URI,United Rentals,Industrials,Trading Companies & Distributors,376266652.6647901,686.4578247070312,2009-01-02,2026-07-10,252
+ICE,Intercontinental Exchange,Financials,Financial Exchanges & Data,372976704.71822953,137.48175048828125,2009-01-02,2026-07-10,252
+COF,Capital One,Financials,Consumer Finance,371122484.90955716,137.82903289794922,2009-01-02,2026-07-10,252
+TT,Trane Technologies,Industrials,Building Products,367395533.5437472,326.6502990722656,2009-01-02,2026-07-10,252
+EOG,EOG Resources,Energy,Oil & Gas Exploration & Production,366137141.5009423,117.89099884033203,2009-01-02,2026-07-10,252
+TTD,Trade Desk (The),Communication Services,Advertising,364710945.02231205,95.88500213623048,2016-09-21,2026-07-10,252
+AON,Aon plc,Financials,Insurance Brokers,363584692.57378954,314.84507751464844,2009-01-02,2026-07-10,252
+DXCM,Dexcom,Health Care,Health Care Equipment,361560292.26206523,113.19499969482422,2009-01-02,2026-07-10,252
+EL,Estée Lauder Companies (The),Consumer Staples,Personal Care Products,357510008.8895056,102.55900573730469,2009-01-02,2026-07-10,252
+RCL,Royal Caribbean Group,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",355601520.1923643,150.88048553466797,2009-01-02,2026-07-10,252
+MNST,Monster Beverage,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,353778693.4913015,53.18000030517578,2009-01-02,2026-07-10,252
+EW,Edwards Lifesciences,Health Care,Health Care Equipment,353529370.2358534,75.61000061035156,2009-01-02,2026-07-10,252
+PH,Parker Hannifin,Industrials,Industrial Machinery & Supplies & Components,352063069.50415957,539.8840637207031,2009-01-02,2026-07-10,252
+MRSH,Marsh McLennan,Financials,Insurance Brokers,351114662.861815,205.80203247070312,2009-01-02,2026-07-10,252
+PSX,Phillips 66,Energy,Oil & Gas Refining & Marketing,347290593.7477021,128.45669555664062,2012-04-12,2026-07-10,252
+MAR,Marriott International,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",345422768.86322993,238.72420501708984,2009-01-02,2026-07-10,252
+DECK,Deckers Brands,Consumer Discretionary,Footwear,339710831.9221133,153.63833618164062,2009-01-02,2026-07-10,252
+DG,Dollar General,Consumer Staples,Consumer Staples Merchandise Retail,338889210.0315276,121.17875289916992,2009-11-13,2026-07-10,252
+BDX,Becton Dickinson,Health Care,Health Care Equipment,332913017.1568173,177.1135711669922,2009-01-02,2026-07-10,252
+ROST,Ross Stores,Consumer Discretionary,Apparel Retail,330035702.2469657,141.37200927734375,2009-01-02,2026-07-10,252
+LEN,Lennar,Consumer Discretionary,Homebuilding,330024136.74716586,151.61005401611328,2009-01-02,2026-07-10,252
+KVUE,Kenvue,Consumer Staples,Personal Care Products,329160312.82166374,18.86640739440918,2023-05-04,2026-07-10,252
+DLTR,Dollar Tree,Consumer Staples,Consumer Staples Merchandise Retail,328654892.4577259,106.70000076293945,2009-01-02,2026-07-10,252
+USB,U.S. Bancorp,Financials,Diversified Banks,328344088.6439354,39.046897888183594,2009-01-02,2026-07-10,252
+HLT,Hilton Worldwide,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",326547072.12540156,211.54547119140625,2013-12-12,2026-07-10,252
+SO,Southern Company,Utilities,Electric Utilities,325174522.0089943,74.44207763671875,2009-01-02,2026-07-10,252
+WM,Waste Management,Industrials,Environmental & Facilities Services,324884296.2409065,202.0766830444336,2009-01-02,2026-07-10,252
+HSY,Hershey Company (The),Consumer Staples,Packaged Foods & Meats,322549357.03978163,179.3050537109375,2009-01-02,2026-07-10,252
+GD,General Dynamics,Industrials,Aerospace & Defense,318177998.7750462,277.9202880859375,2009-01-02,2026-07-10,252
