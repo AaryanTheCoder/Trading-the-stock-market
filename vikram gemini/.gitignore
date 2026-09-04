@@ -1,0 +1,9 @@
+# Credentials must never be committed.
+.env
+.env.*
+*.key
+
+# Local Python/runtime noise.
+__pycache__/
+*.py[cod]
+

@@ -1,0 +1,28 @@
+{
+  "name": "API-efficient 200-stock price foundation",
+  "purpose": "40-session cadence and 10 candidates require 17 grounded calls for 2024 validation plus 2025-current holdout",
+  "universe_size": 200,
+  "selection_data_start": "2021-01-01",
+  "selection_data_end": "2024-12-31",
+  "test_data_start": "2025-01-01",
+  "weights": {
+    "skip_252_20": 1.0
+  },
+  "holding_days": 40,
+  "top_k": 10,
+  "keep_rank": 10,
+  "gemini_candidate_count": 10,
+  "fee": 0.001,
+  "validation": {
+    "return_2021": 0.2662764548552081,
+    "return_2022": -0.003189239590650872,
+    "return_2023": 0.6754493223506619,
+    "return_2024": 1.9008852556921,
+    "compounded_return": 5.134837957630289,
+    "mean_sharpe": 1.4634841737340323,
+    "worst_drawdown": -0.26076519305209034,
+    "objective": 5.222665802032137
+  },
+  "survivorship_bias_warning": "Universe selected from constituents known in 2026.",
+  "fingerprint": "ca4a01a9d88ac41b5c12920d6e2e94affba8b124fcd5843b6f844c5d8cf41e53"
+}

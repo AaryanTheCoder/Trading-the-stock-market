@@ -1,0 +1,1212 @@
+{
+  "requested_start": "2026-07-09",
+  "requested_end_exclusive": "2026-07-27",
+  "ticker_count": 200,
+  "successful_tickers": 200,
+  "missing_tickers": [],
+  "observed_last_dates": [
+    "2026-07-24"
+  ],
+  "tickers": {
+    "NVDA": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "TSLA": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "AAPL": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "AMD": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MSFT": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "AMZN": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "META": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "SMCI": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "AVGO": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "GOOGL": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "LLY": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "COIN": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "NFLX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MU": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "PLTR": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "UNH": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "V": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "INTC": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "JPM": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CRM": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "XOM": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ADBE": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "BA": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "COST": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "BRK-B": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CRWD": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "QCOM": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "BAC": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "UBER": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "PANW": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "AMAT": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "DELL": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "HD": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "WMT": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MA": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ORCL": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CVX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "DIS": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "NOW": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "PG": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "JNJ": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MRK": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "WFC": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "TXN": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "GS": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MRVL": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "NKE": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "LRCX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "PFE": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "BKNG": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CSCO": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MCD": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ABBV": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "GE": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "SBUX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "PEP": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "TMO": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ACN": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "PYPL": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "INTU": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CAT": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "KO": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "LIN": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "C": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "TMUS": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "IBM": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "AMGN": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CMG": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CMCSA": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "NEE": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ANET": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "VRT": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "LULU": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "DHR": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "KLAC": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CVS": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "AXP": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MS": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ADI": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "VZ": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "COP": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "RTX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "GM": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "HON": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ABNB": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ETN": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "APP": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ISRG": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "BMY": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "TGT": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "WDAY": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "T": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "VST": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CEG": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ABT": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "XYZ": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "HUM": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "SNPS": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ELV": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "LOW": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "FCX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "VRTX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "F": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "TJX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "SPGI": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "SCHW": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "DE": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "SHW": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "UNP": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "REGN": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "NXPI": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "PM": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "OXY": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CVNA": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "UPS": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CI": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "LMT": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "GILD": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "DDOG": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "FSLR": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "PGR": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CDNS": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CCL": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "BLK": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MDT": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "SLB": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MCHP": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ON": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "FDX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "DASH": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "KKR": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MMM": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MDLZ": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "BX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MPWR": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "BSX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "AMT": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MCK": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ZTS": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CHTR": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "UAL": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MPC": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "SYK": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MRNA": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "FISV": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "DAL": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "APO": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "EQIX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "NEM": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "AZO": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CB": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ADP": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "PLD": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "APH": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ORLY": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "VLO": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "HCA": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ADSK": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ULTA": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "DHI": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "APD": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "HOOD": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "WDC": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CSX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CL": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "NOC": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MO": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CME": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CRH": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "CMI": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "FTNT": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "URI": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ICE": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "COF": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "TT": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "EOG": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "TTD": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "AON": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "DXCM": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "EL": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "RCL": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MNST": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "EW": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "PH": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MRSH": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "PSX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "MAR": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "DECK": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "DG": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "BDX": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "ROST": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "LEN": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "KVUE": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "DLTR": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "USB": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "HLT": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "SO": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "WM": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "HSY": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    },
+    "GD": {
+      "status": "ok",
+      "first_date": "2026-07-09",
+      "last_date": "2026-07-24",
+      "rows": 12
+    }
+  }
+}

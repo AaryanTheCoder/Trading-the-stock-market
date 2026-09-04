@@ -1,0 +1,868 @@
+{
+  "schema_version": 1,
+  "prompt_version": "news-score-v1",
+  "model": "gemini-2.5-flash",
+  "as_of": "2024-01-31",
+  "created_at": "2026-07-26T06:05:31.467831+00:00",
+  "prompt_sha256": "f3bbcc4e70626a0e6292f18bccb067292af2a0d41dfd780f23eecf0228699bb9",
+  "requested_tickers": [
+    "CRWD",
+    "META",
+    "AMD",
+    "COIN",
+    "UBER"
+  ],
+  "records": [
+    {
+      "ticker": "CRWD",
+      "company": "CrowdStrike",
+      "sector": "Information Technology",
+      "as_of": "2024-01-31",
+      "raw_news_score": 0.7,
+      "confidence": 0.9,
+      "effective_news_score": 0.63,
+      "insufficient_information": false,
+      "audit_passed": true,
+      "audit_reasons": [],
+      "summary": "CrowdStrike received significant positive news, including a high ranking on the Fortune Future 50 list, achieving a major ARR milestone, and recognition for its AI and identity protection solutions. Technical indicators also suggest a bullish trend, and analysts forecast strong earnings growth.",
+      "catalyst": "Strong market validation, rapid Annual Recurring Revenue (ARR) growth, and leadership in AI-driven cybersecurity.",
+      "risk": "None identified in the news within the search window.",
+      "accepted_sources": [
+        {
+          "title": "CrowdStrike Ranked #3 in 2023 Fortune Future 50 List - Investor Relations",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVEUs1MKIe7mUtmB6M770cxZph5sF5DDYiFhPpwRpYxC2luvLuPvN9msNki2WemKk8xWk_W4a8Gf1o1QzhbuacOhVzV7zSbPAZrIERqFdpmRZt7vBWwn4L2emWtAzI5z5qCp4CpKUW8BQCaECU-DWvJBreWxfdLjeVN8pX_34A85relA6IW6_wuJBp5xP-DVbgW8RqbZi6QWhSaSYh6BzTXJnumQdk0vb8",
+          "published_date": "2023-12-11"
+        },
+        {
+          "title": "Vantagepoint Stock of the Week CrowdStrike ($CRWD)",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZiJCb8t55CgULLCQq4SmxHUE2JkaOArvV5XVppnRFZZglUzKtXk8DrPPlK62JwnqRZvlngGlAH3GijAUpt0djlr0bmBsIfB6Ogi2K9TB5CF4dMucF9Xc3qnWq8q17JDegQDRz0XgorjnXN4usL1CdgZ6_cberyFRBe93xdSCy7l7BYOUuw7hhvQ==",
+          "published_date": "2023-11-08"
+        }
+      ],
+      "rejected_sources": [
+        {
+          "title": "CrowdStrike (CRWD) Technical Analysis: RSI, Moving Averages & Support Levels | AltIndex",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuz7cuLzh1c1UvWd8cxr4JwdeJO1iiEXxnM1MZrjA1PWQ4xI1PkpCAYkCfygu1rUCUmUdzeeS_kJBKr0YVs89QTaQPrJHXPJaAM5AaI7LTsnojtkMykVtpGi2_8EWxg1z8tlfJ_SsfY_i6C5mx",
+          "published_date": "2024-02-24"
+        }
+      ]
+    },
+    {
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "sector": "Communication Services",
+      "as_of": "2024-01-31",
+      "raw_news_score": 0.1,
+      "confidence": 0.8,
+      "effective_news_score": 0.08000000000000002,
+      "insufficient_information": false,
+      "audit_passed": true,
+      "audit_reasons": [],
+      "summary": "Meta Platforms announced a massive investment in AI infrastructure by acquiring 350,000 Nvidia H100 GPUs, signaling a strong commitment to AI development. However, the company faced significant negative news regarding allegations of deliberately targeting young users with addictive technology and ignoring warnings about harmful content.",
+      "catalyst": "Substantial investment and focus on AI development.",
+      "risk": "Regulatory and legal challenges related to user safety, especially for young users, and data privacy.",
+      "accepted_sources": [
+        {
+          "title": "Zuckerberg's Meta Is Spending Billions to Buy 350,000 Nvidia H100 GPUs | PCMag",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaE9UbRlP1jDJvHFa7Kxr3qhJ8b0Wtt9nG1PBFo2L4taZaTNPxjlNmnkHcMfHqEBFFtKSK0m0DjgzVWuqvQwJEadXMyn9COgffnuZrTRyMPb18vQ3V302NsOxF955H-JNaLMdkX3OBU3p7W7IjdbqXOImjWZZWBRl7_wI3rzCyGRxF7BUQ6H0bIYa5xzoD5EBEaJJOqgyJggM",
+          "published_date": "2024-01-18"
+        },
+        {
+          "title": "Zuckerberg, Meta execs ignored warnings about harmful content on social media platforms, whistleblower tells Congress | Courthouse News Service",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW156kbX6pM_08iM3duavMFnltDZPsBm1TIfyFyAPFykfuJV7JZpSmCmTIIF2eyzvIYGM49nuzTnG7THADeLvnQmiKOOj2wyJ4IwDr-g1VDC8P-aX_bUmhd4f6T1ISs5CjIrrpx95_AWO3TFBnEeC8cTbLHXgls2Pl0MMXXxqIollKg7PxGh9FxZAxotGrm8isWb_6vMLn0bRA3waYfkbi3Y_eyuxY5Rxid07eJF7w35vrB-AksDJPE2oKqfmp0_G4Kmf--HrGspWpqe9VlQ==",
+          "published_date": "2023-11-07"
+        },
+        {
+          "title": "Meta deliberately targeted young users, ensnaring them with addictive tech, states claim",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPB-NJZeso6PcTNZoCx6KYF-iGW9YK_nPwxdt5dHlz6xlVwJXMff1uucP9LE6w0X7MOn4IrKQBXDQUhsVBOEPFRHK_yC2n15pOGsOhUvEWoPAZBeOkXvvnmwRlE0xcKpUju8VQCzQIlyyW2E42BGhOmi_f0TaZv0lB7np_I2mPq47wcA==",
+          "published_date": "2023-11-27"
+        },
+        {
+          "title": "Big News for Social Media Users in Europe: Meta's New Policy Change | iubenda",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGW8nPcOS6lz95nztFef_7o7DKjUxCgk3TvHMW8HzIjE74YBVvdRCm2o6bXF0MyEUljly34CrkU6q5NycF-rgnM6q5WsxGd4mlj0i0UALAK_gGdogpA5VKhXLyLgZMz_IetuuA0nFtSsidkOTYtorAUMRWGOdyLN--LWwV8h5T3v3JbO5NGCRZcDoT6TKw7vWR-rW8mQCCeHfj2Kso=",
+          "published_date": "2024-01-26"
+        }
+      ],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "sector": "Information Technology",
+      "as_of": "2024-01-31",
+      "raw_news_score": 0.4,
+      "confidence": 0.8,
+      "effective_news_score": 0.32000000000000006,
+      "insufficient_information": false,
+      "audit_passed": true,
+      "audit_reasons": [],
+      "summary": "Advanced Micro Devices reported strong Q4 2023 results and significantly raised its 2024 outlook for data-center AI chip sales, driven by its new Instinct MI300X GPUs. However, the stock experienced a slight drop due to lighter-than-expected Q1 2024 guidance, and technical indicators suggest potential overvaluation and overbought conditions.",
+      "catalyst": "Strong growth in AI chip sales and new product launches for AI workloads.",
+      "risk": "Lower-than-expected near-term revenue guidance and potential overvaluation.",
+      "accepted_sources": [
+        {
+          "title": "AMD's Stock Drops 2.5% on Light Q1 Guidance, But It Raises 2024 Artificial Intelligence Chip Outlook | The Motley Fool",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO9XP7ppNg_cUQYXkEi5ho4_0n0JeC439yQewKVZz2eIG-nnX1wpltDPLozwrURYPi3jj_azB-Rt9Dqaw4rtOX55uL904V4EGnwU9UZK8wJ0SJxb8IXJQjh_41FFaXxZTNBFNxwx3MEYj_m6rYO4YE7Le0nxwZECBpOh0XKyJo9v19Nzmm51lJ4vs=",
+          "published_date": "2024-01-31"
+        },
+        {
+          "title": "AMD Stock Shows Strong Technical Performance, Raises Concerns of Overvaluation: Analysis - StockInvest.us",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGg9OsJ6SdjO27-gWYXvPqyv_KU_OT77StR_VN27qEfr5nzPHWW4L3dJuAB14TDKuyWZdNoG7oD5WJ1psSobrcL1zd4zYp58nKBqCdFxN4tsRPXt1fhkuF_mYBEJd35zaJDI6L0LsGazjpjJM8CiP13mvMvlwjtx7D79yRPuluEKhDB7yg6FEPCGaEWrX3d9bjg-hjh5DdQYxCp0b-GqzV3IHNcAKN48S-WeY-3VCoAYHZ",
+          "published_date": "2023-12-27"
+        },
+        {
+          "title": "AMD starts prep work for Zen 5 CPUs \u2014 multiple Linux patches signal Zen 5's upcoming arrival | Tom's Hardware",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG35nK02bKxwPvoYCJ1QuXsmUBoMpozuwAl6EVmsEEtQyLyOS3-yeirrJkA6zDvgH4pTtfgvBXS4UvOxkaAIQVrZ4FlZiqM3khMe95sKwe0UCIM6sQ2Lpr9gfLx1Rh7AB8W-WBi3qdRDSR-OIGGC-dO5EOj-uv94FWeWP1qUzEPJpH407IAZqm8qA==",
+          "published_date": "2023-12-27"
+        }
+      ],
+      "rejected_sources": [
+        {
+          "title": "Why AMD Stock Soared in January (Spoiler Alert: It's All About AI) | The Motley Fool",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhZ0AVw64ekp-ZblBSnYIDeChKf03L50YfTqCHhOraogrHXjR2s4Ajrc8hmo138_-IQA7ur1Je31vVkhBq6VzOSoKfVC3iaCnDBnB5oPRte5mNx5dJ-2YK9qPlita0kJDMRuRnNO-yHk8Th9Wn0rAla5zCg2O8s_snM1bBUJMsZyfwf3U=",
+          "published_date": "2024-02-05"
+        }
+      ]
+    },
+    {
+      "ticker": "COIN",
+      "company": "Coinbase",
+      "sector": "Financials",
+      "as_of": "2024-01-31",
+      "raw_news_score": 0.2,
+      "confidence": 0.7,
+      "effective_news_score": 0.13999999999999999,
+      "insufficient_information": false,
+      "audit_passed": true,
+      "audit_reasons": [],
+      "summary": "Coinbase released a positive 2024 Crypto Market Outlook, indicating the end of the crypto winter and continued institutional interest in Bitcoin and overall market infrastructure development. However, the company is actively engaged in a legal battle with the SEC, defending itself against allegations of operating as an unregistered exchange.",
+      "catalyst": "Positive crypto market outlook and continued institutional adoption of digital assets.",
+      "risk": "Ongoing legal challenges with the SEC regarding the classification of tokens as securities and operating as an unregistered exchange.",
+      "accepted_sources": [
+        {
+          "title": "Coinbase 2024 Outlook Marks End of Crypto Winter, Ordinals Leading NFT Shift, Heralds Era of Prosperity - Bitcoin News",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdy8V18w_OnDQZ7K7iiPdwxvMoqlQH0GL4pkt5UpSccVKysBR6ROTAT8FbLD1PmjYknWuj5aKA-QYpWfcOgSjumiYst9RqjdW34XqRt0LUjg-HNs-qDCqljiEw8Bw6EadmRyYQ8AJJlbLVTRuTz-yzOqI5dfdR0KrFem4y-NE9120mNmy5YloYkZJs3Y2Z9YBME151AQOdHj8hszi-n4U8JO1WztHKBKaB1AFUzcaiQGxPLBy5DgifeQ==",
+          "published_date": "2023-12-19"
+        },
+        {
+          "title": "Coinbase takes its turn in court, arguing the tokens it listed are not securities | The Block",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVh2LWmWaJ64vtcOz5V0FqqVkWa7h2I_3oddawVzZc89hQy5H5EybUpBf0pnqT7-07hyjLKuPGyMJoQQl4D-ZeupmaN5c9ybjmCuQLI_TudvDT5H8_MuDfA0iEEpJ4vDj8QYE77BAJyVFzXQKVvEeob9ReONcOuw3dz7ZGwp28YB_Z7IzfOzNQWeAMM6v4LqpQ85Jy-Q8Eu8kI5XW2wUMLJcNZCiTRGqDSwnarNiA==",
+          "published_date": "2024-01-17"
+        }
+      ],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "UBER",
+      "company": "Uber",
+      "sector": "Industrials",
+      "as_of": "2024-01-31",
+      "raw_news_score": -0.2,
+      "confidence": 0.8,
+      "effective_news_score": -0.16000000000000003,
+      "insufficient_information": false,
+      "audit_passed": true,
+      "audit_reasons": [],
+      "summary": "Uber successfully upsized a convertible senior notes offering and announced a $10 million commitment to combat gender-based violence. The company also implemented measures to address fraudulent customer refund claims. However, Uber agreed to a significant $290 million settlement for wage theft claims in New York and is shutting down its Drizly alcohol delivery service.",
+      "catalyst": "Successful capital raise and initiatives to improve driver experience and social responsibility.",
+      "risk": "Significant legal settlement costs and the closure of an acquired business unit.",
+      "accepted_sources": [
+        {
+          "title": "Uber and Lyft to pay $328M to settle wage theft claims in N.Y. court case | CBC News",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXpaA5m8ZkdtzcfiYCER876rTrp3R-zlqG-PBU2fqsENcpC2TpyvUZ-BeJOAH1EVGO6B8RMoSDIf0tzLC-_hipN4AVNaT1Zt-dkro66AaI4zq8mMLG6ugtW2u3Fl310Zpxv_v-X-fRqNmLkQ08gg==",
+          "published_date": "2023-11-02"
+        },
+        {
+          "title": "Uber cracking down on users who give bad ratings to get refunds - FOX 9",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUVcGVeu0uiL_-Z-YuOhSMDIRvLIeVu7yh-Ohk1jmNrwxa164Eqc224azG31M8Bwg2qVCUjbakOG-WD2-71XB3lksd3OUQV72hLtD2FXDRDIgGLJGwyVfnCAYitCZTgH1BRoHvhAhbNSCFzKfWtemDfov9WwRDT8-AdMb4fg==",
+          "published_date": "2023-11-15"
+        },
+        {
+          "title": "Uber Announces Pricing of Upsized $1.5 Billion Convertible Senior Notes Offering",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_cNGoy-HR0bM4lT-z3-bxG5_dz6wZVN16WyFY_KfG9VjHX_jVGjoH48wtIh8LrEDKvUBNJqU7LZ546AD8JnzAlrDNOTl8YCYel5BW8cuTDrq-3nJOFcrWN87_FWxq91Cq285Za_2lIXXDMZvAA9MBpMrr574AXccCZQtNhVMXyR_xh14bF6c8zirzgN28Il3haRRNErpunhPTtSsD-57xPHodJxoFc41K4lfMNkowRtYMDHV9Ze11GxNjVNQYD-4ncj94OmRq4wTsDP5QwPVIqrdtwPs6KKtsB1dD6g==",
+          "published_date": "2023-11-21"
+        },
+        {
+          "title": "Driving Change: Uber Commits $10 Million for Community Partnerships Working to End Gender-based Violence",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkOHjfZRdaT_ydeWtxktFFZeG6LtoYPBE-NvtEPAQPH_axkWdF9cLlq6k_1Ws6La3zridSkH8O9zP5ikCcrSJ7Dd762FHT8HlD_T6_oIhJojKXx0YcNwzwbOHH2FJFhw4dT3iHm53Ip3rmCJVOXeldS10=",
+          "published_date": "2023-12-05"
+        },
+        {
+          "title": "Uber to shut down Drizly, the alcohol delivery service it bought for $1.1 billion - CBS News",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8ipC6MTnJv7WXshZD5ZD68Xx8bEmV3aeD0MOT_8SDnM-9C9TfOnySM_bj6uUYaceOumC1QKEbvrotVKOjbPt5HtIS2Ay1Wv1129y7B-6mmidZCl2pLdKzChTqSgSi-1FboTWlKFDsOXStjejEPg6ajLf-6NNH",
+          "published_date": "2024-01-16"
+        }
+      ],
+      "rejected_sources": []
+    }
+  ],
+  "metadata": {
+    "web_search_queries": [
+      "CrowdStrike news 2023-11-02..2024-01-31",
+      "CRWD news before:2024-02-01 after:2023-11-01",
+      "Meta Platforms news 2023-11-02..2024-01-31",
+      "META news before:2024-02-01 after:2023-11-01",
+      "Advanced Micro Devices news 2023-11-02..2024-01-31",
+      "AMD news before:2024-02-01 after:2023-11-01",
+      "Coinbase news 2023-11-02..2024-01-31",
+      "COIN news before:2024-02-01 after:2023-11-01",
+      "Uber news 2023-11-02..2024-01-31",
+      "UBER news before:2024-02-01 after:2023-11-01"
+    ],
+    "grounding_sources": [
+      {
+        "title": "crowdstrike.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVEUs1MKIe7mUtmB6M770cxZph5sF5DDYiFhPpwRpYxC2luvLuPvN9msNki2WemKk8xWk_W4a8Gf1o1QzhbuacOhVzV7zSbPAZrIERqFdpmRZt7vBWwn4L2emWtAzI5z5qCp4CpKUW8BQCaECU-DWvJBreWxfdLjeVN8pX_34A85relA6IW6_wuJBk5xP-DVbgW8RqbZi6QWhSaSYh6BzTXJnumQdk0vb8"
+      },
+      {
+        "title": "vantagepointsoftware.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZiJCb8t55CgULLCQq4SmxHUE2JkaOArvV5XVppnRFZZglUzKtXk8DrPPlK62JwnqRZvlngGlAH3GijAUpt0djlr0bmBsIfB6Ogi2K9TB5CF4dMucF9Xc3qnWq8q17JDegQDRz0XgorjnXN4usL1CdgZ6_cberyFRBe93xdSCy7l7BYOUuw7hhvQ=="
+      },
+      {
+        "title": "altindex.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuz7cuLzh1c1UvWd8cxr4JwdeJO1iiEXxnM1MZrjA1PWQ4xI1PkpCAYkCfygu1rUCUmUdzeeS_kJBKr0YVs89QTaQPrJHXPJaAM5AaI7LTsnojtkMykVtpGi2_8EWxg1z8tlfJ_SsfY_i6C5mx"
+      },
+      {
+        "title": "pcmag.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaE9UbRlP1jDJvHFa7Kxr3qhJ8b0Wtt9nG1PBFo2L4taZaTNPxjlNmnkHcMfHqEBFFtKSK0m0DjgzVWuqvQwJEadXMyn9COgffnuZrTRyMPb18vQ3V302NsOxF955H-JNaLMdkX3OBU3p7W7IjdbqXOImjWZZWBRl7_wI3rzCyGRxF7BUQ6H0bIYa5xzoD5EBEaJJOqgyJggM="
+      },
+      {
+        "title": "courthousenews.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW156kbX6pM_08iM3duavMFnltDZPsBm1TIfvFyAPFykfuJV7JZpSmCmTIIF2eyzvIYGM49nuzTnG7THADeLvnQmiKOOj2wyJ4IwDr-g1VDC8P-aX_bUmhd4f6T1ISs5CjIrrpx95_AWO3TFBnEeC8cTbLHXgls2Pl0MMXXxqIollKg7PxGh9FxZAxotGrm8isWb_6vMLn0bRA3waYfkbi3Y_eyuxY5Rxid07eJF7w35vrB-AksDJPE2oKqfmp0_G4Kmf--HrGspWpqe9VlQ=="
+      },
+      {
+        "title": "cbsnews.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPB-NJZeso6PcTNZoCx6KYF-iGW9YK_nPwxdt5dHlz6xlVwJXMff1uucP9LE6w0X7MOn4IrKQBXDQUhsVBOEPFRHK_yC2n15pOGsOhUvEWoPAZBeOkXvvnmwRlE0xcKpUju8VQCzQIlyyW2E42BGhOmi_f0TaZv0lB7np_I2mPq47wcA=="
+      },
+      {
+        "title": "fool.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO9XP7ppNg_cUQYXkEi5ho4_0n0JeC439yQewKVZz2eIG-nnX1wpltDPLozwrURYPi3jj_azB-Rt9Dqaw4rtOX55uL904V4EGnwU9UZK8wJ0SJxb8IXJQjh_41FFaXxZTNBFNxwx3MEYj_m6rYO4YE7Le0nxwZECBpOh0XKyJo9v19Nzmm51lJ4vs="
+      },
+      {
+        "title": "stockinvest.us",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGg9OsJ6SdjO27-gWYXvPqyv_KU_OT77StR_VN27qEfr5nzPHWW4L3dJuAB14TDKuyWZdNoqG7oD5WJ1psSobrcL1zd4zYp58nKBqCdFxN4tsRPXt1fhkuF_mYBEJd35zaJDI6L0LsGazjpjJM8CiP13mvMvlwjtx7D79yRPuluEKhDB7yg6FEPCGaEWrX3d9bjg-hjh5DdQYxCp0b-GqzV3IHNcAKN48S-WeY-3VCoAYHZ"
+      },
+      {
+        "title": "bitcoin.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdy8V18w_OnDQZ7K7iiPdwxvMoqlQH0GL4pkt5UpSccVKysBR6ROTAT8FbLD1PmjYknWuj5aKA-QYpWfcOgSjumiYst9RqjdW34XqRt0LUjg-HNs-qDCqljiEw8Bw6EadmRyYQ8AJjlbLVTRuTz-yzOqI5dfdR0KrFem4y-NE9120mNmy5YloYkZJs3Y2Z9YBME151AQOdHj8hszi-n4U8JO1WztHKBKaB1AFUzcaiQGxPLBy5DgifeQ=="
+      },
+      {
+        "title": "theblock.co",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVh2LWmWaJ64vtcOz5V0FqqVkWa7h2I_3oddawVzZc89hQy5H5EybUpBf0pnqT7-07hyjLKuPGyMJoQQl4D-ZeupmaN5c9ybjmCuQLI_TudvDT5H8_MuDfA0iEEpJ4vDj8QYE77BAJyVFzXQKVvEeob9ReONcOuw3dz7ZGwp28YB_Z7IzfOzNQWeAMM6v4LqpQ85Jy-Q8Eu8kI5XW2wUMLJcNZCiTRGqDSwnarNiA="
+      },
+      {
+        "title": "uber.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_cNGoy-HR0bM4lT-z3-bxG5_dz6wZVN16WyFY_KfG9VjHX_jVGjoH48wtIh8LrEDKvUBNJqU7LZ546AD8JnzAlrDNOTl8YCYel5BW8cuTDrq-3nJOFcrWN87_FWxq91Cq285Za_2lIXXDMZvAA9MBpMrr574AXccCZQtNhVMXyR_xh14bF6c8zirzgN28Il3haRRNErpunhPTtSsD-57xPHodJxoFc41K4lfMNkowRtYMDHV9Ze11GxNjVNQYD-4ncj94OmRq4wTsDP5QwPVIqrdtwPs6KKtsB1dD6g=="
+      },
+      {
+        "title": "uber.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkOHjfZRdaT_ydeWtxktFFZeG6LtoYPBE-NvtEPAQPH_axkWdF9cLlq6k_1Ws6La3zridSkH8O9zP5ikCcrSJ7Dd762FHT8HlD_T6_oIhJojKXx0YcNwzwbOHH2FJFhw4dT3iHm53Ip3rmCJVOXeldS10="
+      },
+      {
+        "title": "fox9.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUVcGVeu0uiL_-Z-YuOhSMDIRvLIeVu7yh-Ohk1jmNrwxa164Eqc224azG31M8Bwg2qVCUjbakOG-WD2-71XB3lksd3OUQV72hLtD2FXDRDIgGLJGwyVfnCAYitCZTgH1BRoHvhAhbNSCFzKfWtemDfov9WwRDT8-AdMb4fg=="
+      },
+      {
+        "title": "cbc.ca",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXpaA5m8ZkdtzcfiYCER876rTrp3R-zlqG-PBU2fqsENcpC2TpyvUZ-BeJOAH1EVGO6B8RMoSDIf0tzLC-_hipN4AVNaT1Zt-dkro66AaI4zq8mMLG6ugtW2u3Fl310Zpxv_v-X-fRqNmLkQ08gg=="
+      },
+      {
+        "title": "cbsnews.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8ipC6MTnJv7WXshZD5ZD68Xx8bEmV3aeD0MOT_8SDnM-9C9TfOnySM_bjv6uUYaceOumC1QKEbvrotVKOjbPt5HtIS2Ay1Wv1129y7B-mmidZCl2pLdKzChTqSgSi-1FboTWlKFDsOXStjejEPg6ajLf-6NNH"
+      }
+    ],
+    "grounding_supports": [
+      {
+        "segment": {
+          "endIndex": 416,
+          "text": "```json\n{\n  \"as_of\": \"2024-01-31\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"CRWD\",\n      \"news_score\": 70,\n      \"confidence\": 0.9,\n      \"insufficient_information\": false,\n      \"summary\": \"CrowdStrike received significant positive news, including a high ranking on the Fortune Future 50 list, achieving a major ARR milestone, and recognition for its AI and identity protection solutions."
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 417,
+          "endIndex": 513,
+          "text": "Technical indicators also suggest a bullish trend, and analysts forecast strong earnings growth."
+        },
+        "groundingChunkIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 513,
+          "endIndex": 648,
+          "text": "\",\n      \"catalyst\": \"Strong market validation, rapid Annual Recurring Revenue (ARR) growth, and leadership in AI-driven cybersecurity."
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 648,
+          "endIndex": 2340,
+          "text": "\",\n      \"risk\": \"None identified in the news within the search window.\",\n      \"sources\": [\n        {\n          \"title\": \"CrowdStrike Ranked #3 in 2023 Fortune Future 50 List - Investor Relations\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVEUs1MKIe7mUtmB6M770cxZph5sF5DDYiFhPpwRpYxC2luvLuPvN9msNki2WemKk8xWk_W4a8Gf1o1QzhbuacOhVzV7zSbPAZrIERqFdpmRZt7vBWwn4L2emWtAzI5z5qCp4CpKUW8BQCaECU-DWvJBreWxfdLjeVN8pX_34A85relA6IW6_wuJBp5xP-DVbgW8RqbZi6QWhSaSYh6BzTXJnumQdk0vb8\",\n          \"published_date\": \"2023-12-11\"\n        },\n        {\n          \"title\": \"Vantagepoint Stock of the Week CrowdStrike ($CRWD)\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZiJCb8t55CgULLCQq4SmxHUE2JkaOArvV5XVppnRFZZglUzKtXk8DrPPlK62JwnqRZvlngGlAH3GijAUpt0djlr0bmBsIfB6Ogi2K9TB5CF4dMucF9Xc3qnWq8q17JDegQDRz0XgorjnXN4usL1CdgZ6_cberyFRBe93xdSCy7l7BYOUuw7hhvQ==\",\n          \"published_date\": \"2023-11-08\"\n        },\n        {\n          \"title\": \"CrowdStrike (CRWD) Technical Analysis: RSI, Moving Averages & Support Levels | AltIndex\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuz7cuLzh1c1UvWd8cxr4JwdeJO1iiEXxnM1MZrjA1PWQ4xI1PkpCAYkCfygu1rUCUmUdzeeS_kJBKr0YVs89QTaQPrJHXPJaAM5AaI7LTsnojtkMykVtpGi2_8EWxg1z8tlfJ_SsfY_i6C5mx\",\n          \"published_date\": \"2024-02-24\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"META\",\n      \"news_score\": 10,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"Meta Platforms announced a massive investment in AI infrastructure by acquiring 350,000 Nvidia H100 GPUs, signaling a strong commitment to AI development."
+        },
+        "groundingChunkIndices": [
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 2341,
+          "endIndex": 2524,
+          "text": "However, the company faced significant negative news regarding allegations of deliberately targeting young users with addictive technology and ignoring warnings about harmful content."
+        },
+        "groundingChunkIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 2524,
+          "endIndex": 2597,
+          "text": "\",\n      \"catalyst\": \"Substantial investment and focus on AI development."
+        },
+        "groundingChunkIndices": [
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 2597,
+          "endIndex": 2716,
+          "text": "\",\n      \"risk\": \"Regulatory and legal challenges related to user safety, especially for young users, and data privacy."
+        },
+        "groundingChunkIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 2716,
+          "endIndex": 5013,
+          "text": "\",\n      \"sources\": [\n        {\n          \"title\": \"Zuckerberg's Meta Is Spending Billions to Buy 350,000 Nvidia H100 GPUs | PCMag\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaE9UbRlP1jDJvHFa7Kxr3qhJ8b0Wtt9nG1PBFo2L4taZaTNPxjlNmnkHcMfHqEBFFtKSK0m0DjgzVWuqvQwJEadXMyn9COgffnuZrTRyMPb18vQ3V302NsOxF955H-JNaLMdkX3OBU3p7W7IjdbqXOImjWZZWBRl7_wI3rzCyGRxF7BUQ6H0bIYa5xzoD5EBEaJJOqgyJggM\",\n          \"published_date\": \"2024-01-18\"\n        },\n        {\n          \"title\": \"Zuckerberg, Meta execs ignored warnings about harmful content on social media platforms, whistleblower tells Congress | Courthouse News Service\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW156kbX6pM_08iM3duavMFnltDZPsBm1TIfyFyAPFykfuJV7JZpSmCmTIIF2eyzvIYGM49nuzTnG7THADeLvnQmiKOOj2wyJ4IwDr-g1VDC8P-aX_bUmhd4f6T1ISs5CjIrrpx95_AWO3TFBnEeC8cTbLHXgls2Pl0MMXXxqIollKg7PxGh9FxZAxotGrm8isWb_6vMLn0bRA3waYfkbi3Y_eyuxY5Rxid07eJF7w35vrB-AksDJPE2oKqfmp0_G4Kmf--HrGspWpqe9VlQ==\",\n          \"published_date\": \"2023-11-07\"\n        },\n        {\n          \"title\": \"Meta deliberately targeted young users, ensnaring them with addictive tech, states claim\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPB-NJZeso6PcTNZoCx6KYF-iGW9YK_nPwxdt5dHlz6xlVwJXMff1uucP9LE6w0X7MOn4IrKQBXDQUhsVBOEPFRHK_yC2n15pOGsOhUvEWoPAZBeOkXvvnmwRlE0xcKpUju8VQCzQIlyyW2E42BGhOmi_f0TaZv0lB7np_I2mPq47wcA==\",\n          \"published_date\": \"2023-11-27\"\n        },\n        {\n          \"title\": \"Big News for Social Media Users in Europe: Meta's New Policy Change | iubenda\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGW8nPcOS6lz95nztFef_7o7DKjUxCgk3TvHMW8HzIjE74YBVvdRCm2o6bXF0MyEUljly34CrkU6q5NycF-rgnM6q5WsxGd4mlj0i0UALAK_gGdogpA5VKhXLyLgZMz_IetuuA0nFtSsidkOTYtorAUMRWGOdyLN--LWwV8h5T3v3JbO5NGCRZcDoT6TKw7vWR-rW8mQCCeHfj2Kso=\",\n          \"published_date\": \"2024-01-26\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"AMD\",\n      \"news_score\": 40,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"Advanced Micro Devices reported strong Q4 2023 results and significantly raised its 2024 outlook for data-center AI chip sales, driven by its new Instinct MI300X GPUs."
+        },
+        "groundingChunkIndices": [
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5014,
+          "endIndex": 5189,
+          "text": "However, the stock experienced a slight drop due to lighter-than-expected Q1 2024 guidance, and technical indicators suggest potential overvaluation and overbought conditions."
+        },
+        "groundingChunkIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5189,
+          "endIndex": 5284,
+          "text": "\",\n      \"catalyst\": \"Strong growth in AI chip sales and new product launches for AI workloads."
+        },
+        "groundingChunkIndices": [
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5284,
+          "endIndex": 5377,
+          "text": "\",\n      \"risk\": \"Lower-than-expected near-term revenue guidance and potential overvaluation."
+        },
+        "groundingChunkIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5377,
+          "endIndex": 7647,
+          "text": "\",\n      \"sources\": [\n        {\n          \"title\": \"AMD's Stock Drops 2.5% on Light Q1 Guidance, But It Raises 2024 Artificial Intelligence Chip Outlook | The Motley Fool\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO9XP7ppNg_cUQYXkEi5ho4_0n0JeC439yQewKVZz2eIG-nnX1wpltDPLozwrURYPi3jj_azB-Rt9Dqaw4rtOX55uL904V4EGnwU9UZK8wJ0SJxb8IXJQjh_41FFaXxZTNBFNxwx3MEYj_m6rYO4YE7Le0nxwZECBpOh0XKyJo9v19Nzmm51lJ4vs=\",\n          \"published_date\": \"2024-01-31\"\n        },\n        {\n          \"title\": \"AMD Stock Shows Strong Technical Performance, Raises Concerns of Overvaluation: Analysis - StockInvest.us\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGg9OsJ6SdjO27-gWYXvPqyv_KU_OT77StR_VN27qEfr5nzPHWW4L3dJuAB14TDKuyWZdNoG7oD5WJ1psSobrcL1zd4zYp58nKBqCdFxN4tsRPXt1fhkuF_mYBEJd35zaJDI6L0LsGazjpjJM8CiP13mvMvlwjtx7D79yRPuluEKhDB7yg6FEPCGaEWrX3d9bjg-hjh5DdQYxCp0b-GqzV3IHNcAKN48S-WeY-3VCoAYHZ\",\n          \"published_date\": \"2023-12-27\"\n        },\n        {\n          \"title\": \"AMD starts prep work for Zen 5 CPUs \u2014 multiple Linux patches signal Zen 5's upcoming arrival | Tom's Hardware\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG35nK02bKxwPvoYCJ1QuXsmUBoMpozuwAl6EVmsEEtQyLyOS3-yeirrJkA6zDvgH4pTtfgvBXS4UvOxkaAIQVrZ4FlZiqM3khMe95sKwe0UCIM6sQ2Lpr9gfLx1Rh7AB8W-WBi3qdRDSR-OIGGC-dO5EOj-uv94FWeWP1qUzEPJpH407IAZqm8qA==\",\n          \"published_date\": \"2023-12-27\"\n        },\n        {\n          \"title\": \"Why AMD Stock Soared in January (Spoiler Alert: It's All About AI) | The Motley Fool\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhZ0AVw64ekp-ZblBSnYIDeChKf03L50YfTqCHhOraogrHXjR2s4Ajrc8hmo138_-IQA7ur1Je31vVkhBq6VzOSoKfVC3iaCnDBnB5oPRte5mNx5dJ-2YK9qPlita0kJDMRuRnNO-yHk8Th9Wn0rAla5zCg2O8s_snM1bBUJMsZyfwf3U=\",\n          \"published_date\": \"2024-02-05\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"COIN\",\n      \"news_score\": 20,\n      \"confidence\": 0.7,\n      \"insufficient_information\": false,\n      \"summary\": \"Coinbase released a positive 2024 Crypto Market Outlook, indicating the end of the crypto winter and continued institutional interest in Bitcoin and overall market infrastructure development."
+        },
+        "groundingChunkIndices": [
+          8
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 7648,
+          "endIndex": 7799,
+          "text": "However, the company is actively engaged in a legal battle with the SEC, defending itself against allegations of operating as an unregistered exchange."
+        },
+        "groundingChunkIndices": [
+          9
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 7799,
+          "endIndex": 7907,
+          "text": "\",\n      \"catalyst\": \"Positive crypto market outlook and continued institutional adoption of digital assets."
+        },
+        "groundingChunkIndices": [
+          8
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 7907,
+          "endIndex": 8058,
+          "text": "\",\n      \"risk\": \"Ongoing legal challenges with the SEC regarding the classification of tokens as securities and operating as an unregistered exchange."
+        },
+        "groundingChunkIndices": [
+          9
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 8058,
+          "endIndex": 9412,
+          "text": "\",\n      \"sources\": [\n        {\n          \"title\": \"Coinbase 2024 Outlook Marks End of Crypto Winter, Ordinals Leading NFT Shift, Heralds Era of Prosperity - Bitcoin News\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdy8V18w_OnDQZ7K7iiPdwxvMoqlQH0GL4pkt5UpSccVKysBR6ROTAT8FbLD1PmjYknWuj5aKA-QYpWfcOgSjumiYst9RqjdW34XqRt0LUjg-HNs-qDCqljiEw8Bw6EadmRyYQ8AJJlbLVTRuTz-yzOqI5dfdR0KrFem4y-NE9120mNmy5YloYkZJs3Y2Z9YBME151AQOdHj8hszi-n4U8JO1WztHKBKaB1AFUzcaiQGxPLBy5DgifeQ==\",\n          \"published_date\": \"2023-12-19\"\n        },\n        {\n          \"title\": \"Coinbase takes its turn in court, arguing the tokens it listed are not securities | The Block\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVh2LWmWaJ64vtcOz5V0FqqVkWa7h2I_3oddawVzZc89hQy5H5EybUpBf0pnqT7-07hyjLKuPGyMJoQQl4D-ZeupmaN5c9ybjmCuQLI_TudvDT5H8_MuDfA0iEEpJ4vDj8QYE77BAJyVFzXQKVvEeob9ReONcOuw3dz7ZGwp28YB_Z7IzfOzNQWeAMM6v4LqpQ85Jy-Q8Eu8kI5XW2wUMLJcNZCiTRGqDSwnarNiA==\",\n          \"published_date\": \"2024-01-17\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"UBER\",\n      \"news_score\": -20,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"Uber successfully upsized a convertible senior notes offering and announced a $10 million commitment to combat gender-based violence."
+        },
+        "groundingChunkIndices": [
+          10,
+          11
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 9413,
+          "endIndex": 9496,
+          "text": "The company also implemented measures to address fraudulent customer refund claims."
+        },
+        "groundingChunkIndices": [
+          12
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 9497,
+          "endIndex": 9650,
+          "text": "However, Uber agreed to a significant $290 million settlement for wage theft claims in New York and is shutting down its Drizly alcohol delivery service."
+        },
+        "groundingChunkIndices": [
+          13,
+          14
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 9650,
+          "endIndex": 9768,
+          "text": "\",\n      \"catalyst\": \"Successful capital raise and initiatives to improve driver experience and social responsibility."
+        },
+        "groundingChunkIndices": [
+          12,
+          10,
+          11
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 9768,
+          "endIndex": 9866,
+          "text": "\",\n      \"risk\": \"Significant legal settlement costs and the closure of an acquired business unit."
+        },
+        "groundingChunkIndices": [
+          13,
+          14
+        ]
+      }
+    ],
+    "requested_count": 5,
+    "returned_count": 5,
+    "audit_pass_count": 5,
+    "usage_metadata": {
+      "promptTokenCount": 524,
+      "candidatesTokenCount": 5228,
+      "totalTokenCount": 10021,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 524
+        }
+      ],
+      "toolUsePromptTokenCount": 1576,
+      "toolUsePromptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1576
+        }
+      ],
+      "thoughtsTokenCount": 2693,
+      "serviceTier": "standard"
+    },
+    "finish_reason": "STOP"
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "```json\n{\n  \"as_of\": \"2024-01-31\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"CRWD\",\n      \"news_score\": 70,\n      \"confidence\": 0.9,\n      \"insufficient_information\": false,\n      \"summary\": \"CrowdStrike received significant positive news, including a high ranking on the Fortune Future 50 list, achieving a major ARR milestone, and recognition for its AI and identity protection solutions. Technical indicators also suggest a bullish trend, and analysts forecast strong earnings growth.\",\n      \"catalyst\": \"Strong market validation, rapid Annual Recurring Revenue (ARR) growth, and leadership in AI-driven cybersecurity.\",\n      \"risk\": \"None identified in the news within the search window.\",\n      \"sources\": [\n        {\n          \"title\": \"CrowdStrike Ranked #3 in 2023 Fortune Future 50 List - Investor Relations\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVEUs1MKIe7mUtmB6M770cxZph5sF5DDYiFhPpwRpYxC2luvLuPvN9msNki2WemKk8xWk_W4a8Gf1o1QzhbuacOhVzV7zSbPAZrIERqFdpmRZt7vBWwn4L2emWtAzI5z5qCp4CpKUW8BQCaECU-DWvJBreWxfdLjeVN8pX_34A85relA6IW6_wuJBp5xP-DVbgW8RqbZi6QWhSaSYh6BzTXJnumQdk0vb8\",\n          \"published_date\": \"2023-12-11\"\n        },\n        {\n          \"title\": \"Vantagepoint Stock of the Week CrowdStrike ($CRWD)\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZiJCb8t55CgULLCQq4SmxHUE2JkaOArvV5XVppnRFZZglUzKtXk8DrPPlK62JwnqRZvlngGlAH3GijAUpt0djlr0bmBsIfB6Ogi2K9TB5CF4dMucF9Xc3qnWq8q17JDegQDRz0XgorjnXN4usL1CdgZ6_cberyFRBe93xdSCy7l7BYOUuw7hhvQ==\",\n          \"published_date\": \"2023-11-08\"\n        },\n        {\n          \"title\": \"CrowdStrike (CRWD) Technical Analysis: RSI, Moving Averages & Support Levels | AltIndex\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuz7cuLzh1c1UvWd8cxr4JwdeJO1iiEXxnM1MZrjA1PWQ4xI1PkpCAYkCfygu1rUCUmUdzeeS_kJBKr0YVs89QTaQPrJHXPJaAM5AaI7LTsnojtkMykVtpGi2_8EWxg1z8tlfJ_SsfY_i6C5mx\",\n          \"published_date\": \"2024-02-24\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"META\",\n      \"news_score\": 10,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"Meta Platforms announced a massive investment in AI infrastructure by acquiring 350,000 Nvidia H100 GPUs, signaling a strong commitment to AI development. However, the company faced significant negative news regarding allegations of deliberately targeting young users with addictive technology and ignoring warnings about harmful content.\",\n      \"catalyst\": \"Substantial investment and focus on AI development.\",\n      \"risk\": \"Regulatory and legal challenges related to user safety, especially for young users, and data privacy.\",\n      \"sources\": [\n        {\n          \"title\": \"Zuckerberg's Meta Is Spending Billions to Buy 350,000 Nvidia H100 GPUs | PCMag\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaE9UbRlP1jDJvHFa7Kxr3qhJ8b0Wtt9nG1PBFo2L4taZaTNPxjlNmnkHcMfHqEBFFtKSK0m0DjgzVWuqvQwJEadXMyn9COgffnuZrTRyMPb18vQ3V302NsOxF955H-JNaLMdkX3OBU3p7W7IjdbqXOImjWZZWBRl7_wI3rzCyGRxF7BUQ6H0bIYa5xzoD5EBEaJJOqgyJggM\",\n          \"published_date\": \"2024-01-18\"\n        },\n        {\n          \"title\": \"Zuckerberg, Meta execs ignored warnings about harmful content on social media platforms, whistleblower tells Congress | Courthouse News Service\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW156kbX6pM_08iM3duavMFnltDZPsBm1TIfyFyAPFykfuJV7JZpSmCmTIIF2eyzvIYGM49nuzTnG7THADeLvnQmiKOOj2wyJ4IwDr-g1VDC8P-aX_bUmhd4f6T1ISs5CjIrrpx95_AWO3TFBnEeC8cTbLHXgls2Pl0MMXXxqIollKg7PxGh9FxZAxotGrm8isWb_6vMLn0bRA3waYfkbi3Y_eyuxY5Rxid07eJF7w35vrB-AksDJPE2oKqfmp0_G4Kmf--HrGspWpqe9VlQ==\",\n          \"published_date\": \"2023-11-07\"\n        },\n        {\n          \"title\": \"Meta deliberately targeted young users, ensnaring them with addictive tech, states claim\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPB-NJZeso6PcTNZoCx6KYF-iGW9YK_nPwxdt5dHlz6xlVwJXMff1uucP9LE6w0X7MOn4IrKQBXDQUhsVBOEPFRHK_yC2n15pOGsOhUvEWoPAZBeOkXvvnmwRlE0xcKpUju8VQCzQIlyyW2E42BGhOmi_f0TaZv0lB7np_I2mPq47wcA==\",\n          \"published_date\": \"2023-11-27\"\n        },\n        {\n          \"title\": \"Big News for Social Media Users in Europe: Meta's New Policy Change | iubenda\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGW8nPcOS6lz95nztFef_7o7DKjUxCgk3TvHMW8HzIjE74YBVvdRCm2o6bXF0MyEUljly34CrkU6q5NycF-rgnM6q5WsxGd4mlj0i0UALAK_gGdogpA5VKhXLyLgZMz_IetuuA0nFtSsidkOTYtorAUMRWGOdyLN--LWwV8h5T3v3JbO5NGCRZcDoT6TKw7vWR-rW8mQCCeHfj2Kso=\",\n          \"published_date\": \"2024-01-26\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"AMD\",\n      \"news_score\": 40,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"Advanced Micro Devices reported strong Q4 2023 results and significantly raised its 2024 outlook for data-center AI chip sales, driven by its new Instinct MI300X GPUs. However, the stock experienced a slight drop due to lighter-than-expected Q1 2024 guidance, and technical indicators suggest potential overvaluation and overbought conditions.\",\n      \"catalyst\": \"Strong growth in AI chip sales and new product launches for AI workloads.\",\n      \"risk\": \"Lower-than-expected near-term revenue guidance and potential overvaluation.\",\n      \"sources\": [\n        {\n          \"title\": \"AMD's Stock Drops 2.5% on Light Q1 Guidance, But It Raises 2024 Artificial Intelligence Chip Outlook | The Motley Fool\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO9XP7ppNg_cUQYXkEi5ho4_0n0JeC439yQewKVZz2eIG-nnX1wpltDPLozwrURYPi3jj_azB-Rt9Dqaw4rtOX55uL904V4EGnwU9UZK8wJ0SJxb8IXJQjh_41FFaXxZTNBFNxwx3MEYj_m6rYO4YE7Le0nxwZECBpOh0XKyJo9v19Nzmm51lJ4vs=\",\n          \"published_date\": \"2024-01-31\"\n        },\n        {\n          \"title\": \"AMD Stock Shows Strong Technical Performance, Raises Concerns of Overvaluation: Analysis - StockInvest.us\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGg9OsJ6SdjO27-gWYXvPqyv_KU_OT77StR_VN27qEfr5nzPHWW4L3dJuAB14TDKuyWZdNoG7oD5WJ1psSobrcL1zd4zYp58nKBqCdFxN4tsRPXt1fhkuF_mYBEJd35zaJDI6L0LsGazjpjJM8CiP13mvMvlwjtx7D79yRPuluEKhDB7yg6FEPCGaEWrX3d9bjg-hjh5DdQYxCp0b-GqzV3IHNcAKN48S-WeY-3VCoAYHZ\",\n          \"published_date\": \"2023-12-27\"\n        },\n        {\n          \"title\": \"AMD starts prep work for Zen 5 CPUs \u2014 multiple Linux patches signal Zen 5's upcoming arrival | Tom's Hardware\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG35nK02bKxwPvoYCJ1QuXsmUBoMpozuwAl6EVmsEEtQyLyOS3-yeirrJkA6zDvgH4pTtfgvBXS4UvOxkaAIQVrZ4FlZiqM3khMe95sKwe0UCIM6sQ2Lpr9gfLx1Rh7AB8W-WBi3qdRDSR-OIGGC-dO5EOj-uv94FWeWP1qUzEPJpH407IAZqm8qA==\",\n          \"published_date\": \"2023-12-27\"\n        },\n        {\n          \"title\": \"Why AMD Stock Soared in January (Spoiler Alert: It's All About AI) | The Motley Fool\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhZ0AVw64ekp-ZblBSnYIDeChKf03L50YfTqCHhOraogrHXjR2s4Ajrc8hmo138_-IQA7ur1Je31vVkhBq6VzOSoKfVC3iaCnDBnB5oPRte5mNx5dJ-2YK9qPlita0kJDMRuRnNO-yHk8Th9Wn0rAla5zCg2O8s_snM1bBUJMsZyfwf3U=\",\n          \"published_date\": \"2024-02-05\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"COIN\",\n      \"news_score\": 20,\n      \"confidence\": 0.7,\n      \"insufficient_information\": false,\n      \"summary\": \"Coinbase released a positive 2024 Crypto Market Outlook, indicating the end of the crypto winter and continued institutional interest in Bitcoin and overall market infrastructure development. However, the company is actively engaged in a legal battle with the SEC, defending itself against allegations of operating as an unregistered exchange.\",\n      \"catalyst\": \"Positive crypto market outlook and continued institutional adoption of digital assets.\",\n      \"risk\": \"Ongoing legal challenges with the SEC regarding the classification of tokens as securities and operating as an unregistered exchange.\",\n      \"sources\": [\n        {\n          \"title\": \"Coinbase 2024 Outlook Marks End of Crypto Winter, Ordinals Leading NFT Shift, Heralds Era of Prosperity - Bitcoin News\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdy8V18w_OnDQZ7K7iiPdwxvMoqlQH0GL4pkt5UpSccVKysBR6ROTAT8FbLD1PmjYknWuj5aKA-QYpWfcOgSjumiYst9RqjdW34XqRt0LUjg-HNs-qDCqljiEw8Bw6EadmRyYQ8AJJlbLVTRuTz-yzOqI5dfdR0KrFem4y-NE9120mNmy5YloYkZJs3Y2Z9YBME151AQOdHj8hszi-n4U8JO1WztHKBKaB1AFUzcaiQGxPLBy5DgifeQ==\",\n          \"published_date\": \"2023-12-19\"\n        },\n        {\n          \"title\": \"Coinbase takes its turn in court, arguing the tokens it listed are not securities | The Block\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVh2LWmWaJ64vtcOz5V0FqqVkWa7h2I_3oddawVzZc89hQy5H5EybUpBf0pnqT7-07hyjLKuPGyMJoQQl4D-ZeupmaN5c9ybjmCuQLI_TudvDT5H8_MuDfA0iEEpJ4vDj8QYE77BAJyVFzXQKVvEeob9ReONcOuw3dz7ZGwp28YB_Z7IzfOzNQWeAMM6v4LqpQ85Jy-Q8Eu8kI5XW2wUMLJcNZCiTRGqDSwnarNiA==\",\n          \"published_date\": \"2024-01-17\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"UBER\",\n      \"news_score\": -20,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"Uber successfully upsized a convertible senior notes offering and announced a $10 million commitment to combat gender-based violence. The company also implemented measures to address fraudulent customer refund claims. However, Uber agreed to a significant $290 million settlement for wage theft claims in New York and is shutting down its Drizly alcohol delivery service.\",\n      \"catalyst\": \"Successful capital raise and initiatives to improve driver experience and social responsibility.\",\n      \"risk\": \"Significant legal settlement costs and the closure of an acquired business unit.\",\n      \"sources\": [\n        {\n          \"title\": \"Uber and Lyft to pay $328M to settle wage theft claims in N.Y. court case | CBC News\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXpaA5m8ZkdtzcfiYCER876rTrp3R-zlqG-PBU2fqsENcpC2TpyvUZ-BeJOAH1EVGO6B8RMoSDIf0tzLC-_hipN4AVNaT1Zt-dkro66AaI4zq8mMLG6ugtW2u3Fl310Zpxv_v-X-fRqNmLkQ08gg==\",\n          \"published_date\": \"2023-11-02\"\n        },\n        {\n          \"title\": \"Uber cracking down on users who give bad ratings to get refunds - FOX 9\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUVcGVeu0uiL_-Z-YuOhSMDIRvLIeVu7yh-Ohk1jmNrwxa164Eqc224azG31M8Bwg2qVCUjbakOG-WD2-71XB3lksd3OUQV72hLtD2FXDRDIgGLJGwyVfnCAYitCZTgH1BRoHvhAhbNSCFzKfWtemDfov9WwRDT8-AdMb4fg==\",\n          \"published_date\": \"2023-11-15\"\n        },\n        {\n          \"title\": \"Uber Announces Pricing of Upsized $1.5 Billion Convertible Senior Notes Offering\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_cNGoy-HR0bM4lT-z3-bxG5_dz6wZVN16WyFY_KfG9VjHX_jVGjoH48wtIh8LrEDKvUBNJqU7LZ546AD8JnzAlrDNOTl8YCYel5BW8cuTDrq-3nJOFcrWN87_FWxq91Cq285Za_2lIXXDMZvAA9MBpMrr574AXccCZQtNhVMXyR_xh14bF6c8zirzgN28Il3haRRNErpunhPTtSsD-57xPHodJxoFc41K4lfMNkowRtYMDHV9Ze11GxNjVNQYD-4ncj94OmRq4wTsDP5QwPVIqrdtwPs6KKtsB1dD6g==\",\n          \"published_date\": \"2023-11-21\"\n        },\n        {\n          \"title\": \"Driving Change: Uber Commits $10 Million for Community Partnerships Working to End Gender-based Violence\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkOHjfZRdaT_ydeWtxktFFZeG6LtoYPBE-NvtEPAQPH_axkWdF9cLlq6k_1Ws6La3zridSkH8O9zP5ikCcrSJ7Dd762FHT8HlD_T6_oIhJojKXx0YcNwzwbOHH2FJFhw4dT3iHm53Ip3rmCJVOXeldS10=\",\n          \"published_date\": \"2023-12-05\"\n        },\n        {\n          \"title\": \"Uber to shut down Drizly, the alcohol delivery service it bought for $1.1 billion - CBS News\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8ipC6MTnJv7WXshZD5ZD68Xx8bEmV3aeD0MOT_8SDnM-9C9TfOnySM_bj6uUYaceOumC1QKEbvrotVKOjbPt5HtIS2Ay1Wv1129y7B-6mmidZCl2pLdKzChTqSgSi-1FboTWlKFDsOXStjejEPg6ajLf-6NNH\",\n          \"published_date\": \"2024-01-16\"\n        }\n      ]\n    }\n  ]\n}\n```"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "groundingMetadata": {
+          "searchEntryPoint": {
+            "renderedContent": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpt45c1XuLZPSohBF2fv7WvtOlIR8qfdfZMZIg9AuDwo-jAzF1E57T53a7meWSnKALdG0fbxNHhVMN5mL_oB-M1Z_xTXPIoRpHYnlyi3i_lZ54AgJmw0tkEiLxxHS-0aLsSUC0zWqXUcxzILOY3nkzuIM7iyqio_9WZjJIzxKyeyl_5o4aUFHjbzuaqx0wuL-KveN5vuy8-eQdGqotcJdYDNujEnS9be3_ZMaavvw=\">COIN news before:2024-02-01 after:2023-11-01</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPMxNyz-MWb5vKkG6uCZcqil3Wkn4txifKr9dG-cecPHmnpKYeGRbv0Ls_3iu7hDyZ7nuW4-zcwdcbzdyPaktIt0-bJECfCiIYVjRVMnffbTpQH3MYPtCaNGaHrqEnAU1RuOd70klAD1lob1x6tQvYMoVO1gzj19YI6JSGllszzLZLP14wv2N7stTErPYEEvpwxjoPG6xaQFuD87XWthyBODO7MOJocDu3kBljxziFfDoLef5G\">Advanced Micro Devices news 2023-11-02..2024-01-31</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQMkkSh84ZRqsa3touXOEGuao4K95Hd3_BNIIKIuQAKJ7uuTCqq6o9iXCexEffr18jMs-D_XZPr04fIDJ3J2_xnmYL-NDBYZ4MMH2h1nZiIau9dUJ5jR_EitnfOCzZO0Fh22IFUpPc17rgA9kzZLBCBJqGvu9NaaMqvhAN8Vgz-YpMYDkNviq5i_UqPLMj1o1KRyqSHKt95dqBkshJKomAedlUCHFpaHU3P97J\">Meta Platforms news 2023-11-02..2024-01-31</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdSpPpfWAu6pnAz95xenImJYC4Focrnpn7IK0tPPjuuMOH1Heit1EdlMmPS44mu5bX2oeoc-3pAWNoa8IEd88aFvOIiqFFio_S4Wqb_dnMi54n7n4zA0COaCJuerQOHHPkaRNVevMIAWavGDE1Kbw6uhi07fhZsljLZJIGdMeiTP5B6xhacTDYuygcMAvZEbbXJ5dk2xuaFK9STxjwGsPJcb4BFA1URT0c\">CrowdStrike news 2023-11-02..2024-01-31</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGCTOMaSKk0oxL7rI9JMJFuk1CFk2erCEY7aFDZyqVVCuSoJO2O6FbR72FrX5MVGVjHBlxxakEjHawPKlWaBgPxGhz9SHYzS95Bh1e7YSCHt-vIO_u6HavmslkAWEIh7dMAcOQSCg8RBjdunrWfc6MHxkSnxEXeCxVp8SQ_oH1KyOuZdIM_QjsyBKv0x1y5wGAwnTo0qK7g8M7rROnYkjlL4kEB5NZkIV1QLD4UpY8=\">CRWD news before:2024-02-01 after:2023-11-01</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHoPScEuL2zJ7ymRo8QtsOnrnvb-so37XofSLJ8rv3jFuV5XgcxIPnVWRtAq8tFHZ4naPxzaXQY4v6Cv8O3leUPlskIrSl_KRb5XfEva_T47SyXdtHZ5j6T0Lm3dGBeoSI02avUflR1r4H99jFPvO-wVIGHORixbItIQZFzMrpcLscPJjjpGS6nPBuFuBL8QA-0-ZMnUeAYGEVLolDWWHm17uL9KWddkFwcV4t9dA==\">AMD news before:2024-02-01 after:2023-11-01</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6c7B3V5GsTm39NMDkO_xkep8QWj4hVawrANlh5gcs1TRliHkRqtOmWTGNVeQMsUz2q6uejjC8qauKDsIdccOiXtlTNxwitUbytfooOy07oioLKF6nwyt7mBZ5vo3rRMN5loIPiN0Tq2lKkOlMmxEVRA7h2YeYAs2INpXOyfSVW6_8ps43BEmCATiLG0iM5_cRj4QZH5KLb_wqAyzahO4Bk9Pw4Ozp\">Coinbase news 2023-11-02..2024-01-31</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcpday-mZuYQ7-NrLpL7m7jhnt-5Xi_CAXom7VF2UV5BK-QtpffvE00AploEVeN4kl9ILuKNwGNfZcm43FPB3PxDJvvds6dQmYa5Yr25nVHSnz3UmRP6a2Ig-59CFma9gjg8mn8Q7odv0rGqR0Ue8Ae-2an09rY04KDINsbAnXb2Pd321MDysmS0xqRTD8JzVxNqLnhhj3L7ey0XHQI0UFdxQ6yCMTiNVAAFJwcFg=\">META news before:2024-02-01 after:2023-11-01</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHe6bTrmhD2XSCOPT2VYDf-LXWjB1bp80yAkCaQQ1brwpQf-VioCr_ZNbebRUMPiXL9MoS6DnSwBccIBaoaAQbWcbpiEtg6axmg4W9KF1oFdtbFg3YBKXrfzlS6Za3OEDTft5t1Q85v0guzlcSTXLetpDMHSDzh-U9htYtknEhzUclaEfxu2gI0xDcypm5pLx_sfE1JRG-TRWlpIkJe0pS4ZEY=\">Uber news 2023-11-02..2024-01-31</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmXmbmay7O_k1pml-U8mjs5rRp3qvSsx3jb0levQ3NEUqu62035IBODJMn8_dWBIYLNL1LnaL-0f0q07y2HbYI0R3nrKGETn0xQ9lHJBSXI-bPBxn-Nz7GDmETaiIrD1OLm2aIkmrA3aaxETRncb-sf7gCQMb2fNg_Nhkj1sgSFRQ5LrtOH5pgoGOOOSMH7tVwBhndejrHPdS52XGUwcB32ggd5a5Wcv2lqVfVpzs=\">UBER news before:2024-02-01 after:2023-11-01</a>\n  </div>\n</div>\n"
+          },
+          "groundingChunks": [
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVEUs1MKIe7mUtmB6M770cxZph5sF5DDYiFhPpwRpYxC2luvLuPvN9msNki2WemKk8xWk_W4a8Gf1o1QzhbuacOhVzV7zSbPAZrIERqFdpmRZt7vBWwn4L2emWtAzI5z5qCp4CpKUW8BQCaECU-DWvJBreWxfdLjeVN8pX_34A85relA6IW6_wuJBk5xP-DVbgW8RqbZi6QWhSaSYh6BzTXJnumQdk0vb8",
+                "title": "crowdstrike.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZiJCb8t55CgULLCQq4SmxHUE2JkaOArvV5XVppnRFZZglUzKtXk8DrPPlK62JwnqRZvlngGlAH3GijAUpt0djlr0bmBsIfB6Ogi2K9TB5CF4dMucF9Xc3qnWq8q17JDegQDRz0XgorjnXN4usL1CdgZ6_cberyFRBe93xdSCy7l7BYOUuw7hhvQ==",
+                "title": "vantagepointsoftware.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuz7cuLzh1c1UvWd8cxr4JwdeJO1iiEXxnM1MZrjA1PWQ4xI1PkpCAYkCfygu1rUCUmUdzeeS_kJBKr0YVs89QTaQPrJHXPJaAM5AaI7LTsnojtkMykVtpGi2_8EWxg1z8tlfJ_SsfY_i6C5mx",
+                "title": "altindex.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaE9UbRlP1jDJvHFa7Kxr3qhJ8b0Wtt9nG1PBFo2L4taZaTNPxjlNmnkHcMfHqEBFFtKSK0m0DjgzVWuqvQwJEadXMyn9COgffnuZrTRyMPb18vQ3V302NsOxF955H-JNaLMdkX3OBU3p7W7IjdbqXOImjWZZWBRl7_wI3rzCyGRxF7BUQ6H0bIYa5xzoD5EBEaJJOqgyJggM=",
+                "title": "pcmag.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW156kbX6pM_08iM3duavMFnltDZPsBm1TIfvFyAPFykfuJV7JZpSmCmTIIF2eyzvIYGM49nuzTnG7THADeLvnQmiKOOj2wyJ4IwDr-g1VDC8P-aX_bUmhd4f6T1ISs5CjIrrpx95_AWO3TFBnEeC8cTbLHXgls2Pl0MMXXxqIollKg7PxGh9FxZAxotGrm8isWb_6vMLn0bRA3waYfkbi3Y_eyuxY5Rxid07eJF7w35vrB-AksDJPE2oKqfmp0_G4Kmf--HrGspWpqe9VlQ==",
+                "title": "courthousenews.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPB-NJZeso6PcTNZoCx6KYF-iGW9YK_nPwxdt5dHlz6xlVwJXMff1uucP9LE6w0X7MOn4IrKQBXDQUhsVBOEPFRHK_yC2n15pOGsOhUvEWoPAZBeOkXvvnmwRlE0xcKpUju8VQCzQIlyyW2E42BGhOmi_f0TaZv0lB7np_I2mPq47wcA==",
+                "title": "cbsnews.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO9XP7ppNg_cUQYXkEi5ho4_0n0JeC439yQewKVZz2eIG-nnX1wpltDPLozwrURYPi3jj_azB-Rt9Dqaw4rtOX55uL904V4EGnwU9UZK8wJ0SJxb8IXJQjh_41FFaXxZTNBFNxwx3MEYj_m6rYO4YE7Le0nxwZECBpOh0XKyJo9v19Nzmm51lJ4vs=",
+                "title": "fool.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGg9OsJ6SdjO27-gWYXvPqyv_KU_OT77StR_VN27qEfr5nzPHWW4L3dJuAB14TDKuyWZdNoqG7oD5WJ1psSobrcL1zd4zYp58nKBqCdFxN4tsRPXt1fhkuF_mYBEJd35zaJDI6L0LsGazjpjJM8CiP13mvMvlwjtx7D79yRPuluEKhDB7yg6FEPCGaEWrX3d9bjg-hjh5DdQYxCp0b-GqzV3IHNcAKN48S-WeY-3VCoAYHZ",
+                "title": "stockinvest.us"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdy8V18w_OnDQZ7K7iiPdwxvMoqlQH0GL4pkt5UpSccVKysBR6ROTAT8FbLD1PmjYknWuj5aKA-QYpWfcOgSjumiYst9RqjdW34XqRt0LUjg-HNs-qDCqljiEw8Bw6EadmRyYQ8AJjlbLVTRuTz-yzOqI5dfdR0KrFem4y-NE9120mNmy5YloYkZJs3Y2Z9YBME151AQOdHj8hszi-n4U8JO1WztHKBKaB1AFUzcaiQGxPLBy5DgifeQ==",
+                "title": "bitcoin.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVh2LWmWaJ64vtcOz5V0FqqVkWa7h2I_3oddawVzZc89hQy5H5EybUpBf0pnqT7-07hyjLKuPGyMJoQQl4D-ZeupmaN5c9ybjmCuQLI_TudvDT5H8_MuDfA0iEEpJ4vDj8QYE77BAJyVFzXQKVvEeob9ReONcOuw3dz7ZGwp28YB_Z7IzfOzNQWeAMM6v4LqpQ85Jy-Q8Eu8kI5XW2wUMLJcNZCiTRGqDSwnarNiA=",
+                "title": "theblock.co"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_cNGoy-HR0bM4lT-z3-bxG5_dz6wZVN16WyFY_KfG9VjHX_jVGjoH48wtIh8LrEDKvUBNJqU7LZ546AD8JnzAlrDNOTl8YCYel5BW8cuTDrq-3nJOFcrWN87_FWxq91Cq285Za_2lIXXDMZvAA9MBpMrr574AXccCZQtNhVMXyR_xh14bF6c8zirzgN28Il3haRRNErpunhPTtSsD-57xPHodJxoFc41K4lfMNkowRtYMDHV9Ze11GxNjVNQYD-4ncj94OmRq4wTsDP5QwPVIqrdtwPs6KKtsB1dD6g==",
+                "title": "uber.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkOHjfZRdaT_ydeWtxktFFZeG6LtoYPBE-NvtEPAQPH_axkWdF9cLlq6k_1Ws6La3zridSkH8O9zP5ikCcrSJ7Dd762FHT8HlD_T6_oIhJojKXx0YcNwzwbOHH2FJFhw4dT3iHm53Ip3rmCJVOXeldS10=",
+                "title": "uber.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUVcGVeu0uiL_-Z-YuOhSMDIRvLIeVu7yh-Ohk1jmNrwxa164Eqc224azG31M8Bwg2qVCUjbakOG-WD2-71XB3lksd3OUQV72hLtD2FXDRDIgGLJGwyVfnCAYitCZTgH1BRoHvhAhbNSCFzKfWtemDfov9WwRDT8-AdMb4fg==",
+                "title": "fox9.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXpaA5m8ZkdtzcfiYCER876rTrp3R-zlqG-PBU2fqsENcpC2TpyvUZ-BeJOAH1EVGO6B8RMoSDIf0tzLC-_hipN4AVNaT1Zt-dkro66AaI4zq8mMLG6ugtW2u3Fl310Zpxv_v-X-fRqNmLkQ08gg==",
+                "title": "cbc.ca"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8ipC6MTnJv7WXshZD5ZD68Xx8bEmV3aeD0MOT_8SDnM-9C9TfOnySM_bjv6uUYaceOumC1QKEbvrotVKOjbPt5HtIS2Ay1Wv1129y7B-mmidZCl2pLdKzChTqSgSi-1FboTWlKFDsOXStjejEPg6ajLf-6NNH",
+                "title": "cbsnews.com"
+              }
+            }
+          ],
+          "groundingSupports": [
+            {
+              "segment": {
+                "endIndex": 416,
+                "text": "```json\n{\n  \"as_of\": \"2024-01-31\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"CRWD\",\n      \"news_score\": 70,\n      \"confidence\": 0.9,\n      \"insufficient_information\": false,\n      \"summary\": \"CrowdStrike received significant positive news, including a high ranking on the Fortune Future 50 list, achieving a major ARR milestone, and recognition for its AI and identity protection solutions."
+              },
+              "groundingChunkIndices": [
+                0
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 417,
+                "endIndex": 513,
+                "text": "Technical indicators also suggest a bullish trend, and analysts forecast strong earnings growth."
+              },
+              "groundingChunkIndices": [
+                1,
+                2
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 513,
+                "endIndex": 648,
+                "text": "\",\n      \"catalyst\": \"Strong market validation, rapid Annual Recurring Revenue (ARR) growth, and leadership in AI-driven cybersecurity."
+              },
+              "groundingChunkIndices": [
+                0
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 648,
+                "endIndex": 2340,
+                "text": "\",\n      \"risk\": \"None identified in the news within the search window.\",\n      \"sources\": [\n        {\n          \"title\": \"CrowdStrike Ranked #3 in 2023 Fortune Future 50 List - Investor Relations\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVEUs1MKIe7mUtmB6M770cxZph5sF5DDYiFhPpwRpYxC2luvLuPvN9msNki2WemKk8xWk_W4a8Gf1o1QzhbuacOhVzV7zSbPAZrIERqFdpmRZt7vBWwn4L2emWtAzI5z5qCp4CpKUW8BQCaECU-DWvJBreWxfdLjeVN8pX_34A85relA6IW6_wuJBp5xP-DVbgW8RqbZi6QWhSaSYh6BzTXJnumQdk0vb8\",\n          \"published_date\": \"2023-12-11\"\n        },\n        {\n          \"title\": \"Vantagepoint Stock of the Week CrowdStrike ($CRWD)\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZiJCb8t55CgULLCQq4SmxHUE2JkaOArvV5XVppnRFZZglUzKtXk8DrPPlK62JwnqRZvlngGlAH3GijAUpt0djlr0bmBsIfB6Ogi2K9TB5CF4dMucF9Xc3qnWq8q17JDegQDRz0XgorjnXN4usL1CdgZ6_cberyFRBe93xdSCy7l7BYOUuw7hhvQ==\",\n          \"published_date\": \"2023-11-08\"\n        },\n        {\n          \"title\": \"CrowdStrike (CRWD) Technical Analysis: RSI, Moving Averages & Support Levels | AltIndex\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuz7cuLzh1c1UvWd8cxr4JwdeJO1iiEXxnM1MZrjA1PWQ4xI1PkpCAYkCfygu1rUCUmUdzeeS_kJBKr0YVs89QTaQPrJHXPJaAM5AaI7LTsnojtkMykVtpGi2_8EWxg1z8tlfJ_SsfY_i6C5mx\",\n          \"published_date\": \"2024-02-24\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"META\",\n      \"news_score\": 10,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"Meta Platforms announced a massive investment in AI infrastructure by acquiring 350,000 Nvidia H100 GPUs, signaling a strong commitment to AI development."
+              },
+              "groundingChunkIndices": [
+                3
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 2341,
+                "endIndex": 2524,
+                "text": "However, the company faced significant negative news regarding allegations of deliberately targeting young users with addictive technology and ignoring warnings about harmful content."
+              },
+              "groundingChunkIndices": [
+                4,
+                5
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 2524,
+                "endIndex": 2597,
+                "text": "\",\n      \"catalyst\": \"Substantial investment and focus on AI development."
+              },
+              "groundingChunkIndices": [
+                3
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 2597,
+                "endIndex": 2716,
+                "text": "\",\n      \"risk\": \"Regulatory and legal challenges related to user safety, especially for young users, and data privacy."
+              },
+              "groundingChunkIndices": [
+                4,
+                5
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 2716,
+                "endIndex": 5013,
+                "text": "\",\n      \"sources\": [\n        {\n          \"title\": \"Zuckerberg's Meta Is Spending Billions to Buy 350,000 Nvidia H100 GPUs | PCMag\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaE9UbRlP1jDJvHFa7Kxr3qhJ8b0Wtt9nG1PBFo2L4taZaTNPxjlNmnkHcMfHqEBFFtKSK0m0DjgzVWuqvQwJEadXMyn9COgffnuZrTRyMPb18vQ3V302NsOxF955H-JNaLMdkX3OBU3p7W7IjdbqXOImjWZZWBRl7_wI3rzCyGRxF7BUQ6H0bIYa5xzoD5EBEaJJOqgyJggM\",\n          \"published_date\": \"2024-01-18\"\n        },\n        {\n          \"title\": \"Zuckerberg, Meta execs ignored warnings about harmful content on social media platforms, whistleblower tells Congress | Courthouse News Service\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW156kbX6pM_08iM3duavMFnltDZPsBm1TIfyFyAPFykfuJV7JZpSmCmTIIF2eyzvIYGM49nuzTnG7THADeLvnQmiKOOj2wyJ4IwDr-g1VDC8P-aX_bUmhd4f6T1ISs5CjIrrpx95_AWO3TFBnEeC8cTbLHXgls2Pl0MMXXxqIollKg7PxGh9FxZAxotGrm8isWb_6vMLn0bRA3waYfkbi3Y_eyuxY5Rxid07eJF7w35vrB-AksDJPE2oKqfmp0_G4Kmf--HrGspWpqe9VlQ==\",\n          \"published_date\": \"2023-11-07\"\n        },\n        {\n          \"title\": \"Meta deliberately targeted young users, ensnaring them with addictive tech, states claim\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPB-NJZeso6PcTNZoCx6KYF-iGW9YK_nPwxdt5dHlz6xlVwJXMff1uucP9LE6w0X7MOn4IrKQBXDQUhsVBOEPFRHK_yC2n15pOGsOhUvEWoPAZBeOkXvvnmwRlE0xcKpUju8VQCzQIlyyW2E42BGhOmi_f0TaZv0lB7np_I2mPq47wcA==\",\n          \"published_date\": \"2023-11-27\"\n        },\n        {\n          \"title\": \"Big News for Social Media Users in Europe: Meta's New Policy Change | iubenda\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGW8nPcOS6lz95nztFef_7o7DKjUxCgk3TvHMW8HzIjE74YBVvdRCm2o6bXF0MyEUljly34CrkU6q5NycF-rgnM6q5WsxGd4mlj0i0UALAK_gGdogpA5VKhXLyLgZMz_IetuuA0nFtSsidkOTYtorAUMRWGOdyLN--LWwV8h5T3v3JbO5NGCRZcDoT6TKw7vWR-rW8mQCCeHfj2Kso=\",\n          \"published_date\": \"2024-01-26\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"AMD\",\n      \"news_score\": 40,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"Advanced Micro Devices reported strong Q4 2023 results and significantly raised its 2024 outlook for data-center AI chip sales, driven by its new Instinct MI300X GPUs."
+              },
+              "groundingChunkIndices": [
+                6
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 5014,
+                "endIndex": 5189,
+                "text": "However, the stock experienced a slight drop due to lighter-than-expected Q1 2024 guidance, and technical indicators suggest potential overvaluation and overbought conditions."
+              },
+              "groundingChunkIndices": [
+                6,
+                7
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 5189,
+                "endIndex": 5284,
+                "text": "\",\n      \"catalyst\": \"Strong growth in AI chip sales and new product launches for AI workloads."
+              },
+              "groundingChunkIndices": [
+                6
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 5284,
+                "endIndex": 5377,
+                "text": "\",\n      \"risk\": \"Lower-than-expected near-term revenue guidance and potential overvaluation."
+              },
+              "groundingChunkIndices": [
+                6,
+                7
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 5377,
+                "endIndex": 7647,
+                "text": "\",\n      \"sources\": [\n        {\n          \"title\": \"AMD's Stock Drops 2.5% on Light Q1 Guidance, But It Raises 2024 Artificial Intelligence Chip Outlook | The Motley Fool\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO9XP7ppNg_cUQYXkEi5ho4_0n0JeC439yQewKVZz2eIG-nnX1wpltDPLozwrURYPi3jj_azB-Rt9Dqaw4rtOX55uL904V4EGnwU9UZK8wJ0SJxb8IXJQjh_41FFaXxZTNBFNxwx3MEYj_m6rYO4YE7Le0nxwZECBpOh0XKyJo9v19Nzmm51lJ4vs=\",\n          \"published_date\": \"2024-01-31\"\n        },\n        {\n          \"title\": \"AMD Stock Shows Strong Technical Performance, Raises Concerns of Overvaluation: Analysis - StockInvest.us\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGg9OsJ6SdjO27-gWYXvPqyv_KU_OT77StR_VN27qEfr5nzPHWW4L3dJuAB14TDKuyWZdNoG7oD5WJ1psSobrcL1zd4zYp58nKBqCdFxN4tsRPXt1fhkuF_mYBEJd35zaJDI6L0LsGazjpjJM8CiP13mvMvlwjtx7D79yRPuluEKhDB7yg6FEPCGaEWrX3d9bjg-hjh5DdQYxCp0b-GqzV3IHNcAKN48S-WeY-3VCoAYHZ\",\n          \"published_date\": \"2023-12-27\"\n        },\n        {\n          \"title\": \"AMD starts prep work for Zen 5 CPUs \u2014 multiple Linux patches signal Zen 5's upcoming arrival | Tom's Hardware\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG35nK02bKxwPvoYCJ1QuXsmUBoMpozuwAl6EVmsEEtQyLyOS3-yeirrJkA6zDvgH4pTtfgvBXS4UvOxkaAIQVrZ4FlZiqM3khMe95sKwe0UCIM6sQ2Lpr9gfLx1Rh7AB8W-WBi3qdRDSR-OIGGC-dO5EOj-uv94FWeWP1qUzEPJpH407IAZqm8qA==\",\n          \"published_date\": \"2023-12-27\"\n        },\n        {\n          \"title\": \"Why AMD Stock Soared in January (Spoiler Alert: It's All About AI) | The Motley Fool\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhZ0AVw64ekp-ZblBSnYIDeChKf03L50YfTqCHhOraogrHXjR2s4Ajrc8hmo138_-IQA7ur1Je31vVkhBq6VzOSoKfVC3iaCnDBnB5oPRte5mNx5dJ-2YK9qPlita0kJDMRuRnNO-yHk8Th9Wn0rAla5zCg2O8s_snM1bBUJMsZyfwf3U=\",\n          \"published_date\": \"2024-02-05\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"COIN\",\n      \"news_score\": 20,\n      \"confidence\": 0.7,\n      \"insufficient_information\": false,\n      \"summary\": \"Coinbase released a positive 2024 Crypto Market Outlook, indicating the end of the crypto winter and continued institutional interest in Bitcoin and overall market infrastructure development."
+              },
+              "groundingChunkIndices": [
+                8
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 7648,
+                "endIndex": 7799,
+                "text": "However, the company is actively engaged in a legal battle with the SEC, defending itself against allegations of operating as an unregistered exchange."
+              },
+              "groundingChunkIndices": [
+                9
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 7799,
+                "endIndex": 7907,
+                "text": "\",\n      \"catalyst\": \"Positive crypto market outlook and continued institutional adoption of digital assets."
+              },
+              "groundingChunkIndices": [
+                8
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 7907,
+                "endIndex": 8058,
+                "text": "\",\n      \"risk\": \"Ongoing legal challenges with the SEC regarding the classification of tokens as securities and operating as an unregistered exchange."
+              },
+              "groundingChunkIndices": [
+                9
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 8058,
+                "endIndex": 9412,
+                "text": "\",\n      \"sources\": [\n        {\n          \"title\": \"Coinbase 2024 Outlook Marks End of Crypto Winter, Ordinals Leading NFT Shift, Heralds Era of Prosperity - Bitcoin News\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdy8V18w_OnDQZ7K7iiPdwxvMoqlQH0GL4pkt5UpSccVKysBR6ROTAT8FbLD1PmjYknWuj5aKA-QYpWfcOgSjumiYst9RqjdW34XqRt0LUjg-HNs-qDCqljiEw8Bw6EadmRyYQ8AJJlbLVTRuTz-yzOqI5dfdR0KrFem4y-NE9120mNmy5YloYkZJs3Y2Z9YBME151AQOdHj8hszi-n4U8JO1WztHKBKaB1AFUzcaiQGxPLBy5DgifeQ==\",\n          \"published_date\": \"2023-12-19\"\n        },\n        {\n          \"title\": \"Coinbase takes its turn in court, arguing the tokens it listed are not securities | The Block\",\n          \"url\": \"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVh2LWmWaJ64vtcOz5V0FqqVkWa7h2I_3oddawVzZc89hQy5H5EybUpBf0pnqT7-07hyjLKuPGyMJoQQl4D-ZeupmaN5c9ybjmCuQLI_TudvDT5H8_MuDfA0iEEpJ4vDj8QYE77BAJyVFzXQKVvEeob9ReONcOuw3dz7ZGwp28YB_Z7IzfOzNQWeAMM6v4LqpQ85Jy-Q8Eu8kI5XW2wUMLJcNZCiTRGqDSwnarNiA==\",\n          \"published_date\": \"2024-01-17\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"UBER\",\n      \"news_score\": -20,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"Uber successfully upsized a convertible senior notes offering and announced a $10 million commitment to combat gender-based violence."
+              },
+              "groundingChunkIndices": [
+                10,
+                11
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 9413,
+                "endIndex": 9496,
+                "text": "The company also implemented measures to address fraudulent customer refund claims."
+              },
+              "groundingChunkIndices": [
+                12
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 9497,
+                "endIndex": 9650,
+                "text": "However, Uber agreed to a significant $290 million settlement for wage theft claims in New York and is shutting down its Drizly alcohol delivery service."
+              },
+              "groundingChunkIndices": [
+                13,
+                14
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 9650,
+                "endIndex": 9768,
+                "text": "\",\n      \"catalyst\": \"Successful capital raise and initiatives to improve driver experience and social responsibility."
+              },
+              "groundingChunkIndices": [
+                12,
+                10,
+                11
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 9768,
+                "endIndex": 9866,
+                "text": "\",\n      \"risk\": \"Significant legal settlement costs and the closure of an acquired business unit."
+              },
+              "groundingChunkIndices": [
+                13,
+                14
+              ]
+            }
+          ],
+          "webSearchQueries": [
+            "CrowdStrike news 2023-11-02..2024-01-31",
+            "CRWD news before:2024-02-01 after:2023-11-01",
+            "Meta Platforms news 2023-11-02..2024-01-31",
+            "META news before:2024-02-01 after:2023-11-01",
+            "Advanced Micro Devices news 2023-11-02..2024-01-31",
+            "AMD news before:2024-02-01 after:2023-11-01",
+            "Coinbase news 2023-11-02..2024-01-31",
+            "COIN news before:2024-02-01 after:2023-11-01",
+            "Uber news 2023-11-02..2024-01-31",
+            "UBER news before:2024-02-01 after:2023-11-01"
+          ]
+        }
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 524,
+      "candidatesTokenCount": 5228,
+      "totalTokenCount": 10021,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 524
+        }
+      ],
+      "toolUsePromptTokenCount": 1576,
+      "toolUsePromptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1576
+        }
+      ],
+      "thoughtsTokenCount": 2693,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "h6NlaobbFYS9juMP5IjzyA0"
+  }
+}
