@@ -1,5 +1,5 @@
 {
-  "created_on": "2026-07-22",
+  "created_on": "2026-09-19",
   "model_fingerprint": "51a8d0fd6819ec5b",
   "model_training_end": "2025-07-10",
   "strategy_revision": 2,
@@ -77,6 +77,6 @@
     "first_date": "2025-07-11",
     "last_date": "2026-07-10"
   },
-  "training_data_quality_report": "../training/RL_CODEX_3_DATA_QUALITY_V2.json",
-  "simulation_data_quality_report": "CODEX_SIMULATION_3_V2_DATA_QUALITY.json"
+  "training_data_quality_report": "/Users/aaryangupta/Desktop/Programming/Reinforcement Learning! /Trading the stock market /Before 26th July/Models/RL_Codex_3_V2_34.63pct/data/training/RL_CODEX_3_DATA_QUALITY_V2.json",
+  "simulation_data_quality_report": "/Users/aaryangupta/Desktop/Programming/Reinforcement Learning! /Trading the stock market /Before 26th July/Models/RL_Codex_3_V2_34.63pct/data/simulation/CODEX_SIMULATION_3_V2_DATA_QUALITY.json"
 }

@@ -1,3 +1,7 @@
 {
-    "python-envs.defaultEnvManager": "ms-python.python:system"
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/Before 26th July/Models/RL_Codex_3_V2_34.63pct/source"
+    ]
 }
