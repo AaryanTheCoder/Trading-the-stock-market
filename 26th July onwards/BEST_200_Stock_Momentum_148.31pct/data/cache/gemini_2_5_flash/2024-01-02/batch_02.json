@@ -1,0 +1,570 @@
+{
+  "schema_version": 1,
+  "prompt_version": "news-score-v1",
+  "model": "gemini-2.5-flash",
+  "as_of": "2024-01-02",
+  "created_at": "2026-07-26T06:01:20.139091+00:00",
+  "prompt_sha256": "835d8f45b85770ef610e0351ce0bb8819e20fa566e9833e130610be4e2b208e1",
+  "requested_tickers": [
+    "UBER",
+    "CCL",
+    "AMD",
+    "PANW",
+    "TSLA"
+  ],
+  "records": [
+    {
+      "ticker": "UBER",
+      "company": "Uber",
+      "sector": "Industrials",
+      "as_of": "2024-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "No qualifying news was found for Uber Technologies within the specified search window.",
+      "catalyst": "None.",
+      "risk": "None.",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "CCL",
+      "company": "Carnival Corporation",
+      "sector": "Consumer Discretionary",
+      "as_of": "2024-01-02",
+      "raw_news_score": 0.7,
+      "confidence": 0.8,
+      "effective_news_score": 0.5599999999999999,
+      "insufficient_information": false,
+      "audit_passed": true,
+      "audit_reasons": [],
+      "summary": "Carnival Corporation reported record full-year 2023 revenues of $21.6 billion and record fourth-quarter revenues of $5.4 billion, with positive adjusted net income for the full year. The company also entered 2024 with its best booked position on record for both price and occupancy, and total customer deposits reached a fourth-quarter record of $6.4 billion.",
+      "catalyst": "Record full-year and fourth-quarter revenues, positive adjusted net income for the full year, and a record booked position for 2024 indicate strong demand and financial recovery.",
+      "risk": "While the company made significant debt payments, it still has a substantial debt balance.",
+      "accepted_sources": [
+        {
+          "title": "Carnival Corp. Reports Record 2023 Revenue and Fourth Quarter Earnings",
+          "url": "https://www.cruiseindustrynews.com/cruise-news/30990-carnival-corp-reports-record-2023-revenue-and-fourth-quarter-earnings.html",
+          "published_date": "2023-12-21"
+        },
+        {
+          "title": "2023 4Q Earnings Release (8-K) - Carnival Corporation",
+          "url": "https://ir.carnivalcorp.com/static-files/1100122a-122c-411a-812a-122c1100122a",
+          "published_date": "2023-12-21"
+        },
+        {
+          "title": "CARNIVAL CORPORATION & PLC REPORTS RECORD FOURTH QUARTER AND FULL YEAR REVENUES WITH CONTINUED STRONG BOOKINGS AND EARNINGS MOMENTUM",
+          "url": "https://www.prnewswire.com/news-releases/carnival-corporation--plc-reports-record-fourth-quarter-and-full-year-revenues-with-continued-strong-bookings-and-earnings-momentum-302021200.html",
+          "published_date": "2023-12-21"
+        }
+      ],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "sector": "Information Technology",
+      "as_of": "2024-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "No qualifying news was found for Advanced Micro Devices within the specified search window.",
+      "catalyst": "None.",
+      "risk": "None.",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "PANW",
+      "company": "Palo Alto Networks",
+      "sector": "Information Technology",
+      "as_of": "2024-01-02",
+      "raw_news_score": 0.0,
+      "confidence": 0.0,
+      "effective_news_score": 0.0,
+      "insufficient_information": true,
+      "audit_passed": false,
+      "audit_reasons": [
+        "model_reported_insufficient_information",
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "No qualifying news was found for Palo Alto Networks within the specified search window.",
+      "catalyst": "None.",
+      "risk": "None.",
+      "accepted_sources": [],
+      "rejected_sources": []
+    },
+    {
+      "ticker": "TSLA",
+      "company": "Tesla, Inc.",
+      "sector": "Consumer Discretionary",
+      "as_of": "2024-01-02",
+      "raw_news_score": -0.5,
+      "confidence": 0.7,
+      "effective_news_score": 0.0,
+      "insufficient_information": false,
+      "audit_passed": false,
+      "audit_reasons": [
+        "no_source_with_valid_point_in_time_date"
+      ],
+      "summary": "Tesla reported Q3 2023 vehicle deliveries of 435,059, missing analyst estimates of 461,640, due to planned factory downtimes for upgrades. Despite the sequential decline, Tesla maintained its 2023 volume target of approximately 1.8 million vehicles.",
+      "catalyst": "The company's commitment to its 2023 volume target of 1.8 million vehicles, despite Q3 production dips, suggests confidence in future production capabilities.",
+      "risk": "Q3 2023 vehicle deliveries missed analyst estimates, and a sequential decline in production and deliveries could raise concerns about short-term growth.",
+      "accepted_sources": [],
+      "rejected_sources": [
+        {
+          "title": "Tesla reports dip in production, deliveries in 3rd quarter | Fox Business",
+          "url": "https://www.foxbusiness.com/markets/tesla-reports-dip-production-deliveries-3rd-quarter",
+          "published_date": "2023-10-02"
+        },
+        {
+          "title": "Tesla (TSLA) reports 435059 vehicle deliveries in Q3 2023, missing analyst estimates",
+          "url": "https://www.shacknews.com/article/137090/tesla-tsla-reports-435059-vehicle-deliveries-in-q3-2023-missing-analyst-estimates",
+          "published_date": "2023-10-02"
+        },
+        {
+          "title": "Tesla Vehicle Production & Deliveries and Date for Financial Results & Webcast for Third Quarter 2023",
+          "url": "https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-third-quarter-2023",
+          "published_date": "2023-10-02"
+        },
+        {
+          "title": "Tesla Production and Vehicle Delivery Performance Slows in Q3 | - Bob Ferrari",
+          "url": "https://supplychainmatters.substack.com/p/tesla-production-and-vehicle-delivery",
+          "published_date": "2023-10-03"
+        },
+        {
+          "title": "Tesla Vehicle Production & Deliveries and Date for Financial Results & Webcast for Third Quarter 2023 | Nasdaq",
+          "url": "https://www.nasdaq.com/press-release/tesla-vehicle-production-deliveries-and-date-for-financial-results-webcast-for-third",
+          "published_date": "2023-10-02"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "web_search_queries": [
+      "UBER news 2023-10-04 to 2024-01-02",
+      "Uber Technologies news catalyst 2023-10-04 to 2024-01-02",
+      "Carnival Corporation news 2023-10-04 to 2024-01-02",
+      "CCL news catalyst 2023-10-04 to 2024-01-02",
+      "Advanced Micro Devices news 2023-10-04 to 2024-01-02",
+      "AMD news catalyst 2023-10-04 to 2024-01-02",
+      "Palo Alto Networks news 2023-10-04 to 2024-01-02",
+      "PANW news catalyst 2023-10-04 to 2024-01-02",
+      "Tesla, Inc. news 2023-10-04 to 2024-01-02",
+      "TSLA news catalyst 2023-10-04 to 2024-01-02",
+      "UBER news 2023-10-04..2024-01-02",
+      "Carnival Corporation CCL news 2023-10-04..2024-01-02",
+      "Advanced Micro Devices AMD news 2023-10-04..2024-01-02",
+      "Palo Alto Networks PANW news 2023-10-04..2024-01-02",
+      "Tesla TSLA news 2023-10-04..2024-01-02",
+      "Carnival Corporation FY 2023 earnings release November 2023",
+      "Tesla Q3 2023 production and deliveries report October 2023"
+    ],
+    "grounding_sources": [
+      {
+        "title": "cruiseindustrynews.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVOAKluwv4i0r2kSpbVw57UNuROPWQXF_DdX9bgJSZ69QkOYEAYV72sviffgCxIziqFHtf-k61uM0tCw-QtvvJMHgIMfmc70sF6y8bX6sVW4aMBqdJqoBeGNSZ6uUoZLfJPQsYpeudeP8ShFRYylPa7iRZ7BDkb9Nob2h0hKVtReXA1e3TcqxL5tljnXoh6PLTl-8G_M4SUJidGzpeBru243lruoepOvyfWmLb1H2x2kJe0Q=="
+      },
+      {
+        "title": "carnivalcorp.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcsYa2L4Q98yLO3jv8l4JgHhbU4QU1pIA01ek-XNfXWh7ACQfv_mSvyhDnoB6--aouUJ9NXhatxdCpl0W-ZN_ui9xAN66sLzzA0llHbtKVLBhfRX3w-TqpZmqjJYWwWLJe6DwLafFKnOnEOv2b5eHPpS8WVCLswRgktDc0sxCX-3jSRXEwEALR3JpX6VrMjZyF-KyHMN3nNQ=="
+      },
+      {
+        "title": "prnewswire.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHivqRFD6Pmm048rr7LBXP7lqtyEYvmED0I-EfE0oGSctMmxfGW0zJJNW-u6q_BL48AUkzWjs4umHSnf69ImjFCLXcNld2_QBb_WL6qkC9VOOsba4u6utAnnrpJSRFzUCpZseAtDfFkkwCtCkaZtmN9GcbcSnD87lySI6mqbFLjY3xkc3ec_0SyJWWRvG43LzR7Iaag3U_ImqyURCqItbWvA2OUDf0ME559dInJA1aYfHPOWmT6y4IZ85aAeNG0em_Rer_EBYX8e4g9akelPNQU7BiSVzF8-jK5SKAMsmpDVXAoX4Nv3C7uxWANi8zkEZ2wJWQSEM="
+      },
+      {
+        "title": "foxbusiness.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwMTiJOcq44MBavBXNrEJWkvTEhqPJlcTvmHuGkUU0axgJgqk0zm2KbQRz6bZ-25dT1bhPWFgtB8T5bCmLJgptbtY1X0BPo5mT1a4AL2rIXOh4ln9RXKCd6Ti56CcSFqsIXSA0j1f0kli1LuqpBw976c3ANGxH3oizWIvhf0Wjx5JH_sjrEBOz7FeNwmoEv31tsis="
+      },
+      {
+        "title": "shacknews.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrcF1c6lC-wgZmZOJS228GBTBDEGlTtokQT9ly0gMZphP31lQK9oTxjSvj3d1Yl9nnsTQjFTP64rckqG8c3PsiDma0KddcITHmr9tFjuoeSqjZ4sCEArbCTQWGcT8PiKT5RdJlaHDHS1XLdFz5oPjjmv8HMe1RKIJPvwarUjOTGMBFDdcTRq_A"
+      },
+      {
+        "title": "tesla.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEoJWasGFhkzdS-g5vFNYG4QaXFBudPTES0QGgzissbCI-BVF0xB9-7rDUFP_J-oxwpCbKebh9RxK7gC9LBn5S1-viTKD3-mng0bc_DUCASh8xEbtxq5loXc2DstYoD8RLiqR1GNnPXfeqNmHs0TmuSQ7KNTTNFDyfcIca8_PsQryqy4oDHKW-TVBYhwLVbY-ortVHKtJ0krNFj6NZp2znNghs8euIceAQ3WMPP0mOgWLp6OP4Oww=="
+      },
+      {
+        "title": "theferrarigroup.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGY6dBT9EgzppfJSknpW7ElJByjdabprwYXt7TODV80LgJGaOFEMWOsPtIOqh1bshwWkbDhihMob4gsr2ELn9s1yEHey9AvgjPXqA9ujMfWBFBXzCoTL9e1hgxkLELIVPwYMoM6ifc6ct9gYI_mFmJW_EM6IrLA6vUEeV-N640iNi22UqszAySs9-KVcRUvjZcm2SIj"
+      },
+      {
+        "title": "nasdaq.com",
+        "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWAVqFwG6mbm5x4cnujxRciTTtvHX5KJ8nAwZH9o8L1GTCV2NXLJCtU4ND-j6Yed8S98mea0nxWeHTGUeMeZk_maMDdqOqELzNl2ognNZMgwh6yRQE-4RSvzOzx81kybLSd7Jw6OUId-pFwb5zo1qS5t9v4a7y9laetBBHc8EoJizAlQ1HahS6gLo6rfL4IQjmJLpsEqjWR7070TOd08Mv65Qt1K4c5vmv43jMq3pN"
+      }
+    ],
+    "grounding_supports": [
+      {
+        "segment": {
+          "endIndex": 701,
+          "text": "```json\n{\n  \"as_of\": \"2024-01-02\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"UBER\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"No qualifying news was found for Uber Technologies within the specified search window.\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": []\n    },\n    {\n      \"ticker\": \"CCL\",\n      \"news_score\": 70,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"Carnival Corporation reported record full-year 2023 revenues of $21.6 billion and record fourth-quarter revenues of $5.4 billion, with positive adjusted net income for the full year."
+        },
+        "groundingChunkIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 702,
+          "endIndex": 878,
+          "text": "The company also entered 2024 with its best booked position on record for both price and occupancy, and total customer deposits reached a fourth-quarter record of $6.4 billion."
+        },
+        "groundingChunkIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 878,
+          "endIndex": 1078,
+          "text": "\",\n      \"catalyst\": \"Record full-year and fourth-quarter revenues, positive adjusted net income for the full year, and a record booked position for 2024 indicate strong demand and financial recovery."
+        },
+        "groundingChunkIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1078,
+          "endIndex": 1186,
+          "text": "\",\n      \"risk\": \"While the company made significant debt payments, it still has a substantial debt balance."
+        },
+        "groundingChunkIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1253,
+          "endIndex": 3072,
+          "text": "Reports Record 2023 Revenue and Fourth Quarter Earnings\",\n          \"url\": \"https://www.cruiseindustrynews.com/cruise-news/30990-carnival-corp-reports-record-2023-revenue-and-fourth-quarter-earnings.html\",\n          \"published_date\": \"2023-12-21\"\n        },\n        {\n          \"title\": \"2023 4Q Earnings Release (8-K) - Carnival Corporation\",\n          \"url\": \"https://ir.carnivalcorp.com/static-files/1100122a-122c-411a-812a-122c1100122a\",\n          \"published_date\": \"2023-12-21\"\n        },\n        {\n          \"title\": \"CARNIVAL CORPORATION & PLC REPORTS RECORD FOURTH QUARTER AND FULL YEAR REVENUES WITH CONTINUED STRONG BOOKINGS AND EARNINGS MOMENTUM\",\n          \"url\": \"https://www.prnewswire.com/news-releases/carnival-corporation--plc-reports-record-fourth-quarter-and-full-year-revenues-with-continued-strong-bookings-and-earnings-momentum-302021200.html\",\n          \"published_date\": \"2023-12-21\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"AMD\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"No qualifying news was found for Advanced Micro Devices within the specified search window.\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": []\n    },\n    {\n      \"ticker\": \"PANW\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"No qualifying news was found for Palo Alto Networks within the specified search window.\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": []\n    },\n    {\n      \"ticker\": \"TSLA\",\n      \"news_score\": -50,\n      \"confidence\": 0.7,\n      \"insufficient_information\": false,\n      \"summary\": \"Tesla reported Q3 2023 vehicle deliveries of 435,059, missing analyst estimates of 461,640, due to planned factory downtimes for upgrades."
+        },
+        "groundingChunkIndices": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 3073,
+          "endIndex": 3183,
+          "text": "Despite the sequential decline, Tesla maintained its 2023 volume target of approximately 1.8 million vehicles."
+        },
+        "groundingChunkIndices": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 3183,
+          "endIndex": 3363,
+          "text": "\",\n      \"catalyst\": \"The company's commitment to its 2023 volume target of 1.8 million vehicles, despite Q3 production dips, suggests confidence in future production capabilities."
+        },
+        "groundingChunkIndices": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 3363,
+          "endIndex": 3533,
+          "text": "\",\n      \"risk\": \"Q3 2023 vehicle deliveries missed analyst estimates, and a sequential decline in production and deliveries could raise concerns about short-term growth."
+        },
+        "groundingChunkIndices": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "requested_count": 5,
+    "returned_count": 5,
+    "audit_pass_count": 1,
+    "usage_metadata": {
+      "promptTokenCount": 532,
+      "candidatesTokenCount": 2044,
+      "totalTokenCount": 20098,
+      "cachedContentTokenCount": 424,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 532
+        }
+      ],
+      "cacheTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 424
+        }
+      ],
+      "toolUsePromptTokenCount": 11534,
+      "toolUsePromptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 11534
+        }
+      ],
+      "thoughtsTokenCount": 5988,
+      "serviceTier": "standard"
+    },
+    "finish_reason": "STOP"
+  },
+  "raw_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "```json\n{\n  \"as_of\": \"2024-01-02\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"UBER\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"No qualifying news was found for Uber Technologies within the specified search window.\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": []\n    },\n    {\n      \"ticker\": \"CCL\",\n      \"news_score\": 70,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"Carnival Corporation reported record full-year 2023 revenues of $21.6 billion and record fourth-quarter revenues of $5.4 billion, with positive adjusted net income for the full year. The company also entered 2024 with its best booked position on record for both price and occupancy, and total customer deposits reached a fourth-quarter record of $6.4 billion.\",\n      \"catalyst\": \"Record full-year and fourth-quarter revenues, positive adjusted net income for the full year, and a record booked position for 2024 indicate strong demand and financial recovery.\",\n      \"risk\": \"While the company made significant debt payments, it still has a substantial debt balance.\",\n      \"sources\": [\n        {\n          \"title\": \"Carnival Corp. Reports Record 2023 Revenue and Fourth Quarter Earnings\",\n          \"url\": \"https://www.cruiseindustrynews.com/cruise-news/30990-carnival-corp-reports-record-2023-revenue-and-fourth-quarter-earnings.html\",\n          \"published_date\": \"2023-12-21\"\n        },\n        {\n          \"title\": \"2023 4Q Earnings Release (8-K) - Carnival Corporation\",\n          \"url\": \"https://ir.carnivalcorp.com/static-files/1100122a-122c-411a-812a-122c1100122a\",\n          \"published_date\": \"2023-12-21\"\n        },\n        {\n          \"title\": \"CARNIVAL CORPORATION & PLC REPORTS RECORD FOURTH QUARTER AND FULL YEAR REVENUES WITH CONTINUED STRONG BOOKINGS AND EARNINGS MOMENTUM\",\n          \"url\": \"https://www.prnewswire.com/news-releases/carnival-corporation--plc-reports-record-fourth-quarter-and-full-year-revenues-with-continued-strong-bookings-and-earnings-momentum-302021200.html\",\n          \"published_date\": \"2023-12-21\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"AMD\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"No qualifying news was found for Advanced Micro Devices within the specified search window.\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": []\n    },\n    {\n      \"ticker\": \"PANW\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"No qualifying news was found for Palo Alto Networks within the specified search window.\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": []\n    },\n    {\n      \"ticker\": \"TSLA\",\n      \"news_score\": -50,\n      \"confidence\": 0.7,\n      \"insufficient_information\": false,\n      \"summary\": \"Tesla reported Q3 2023 vehicle deliveries of 435,059, missing analyst estimates of 461,640, due to planned factory downtimes for upgrades. Despite the sequential decline, Tesla maintained its 2023 volume target of approximately 1.8 million vehicles.\",\n      \"catalyst\": \"The company's commitment to its 2023 volume target of 1.8 million vehicles, despite Q3 production dips, suggests confidence in future production capabilities.\",\n      \"risk\": \"Q3 2023 vehicle deliveries missed analyst estimates, and a sequential decline in production and deliveries could raise concerns about short-term growth.\",\n      \"sources\": [\n        {\n          \"title\": \"Tesla reports dip in production, deliveries in 3rd quarter | Fox Business\",\n          \"url\": \"https://www.foxbusiness.com/markets/tesla-reports-dip-production-deliveries-3rd-quarter\",\n          \"published_date\": \"2023-10-02\"\n        },\n        {\n          \"title\": \"Tesla (TSLA) reports 435059 vehicle deliveries in Q3 2023, missing analyst estimates\",\n          \"url\": \"https://www.shacknews.com/article/137090/tesla-tsla-reports-435059-vehicle-deliveries-in-q3-2023-missing-analyst-estimates\",\n          \"published_date\": \"2023-10-02\"\n        },\n        {\n          \"title\": \"Tesla Vehicle Production & Deliveries and Date for Financial Results & Webcast for Third Quarter 2023\",\n          \"url\": \"https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-third-quarter-2023\",\n          \"published_date\": \"2023-10-02\"\n        },\n        {\n          \"title\": \"Tesla Production and Vehicle Delivery Performance Slows in Q3 | - Bob Ferrari\",\n          \"url\": \"https://supplychainmatters.substack.com/p/tesla-production-and-vehicle-delivery\",\n          \"published_date\": \"2023-10-03\"\n        },\n        {\n          \"title\": \"Tesla Vehicle Production & Deliveries and Date for Financial Results & Webcast for Third Quarter 2023 | Nasdaq\",\n          \"url\": \"https://www.nasdaq.com/press-release/tesla-vehicle-production-deliveries-and-date-for-financial-results-webcast-for-third\",\n          \"published_date\": \"2023-10-02\"\n        }\n      ]\n    }\n  ]\n}\n```"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "groundingMetadata": {
+          "searchEntryPoint": {
+            "renderedContent": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGYtjastVnaLjHVhh67D3qot981yDEVVWeWkhms8TrC_aqMnrjLFwe2dOu8glLF669kJ2dm-qpRopFp3HApTDeCFcRvgnvE4pAQJPvlmI8-zc6PvxhXHslN69mE_M134AG_eM7_jDLYBhNYDHPgBco1g-yODtunSSMuoakdnhOzlguNItZTpe-rN0sGrZIevBUEoLvmFhDkEMc2n3DBZvwR9V4V7X2klCiKUVb5SErtlzCHcNhbBIDTYarV6Gy\">Tesla Q3 2023 production and deliveries report October 2023</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGehL5QSeMdjleiNBh-E04bOnWrlT8jWCKfPLjn3LRiMVXpAR1EcyJW2bl8ZF8c_66xGhVZhzddw9hVOcKpecMpyLUVKVW6j_qyJHVB_xu0XRAsvWB3cENE8MHQmRk41trcRQHfhs1E8kJNd62LhvQtrm8cGbXcszWkJwrYuG_cnJhrNUEfOnJocjmZKzFtFUUKlHXTGe4y5G4covZMK0JFX8gl00b4OVQpRur0aIbDa_HC-h8NiwT7D1mZKxJu\">Carnival Corporation FY 2023 earnings release November 2023</a>\n  </div>\n</div>\n"
+          },
+          "groundingChunks": [
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVOAKluwv4i0r2kSpbVw57UNuROPWQXF_DdX9bgJSZ69QkOYEAYV72sviffgCxIziqFHtf-k61uM0tCw-QtvvJMHgIMfmc70sF6y8bX6sVW4aMBqdJqoBeGNSZ6uUoZLfJPQsYpeudeP8ShFRYylPa7iRZ7BDkb9Nob2h0hKVtReXA1e3TcqxL5tljnXoh6PLTl-8G_M4SUJidGzpeBru243lruoepOvyfWmLb1H2x2kJe0Q==",
+                "title": "cruiseindustrynews.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcsYa2L4Q98yLO3jv8l4JgHhbU4QU1pIA01ek-XNfXWh7ACQfv_mSvyhDnoB6--aouUJ9NXhatxdCpl0W-ZN_ui9xAN66sLzzA0llHbtKVLBhfRX3w-TqpZmqjJYWwWLJe6DwLafFKnOnEOv2b5eHPpS8WVCLswRgktDc0sxCX-3jSRXEwEALR3JpX6VrMjZyF-KyHMN3nNQ==",
+                "title": "carnivalcorp.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHivqRFD6Pmm048rr7LBXP7lqtyEYvmED0I-EfE0oGSctMmxfGW0zJJNW-u6q_BL48AUkzWjs4umHSnf69ImjFCLXcNld2_QBb_WL6qkC9VOOsba4u6utAnnrpJSRFzUCpZseAtDfFkkwCtCkaZtmN9GcbcSnD87lySI6mqbFLjY3xkc3ec_0SyJWWRvG43LzR7Iaag3U_ImqyURCqItbWvA2OUDf0ME559dInJA1aYfHPOWmT6y4IZ85aAeNG0em_Rer_EBYX8e4g9akelPNQU7BiSVzF8-jK5SKAMsmpDVXAoX4Nv3C7uxWANi8zkEZ2wJWQSEM=",
+                "title": "prnewswire.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwMTiJOcq44MBavBXNrEJWkvTEhqPJlcTvmHuGkUU0axgJgqk0zm2KbQRz6bZ-25dT1bhPWFgtB8T5bCmLJgptbtY1X0BPo5mT1a4AL2rIXOh4ln9RXKCd6Ti56CcSFqsIXSA0j1f0kli1LuqpBw976c3ANGxH3oizWIvhf0Wjx5JH_sjrEBOz7FeNwmoEv31tsis=",
+                "title": "foxbusiness.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrcF1c6lC-wgZmZOJS228GBTBDEGlTtokQT9ly0gMZphP31lQK9oTxjSvj3d1Yl9nnsTQjFTP64rckqG8c3PsiDma0KddcITHmr9tFjuoeSqjZ4sCEArbCTQWGcT8PiKT5RdJlaHDHS1XLdFz5oPjjmv8HMe1RKIJPvwarUjOTGMBFDdcTRq_A",
+                "title": "shacknews.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEoJWasGFhkzdS-g5vFNYG4QaXFBudPTES0QGgzissbCI-BVF0xB9-7rDUFP_J-oxwpCbKebh9RxK7gC9LBn5S1-viTKD3-mng0bc_DUCASh8xEbtxq5loXc2DstYoD8RLiqR1GNnPXfeqNmHs0TmuSQ7KNTTNFDyfcIca8_PsQryqy4oDHKW-TVBYhwLVbY-ortVHKtJ0krNFj6NZp2znNghs8euIceAQ3WMPP0mOgWLp6OP4Oww==",
+                "title": "tesla.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGY6dBT9EgzppfJSknpW7ElJByjdabprwYXt7TODV80LgJGaOFEMWOsPtIOqh1bshwWkbDhihMob4gsr2ELn9s1yEHey9AvgjPXqA9ujMfWBFBXzCoTL9e1hgxkLELIVPwYMoM6ifc6ct9gYI_mFmJW_EM6IrLA6vUEeV-N640iNi22UqszAySs9-KVcRUvjZcm2SIj",
+                "title": "theferrarigroup.com"
+              }
+            },
+            {
+              "web": {
+                "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWAVqFwG6mbm5x4cnujxRciTTtvHX5KJ8nAwZH9o8L1GTCV2NXLJCtU4ND-j6Yed8S98mea0nxWeHTGUeMeZk_maMDdqOqELzNl2ognNZMgwh6yRQE-4RSvzOzx81kybLSd7Jw6OUId-pFwb5zo1qS5t9v4a7y9laetBBHc8EoJizAlQ1HahS6gLo6rfL4IQjmJLpsEqjWR7070TOd08Mv65Qt1K4c5vmv43jMq3pN",
+                "title": "nasdaq.com"
+              }
+            }
+          ],
+          "groundingSupports": [
+            {
+              "segment": {
+                "endIndex": 701,
+                "text": "```json\n{\n  \"as_of\": \"2024-01-02\",\n  \"forecast_trading_days\": 20,\n  \"stocks\": [\n    {\n      \"ticker\": \"UBER\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"No qualifying news was found for Uber Technologies within the specified search window.\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": []\n    },\n    {\n      \"ticker\": \"CCL\",\n      \"news_score\": 70,\n      \"confidence\": 0.8,\n      \"insufficient_information\": false,\n      \"summary\": \"Carnival Corporation reported record full-year 2023 revenues of $21.6 billion and record fourth-quarter revenues of $5.4 billion, with positive adjusted net income for the full year."
+              },
+              "groundingChunkIndices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 702,
+                "endIndex": 878,
+                "text": "The company also entered 2024 with its best booked position on record for both price and occupancy, and total customer deposits reached a fourth-quarter record of $6.4 billion."
+              },
+              "groundingChunkIndices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 878,
+                "endIndex": 1078,
+                "text": "\",\n      \"catalyst\": \"Record full-year and fourth-quarter revenues, positive adjusted net income for the full year, and a record booked position for 2024 indicate strong demand and financial recovery."
+              },
+              "groundingChunkIndices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 1078,
+                "endIndex": 1186,
+                "text": "\",\n      \"risk\": \"While the company made significant debt payments, it still has a substantial debt balance."
+              },
+              "groundingChunkIndices": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 1253,
+                "endIndex": 3072,
+                "text": "Reports Record 2023 Revenue and Fourth Quarter Earnings\",\n          \"url\": \"https://www.cruiseindustrynews.com/cruise-news/30990-carnival-corp-reports-record-2023-revenue-and-fourth-quarter-earnings.html\",\n          \"published_date\": \"2023-12-21\"\n        },\n        {\n          \"title\": \"2023 4Q Earnings Release (8-K) - Carnival Corporation\",\n          \"url\": \"https://ir.carnivalcorp.com/static-files/1100122a-122c-411a-812a-122c1100122a\",\n          \"published_date\": \"2023-12-21\"\n        },\n        {\n          \"title\": \"CARNIVAL CORPORATION & PLC REPORTS RECORD FOURTH QUARTER AND FULL YEAR REVENUES WITH CONTINUED STRONG BOOKINGS AND EARNINGS MOMENTUM\",\n          \"url\": \"https://www.prnewswire.com/news-releases/carnival-corporation--plc-reports-record-fourth-quarter-and-full-year-revenues-with-continued-strong-bookings-and-earnings-momentum-302021200.html\",\n          \"published_date\": \"2023-12-21\"\n        }\n      ]\n    },\n    {\n      \"ticker\": \"AMD\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"No qualifying news was found for Advanced Micro Devices within the specified search window.\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": []\n    },\n    {\n      \"ticker\": \"PANW\",\n      \"news_score\": 0,\n      \"confidence\": 0.0,\n      \"insufficient_information\": true,\n      \"summary\": \"No qualifying news was found for Palo Alto Networks within the specified search window.\",\n      \"catalyst\": \"None.\",\n      \"risk\": \"None.\",\n      \"sources\": []\n    },\n    {\n      \"ticker\": \"TSLA\",\n      \"news_score\": -50,\n      \"confidence\": 0.7,\n      \"insufficient_information\": false,\n      \"summary\": \"Tesla reported Q3 2023 vehicle deliveries of 435,059, missing analyst estimates of 461,640, due to planned factory downtimes for upgrades."
+              },
+              "groundingChunkIndices": [
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 3073,
+                "endIndex": 3183,
+                "text": "Despite the sequential decline, Tesla maintained its 2023 volume target of approximately 1.8 million vehicles."
+              },
+              "groundingChunkIndices": [
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 3183,
+                "endIndex": 3363,
+                "text": "\",\n      \"catalyst\": \"The company's commitment to its 2023 volume target of 1.8 million vehicles, despite Q3 production dips, suggests confidence in future production capabilities."
+              },
+              "groundingChunkIndices": [
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "segment": {
+                "startIndex": 3363,
+                "endIndex": 3533,
+                "text": "\",\n      \"risk\": \"Q3 2023 vehicle deliveries missed analyst estimates, and a sequential decline in production and deliveries could raise concerns about short-term growth."
+              },
+              "groundingChunkIndices": [
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          ],
+          "webSearchQueries": [
+            "UBER news 2023-10-04 to 2024-01-02",
+            "Uber Technologies news catalyst 2023-10-04 to 2024-01-02",
+            "Carnival Corporation news 2023-10-04 to 2024-01-02",
+            "CCL news catalyst 2023-10-04 to 2024-01-02",
+            "Advanced Micro Devices news 2023-10-04 to 2024-01-02",
+            "AMD news catalyst 2023-10-04 to 2024-01-02",
+            "Palo Alto Networks news 2023-10-04 to 2024-01-02",
+            "PANW news catalyst 2023-10-04 to 2024-01-02",
+            "Tesla, Inc. news 2023-10-04 to 2024-01-02",
+            "TSLA news catalyst 2023-10-04 to 2024-01-02",
+            "UBER news 2023-10-04..2024-01-02",
+            "Carnival Corporation CCL news 2023-10-04..2024-01-02",
+            "Advanced Micro Devices AMD news 2023-10-04..2024-01-02",
+            "Palo Alto Networks PANW news 2023-10-04..2024-01-02",
+            "Tesla TSLA news 2023-10-04..2024-01-02",
+            "Carnival Corporation FY 2023 earnings release November 2023",
+            "Tesla Q3 2023 production and deliveries report October 2023"
+          ]
+        }
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 532,
+      "candidatesTokenCount": 2044,
+      "totalTokenCount": 20098,
+      "cachedContentTokenCount": 424,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 532
+        }
+      ],
+      "cacheTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 424
+        }
+      ],
+      "toolUsePromptTokenCount": 11534,
+      "toolUsePromptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 11534
+        }
+      ],
+      "thoughtsTokenCount": 5988,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "iKJlatG_HtDLqfkP7eLx0Ao"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "batch_files": 14,
+  "rebalance_dates_touched": 4,
+  "stock_date_responses": 70,
+  "audit_pass_count": 31,
+  "audit_pass_rate": 0.44285714285714284,
+  "nonzero_effective_scores": 30,
+  "mean_confidence_all": 0.4314285714285714,
+  "mean_confidence_accepted": 0.8225806451612904,
+  "mean_effective_score_accepted": 0.545241935483871,
+  "minimum_effective_score": -0.16000000000000003,
+  "maximum_effective_score": 1.0,
+  "grounded_search_queries": 100,
+  "reported_total_tokens": 121300,
+  "models_by_batch": {
+    "gemini-2.5-flash": 14
+  },
+  "audit_failure_reasons": {
+    "no_source_with_valid_point_in_time_date": 37,
+    "model_reported_insufficient_information": 33,
+    "missing_ticker": 4
+  },
+  "coverage_warning": "Partial cache only. Do not select news weight or claim a holdout return until every required rebalance candidate is cached."
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Gemini 2.5 Flash grounded-news allocation overlay",
+  "price_model": "api_efficient_price_model_200.json",
+  "price_model_fingerprint": "ca4a01a9d88ac41b5c12920d6e2e94affba8b124fcd5843b6f844c5d8cf41e53",
+  "gemini_model": "gemini-2.5-flash",
+  "cache_tag": "gemini_2_5_flash_api_efficient",
+  "prompt_version": "news-score-v1",
+  "universe_size": 200,
+  "news_candidates": 10,
+  "combination": "select top-10 price candidates; weights are softmax(news_alpha * audited_news_rank)",
+  "news_alpha": 2.0,
+  "selection_start": "2024-01-01",
+  "selection_end": "2024-12-31",
+  "holdout_start": "2025-01-01",
+  "validation": {
+    "close_return": 2.3913162600290025,
+    "next_open_return": 2.4047753731992283,
+    "close_sharpe": 2.6745569327990864,
+    "next_open_sharpe": 2.6883583938847107,
+    "worst_drawdown": -0.2590697811663747,
+    "objective": 2.6123416423437265
+  },
+  "retrospective_search_warning": "Historical search is date-filtered and source-audited, but retrospective ranking can still leak hindsight.",
+  "fingerprint": "f2685786ca0bc526633ee4bae4c7fab21b202ce948c323add50533ab52e01d02"
+}
